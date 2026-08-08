@@ -1,4 +1,4 @@
-name = "opera-italian-reader-proxy"
+name = "leggio-proxy"
 main = "index.mjs"
 compatibility_date = "2026-08-01"
 
