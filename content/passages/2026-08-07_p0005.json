@@ -1,0 +1,142 @@
+{
+  "id": "p0005",
+  "phase": "P2",
+  "genre": "practical",
+  "wordCount": 210,
+  "title_ja": "会話を終わらせてしまう言葉",
+  "text": "Molti genitori si lamentano del fatto che i figli adolescenti non raccontino più nulla, e non sospettano che a interrompere il racconto siano state, quasi sempre, alcune loro frasi abituali. La frase «Te l'avevo detto» è forse la più efficace di tutte: chi la pronuncia crede di offrire un insegnamento, ma chi la riceve capisce soltanto che il proprio errore era prevedibile e che confidarlo è stato uno sbaglio. Rispondendo immediatamente con un consiglio pratico si ottiene spesso lo stesso risultato: il ragazzo si sente giudicato e cambia argomento.\n\nFunziona allo stesso modo la domanda posta con tono di verifica, se viene ripetuta ogni sera alla stessa ora, perché trasforma un dialogo in un controllo. Non si tratta di rinunciare alle regole, che restano necessarie, ma di distinguere il momento in cui si esercita l'autorità da quello in cui si ascolta. Se un ragazzo comincia a parlare mentre si sparecchia la tavola, conviene rimandare qualsiasi giudizio: basterebbe una sola osservazione severa perché la porta, appena socchiusa, si richiudesse per settimane. Chi ha provato a tacere per qualche giorno racconta che i figli, dopo un primo momento di diffidenza, ricominciano a parlare da soli, quasi sempre nei momenti più scomodi della giornata, come se avessero soltanto aspettato che nessuno li interrogasse.",
+  "sentences": [
+    {
+      "idx": 0,
+      "text": "Molti genitori si lamentano del fatto che i figli adolescenti non raccontino più nulla, e non sospettano che a interrompere il racconto siano state, quasi sempre, alcune loro frasi abituali.",
+      "words": 30,
+      "skeleton": {
+        "mainVerb": "si lamentano / non sospettano (等位の二主節)",
+        "subject": "Molti genitori",
+        "core_ja": "多くの親は〜と嘆き、〜とは思ってもみない。"
+      },
+      "clauses": [
+        {"span": [6, 13], "type": "sub", "note_ja": "del fatto che に続く従属節。接続法 raccontino。non … più nulla の二重否定的表現は「もう何も〜ない」。"},
+        {"span": [17, 29], "type": "sub", "note_ja": "sospettano の目的節。語順が倒置されており、siano state の主語は文末の alcune loro frasi abituali。冒頭の a interrompere il racconto は「話を中断させたのは」という不定詞句。"},
+        {"span": [24, 25], "type": "ins", "note_ja": "quasi sempre は助動詞 siano state と主語 alcune loro frasi abituali の間に割り込む挿入句。"}
+      ],
+      "model_ja": "多くの親は、思春期の子どもがもう何も話してくれないと嘆くが、その語りを断ち切ってきたのが、たいていは自分自身のいくつかの口癖であったとは思いもしない。",
+      "traps": ["MOOD", "SYN", "REF"]
+    },
+    {
+      "idx": 1,
+      "text": "La frase «Te l'avevo detto» è forse la più efficace di tutte: chi la pronuncia crede di offrire un insegnamento, ma chi la riceve capisce soltanto che il proprio errore era prevedibile e che confidarlo è stato uno sbaglio.",
+      "words": 39,
+      "skeleton": {
+        "mainVerb": "è / crede / capisce",
+        "subject": "La frase / chi (2回)",
+        "core_ja": "「だから言っただろう」という言葉が最も効き目がある。言う側は〜と信じ、受け取る側は〜と理解する。"
+      },
+      "clauses": [
+        {"span": [12, 14], "type": "rel", "note_ja": "chi は融合関係詞で、この部分が crede の主語。la は la frase を受ける。"},
+        {"span": [21, 23], "type": "rel", "note_ja": "二つ目の chi。capisce の主語で、前の chi と対比されている。"},
+        {"span": [26, 31], "type": "sub", "note_ja": "capisce に従属する第一のche節。proprio は「(その人)自身の」。"},
+        {"span": [33, 38], "type": "sub", "note_ja": "capisce に従属する第二のche節。confidarlo(それを打ち明けたこと)が主語の不定詞。"}
+      ],
+      "model_ja": "「だから言っただろう」という一言は、おそらくそのなかで最も効き目がある。口にする側は教訓を与えているつもりでいるが、受け取る側は、自分の失敗は初めから予測されていたのであり、それを打ち明けたのが間違いだった、とだけ理解するのである。",
+      "traps": ["SYN", "REF", "OMIT"]
+    },
+    {
+      "idx": 2,
+      "text": "Rispondendo immediatamente con un consiglio pratico si ottiene spesso lo stesso risultato: il ragazzo si sente giudicato e cambia argomento.",
+      "words": 20,
+      "skeleton": {
+        "mainVerb": "si ottiene",
+        "subject": "lo stesso risultato(非人称siの受動的用法)",
+        "core_ja": "〜すれば、しばしば同じ結果が得られる。"
+      },
+      "clauses": [
+        {"span": [0, 5], "type": "ger", "note_ja": "Rispondendo のジェルンディオ句。条件・手段を表し「〜すると」。"}
+      ],
+      "model_ja": "すぐに実際的な助言を返しても、しばしば同じ結果になる。子どもは評価されたと感じ、話題を変えてしまう。",
+      "traps": ["SYN", "LEX"]
+    },
+    {
+      "idx": 3,
+      "text": "Funziona allo stesso modo la domanda posta con tono di verifica, se viene ripetuta ogni sera alla stessa ora, perché trasforma un dialogo in un controllo.",
+      "words": 26,
+      "skeleton": {
+        "mainVerb": "Funziona",
+        "subject": "la domanda(動詞のあとに置かれた主語)",
+        "core_ja": "確認の口調で発せられる問いも同じように働く。"
+      },
+      "clauses": [
+        {"span": [6, 10], "type": "ins", "note_ja": "posta 以下は la domanda に一致する過去分詞句(porre の過去分詞)。「〜という調子で発せられた」。"},
+        {"span": [11, 18], "type": "sub", "note_ja": "se の条件節。viene ripetuta は venire を用いた受動態。"},
+        {"span": [19, 25], "type": "sub", "note_ja": "perché の理由節。主語は la domanda のままで交替していない。"}
+      ],
+      "model_ja": "確認するような口調で発せられる問いも、同じように働く。毎晩同じ時刻に繰り返されるなら、それは対話を点検に変えてしまうからである。",
+      "traps": ["SYN", "MOD"]
+    },
+    {
+      "idx": 4,
+      "text": "Non si tratta di rinunciare alle regole, che restano necessarie, ma di distinguere il momento in cui si esercita l'autorità da quello in cui si ascolta.",
+      "words": 26,
+      "skeleton": {
+        "mainVerb": "Non si tratta",
+        "subject": "非人称(問題は〜である)",
+        "core_ja": "規則を捨てることではなく、区別することが問題なのだ。"
+      },
+      "clauses": [
+        {"span": [7, 9], "type": "rel", "note_ja": "le regole を先行詞とする非制限的関係節。前後をコンマで区切られており、いったん外して non si tratta di … ma di … の相関を確かめる。"},
+        {"span": [15, 19], "type": "rel", "note_ja": "il momento を先行詞とする関係節(in cui)。"},
+        {"span": [22, 25], "type": "rel", "note_ja": "quello(= il momento)を先行詞とする関係節。distinguere A da B の B にあたる。"}
+      ],
+      "model_ja": "規則を放棄せよということではない。規則は必要であり続ける。そうではなく、権威を行使する場面と、耳を傾ける場面とを区別せよということである。",
+      "traps": ["SYN", "MOD", "OMIT"]
+    },
+    {
+      "idx": 5,
+      "text": "Se un ragazzo comincia a parlare mentre si sparecchia la tavola, conviene rimandare qualsiasi giudizio: basterebbe una sola osservazione severa perché la porta, appena socchiusa, si richiudesse per settimane.",
+      "words": 29,
+      "skeleton": {
+        "mainVerb": "conviene / basterebbe",
+        "subject": "rimandare…(不定詞) / una sola osservazione severa",
+        "core_ja": "子どもが話し始めたら、判断は後回しにするのがよい。厳しい一言だけで十分だろう。"
+      },
+      "clauses": [
+        {"span": [0, 10], "type": "sub", "note_ja": "se の条件節。"},
+        {"span": [6, 10], "type": "sub", "note_ja": "mentre の時の副詞節が条件節の内部に入れ子になっている。si sparecchia は非人称のsi。"},
+        {"span": [20, 28], "type": "sub", "note_ja": "この perché は理由ではなく目的・結果を表し、接続法 richiudesse をとる(「〜するには〜で足りるだろう」)。理由と取ると時制も意味も合わない。"},
+        {"span": [23, 24], "type": "ins", "note_ja": "appena socchiusa は la porta に一致する挿入的な過去分詞句(「わずかに開きかけた」)。"}
+      ],
+      "model_ja": "食卓を片づけている最中に子どもが話し始めたなら、いかなる判断も先送りにするのがよい。厳しい指摘がひとつあるだけで、わずかに開きかけた扉は何週間も閉ざされてしまうのだから。",
+      "traps": ["MOOD", "SYN", "LEX"]
+    },
+    {
+      "idx": 6,
+      "text": "Chi ha provato a tacere per qualche giorno racconta che i figli, dopo un primo momento di diffidenza, ricominciano a parlare da soli, quasi sempre nei momenti più scomodi della giornata, come se avessero soltanto aspettato che nessuno li interrogasse.",
+      "words": 40,
+      "skeleton": {
+        "mainVerb": "racconta",
+        "subject": "Chi (= colui che)",
+        "core_ja": "〜した人は、〜だと語る。"
+      },
+      "clauses": [
+        {"span": [0, 7], "type": "rel", "note_ja": "Chi で始まる融合関係詞句が主節の主語。ha provato a + 不定詞で「〜してみた」。"},
+        {"span": [9, 39], "type": "sub", "note_ja": "racconta の目的節。主語 i figli と動詞 ricominciano の間に挿入句が入る。"},
+        {"span": [12, 17], "type": "ins", "note_ja": "dopo un primo momento di diffidenza は主語と動詞を隔てる挿入句。"},
+        {"span": [23, 30], "type": "ins", "note_ja": "quasi sempre nei momenti più scomodi della giornata も挿入的な補足。"},
+        {"span": [31, 39], "type": "sub", "note_ja": "come se + 接続法大過去 avessero aspettato。主節より前の時点を表す(「〜していたかのように」)。"},
+        {"span": [36, 39], "type": "sub", "note_ja": "aspettato に従属するche節。接続法半過去 interrogasse。"}
+      ],
+      "model_ja": "数日のあいだ黙ってみたという人は、こう語る。子どもたちは、最初こそ警戒するものの、やがて自分から話し始める。しかもたいていは一日のうちで最も都合の悪い時間帯に、まるで誰も自分に問いたださないのをただ待っていたかのように。",
+      "traps": ["MOOD", "SYN", "MOD"]
+    }
+  ],
+  "model_ja_full": "多くの親は、思春期の子どもがもう何も話してくれないと嘆くが、その語りを断ち切ってきたのが、たいていは自分自身のいくつかの口癖であったとは思いもしない。「だから言っただろう」という一言は、おそらくそのなかで最も効き目がある。口にする側は教訓を与えているつもりでいるが、受け取る側は、自分の失敗は初めから予測されていたのであり、それを打ち明けたのが間違いだった、とだけ理解するのである。すぐに実際的な助言を返しても、しばしば同じ結果になる。子どもは評価されたと感じ、話題を変えてしまう。\n\n確認するような口調で発せられる問いも、同じように働く。毎晩同じ時刻に繰り返されるなら、それは対話を点検に変えてしまうからである。規則を放棄せよということではない。規則は必要であり続ける。そうではなく、権威を行使する場面と、耳を傾ける場面とを区別せよということである。食卓を片づけている最中に子どもが話し始めたなら、いかなる判断も先送りにするのがよい。厳しい指摘がひとつあるだけで、わずかに開きかけた扉は何週間も閉ざされてしまうのだから。数日のあいだ黙ってみたという人は、こう語る。子どもたちは、最初こそ警戒するものの、やがて自分から話し始める。しかもたいていは一日のうちで最も都合の悪い時間帯に、まるで誰も自分に問いたださないのをただ待っていたかのように。",
+  "vocab": [
+    {"it": "lamentarsi di", "ja": "〜について不平を言う", "hint": "推測可"},
+    {"it": "diffidenza", "ja": "不信・警戒", "hint": "辞書を引くべき"},
+    {"it": "sparecchiare", "ja": "食卓を片づける", "hint": "辞書を引くべき"},
+    {"it": "socchiuso", "ja": "半開きの", "hint": "辞書を引くべき"},
+    {"it": "rimandare", "ja": "先延ばしにする", "hint": "推測可"},
+    {"it": "interrogare", "ja": "問いただす", "hint": "推測可"},
+    {"it": "confidare", "ja": "打ち明ける", "hint": "辞書を引くべき"}
+  ]
+}

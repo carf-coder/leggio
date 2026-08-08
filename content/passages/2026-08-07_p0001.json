@@ -1,0 +1,99 @@
+{
+  "id": "p0001",
+  "phase": "P1",
+  "genre": "essay",
+  "wordCount": 115,
+  "title_ja": "イタリアの広場",
+  "text": "In quasi tutte le città italiane esiste una piazza che i cittadini considerano il centro della propria vita comune. Non è soltanto uno spazio vuoto tra gli edifici: è il luogo in cui si tengono i mercati, le feste e, quando occorre, le discussioni pubbliche. Gli storici sostengono che questa abitudine sia molto antica e che risalga ai secoli in cui i comuni amministravano da sé il proprio territorio.\n\nOggi molte piazze vengono occupate dalle automobili, e chi le attraversa a piedi lo fa in fretta, guardando l'orologio più che le facciate degli edifici. Alcune amministrazioni, però, hanno deciso di restituirle ai pedoni, convinte che una città senza luoghi d'incontro diventi col tempo meno abitabile.",
+  "sentences": [
+    {
+      "idx": 0,
+      "text": "In quasi tutte le città italiane esiste una piazza che i cittadini considerano il centro della propria vita comune.",
+      "words": 19,
+      "skeleton": {
+        "mainVerb": "esiste",
+        "subject": "una piazza",
+        "core_ja": "ほぼすべてのイタリアの都市に、ひとつの広場がある。"
+      },
+      "clauses": [
+        {"span": [9, 18], "type": "rel", "note_ja": "che以下はpiazzaを修飾する関係節。cheは considerano の直接目的語(主語はi cittadini)で、il centro… は目的補語。"}
+      ],
+      "model_ja": "イタリアのほぼすべての都市には、市民が自分たちの共同生活の中心とみなしている広場がある。",
+      "traps": ["MOD", "REF"]
+    },
+    {
+      "idx": 1,
+      "text": "Non è soltanto uno spazio vuoto tra gli edifici: è il luogo in cui si tengono i mercati, le feste e, quando occorre, le discussioni pubbliche.",
+      "words": 26,
+      "skeleton": {
+        "mainVerb": "è (2回・コロンで並置)",
+        "subject": "(la piazza) 省略された主語",
+        "core_ja": "(広場は)単なる空間ではなく、〜が行われる場所である。"
+      },
+      "clauses": [
+        {"span": [12, 25], "type": "rel", "note_ja": "in cui = 前置詞+関係代名詞。il luogo を修飾する関係節。動詞 si tengono は非人称のsiによる受動的用法で、主語は i mercati / le feste / le discussioni の三つ。"},
+        {"span": [21, 22], "type": "ins", "note_ja": "quando occorre は列挙の途中に割り込む挿入的な時の副詞節。訳出時はいったん外して並列関係を確かめる。"}
+      ],
+      "model_ja": "それは建物にはさまれた単なる空いた場所ではない。市が立ち、祭りが催され、必要とあらば公の議論が交わされる場所なのである。",
+      "traps": ["SYN", "OMIT"]
+    },
+    {
+      "idx": 2,
+      "text": "Gli storici sostengono che questa abitudine sia molto antica e che risalga ai secoli in cui i comuni amministravano da sé il proprio territorio.",
+      "words": 24,
+      "skeleton": {
+        "mainVerb": "sostengono",
+        "subject": "Gli storici",
+        "core_ja": "歴史家たちは〜と〜を主張している。"
+      },
+      "clauses": [
+        {"span": [3, 8], "type": "sub", "note_ja": "sostengono に従属する第一のche節。接続法 sia は「主張の内容」であることの標識。"},
+        {"span": [10, 23], "type": "sub", "note_ja": "同じく sostengono に従属する第二のche節(接続法 risalga)。cheが繰り返されている点を見落とすと二つ目の節を第一の節の内部に取り込んでしまう。"},
+        {"span": [14, 23], "type": "rel", "note_ja": "in cui は secoli を先行詞とする関係節。amministravano は半過去で、その時代に継続していた状態を表す。"}
+      ],
+      "model_ja": "歴史家たちは、この習慣は非常に古いものであり、自治都市が自らの領域を自ら統治していた時代にまでさかのぼる、と主張している。",
+      "traps": ["MOOD", "SYN"]
+    },
+    {
+      "idx": 3,
+      "text": "Oggi molte piazze vengono occupate dalle automobili, e chi le attraversa a piedi lo fa in fretta, guardando l'orologio più che le facciate degli edifici.",
+      "words": 25,
+      "skeleton": {
+        "mainVerb": "vengono occupate / fa (等位の二つの主節)",
+        "subject": "molte piazze / chi",
+        "core_ja": "今日多くの広場は自動車に占められ、そこを歩く人は急いでそうする。"
+      },
+      "clauses": [
+        {"span": [8, 10], "type": "rel", "note_ja": "chi は「〜する人」を意味する融合関係詞で、この部分がそのまま後半の主節(lo fa in fretta)の主語になる。le は piazze を受ける直接目的語代名詞、lo は attraversa a piedi を受ける中性代名詞。"},
+        {"span": [17, 24], "type": "ger", "note_ja": "guardando 以下はジェルンディオ句で、主節と同じ主語(chi)の様態を表す。più che は比較で「〜よりむしろ」。"}
+      ],
+      "model_ja": "今日では多くの広場が自動車に占領されており、そこを歩いて横切る人も、建物の正面よりは腕時計を見ながら足早に通り過ぎる。",
+      "traps": ["SYN", "REF"]
+    },
+    {
+      "idx": 4,
+      "text": "Alcune amministrazioni, però, hanno deciso di restituirle ai pedoni, convinte che una città senza luoghi d'incontro diventi col tempo meno abitabile.",
+      "words": 21,
+      "skeleton": {
+        "mainVerb": "hanno deciso",
+        "subject": "Alcune amministrazioni",
+        "core_ja": "しかし一部の自治体は、広場を歩行者に返すことを決めた。"
+      },
+      "clauses": [
+        {"span": [9, 20], "type": "ins", "note_ja": "convinte 以下は主語 Alcune amministrazioni に係る叙述的付加(女性複数で一致)。「〜と確信して」と理由的に訳せる。"},
+        {"span": [10, 20], "type": "sub", "note_ja": "convinte に従属するche節。接続法 diventi。主語は una città、述語は meno abitabile。"}
+      ],
+      "model_ja": "しかし一部の自治体は、出会いの場を持たない都市はやがて住みにくくなると確信して、広場を歩行者に返すことを決めた。",
+      "traps": ["MOOD", "REF"]
+    }
+  ],
+  "model_ja_full": "イタリアのほぼすべての都市には、市民が自分たちの共同生活の中心とみなしている広場がある。それは建物にはさまれた単なる空いた場所ではない。市が立ち、祭りが催され、必要とあらば公の議論が交わされる場所なのである。歴史家たちは、この習慣は非常に古いものであり、自治都市が自らの領域を自ら統治していた時代にまでさかのぼる、と主張している。\n\n今日では多くの広場が自動車に占領されており、そこを歩いて横切る人も、建物の正面よりは腕時計を見ながら足早に通り過ぎる。しかし一部の自治体は、出会いの場を持たない都市はやがて住みにくくなると確信して、広場を歩行者に返すことを決めた。",
+  "vocab": [
+    {"it": "occorrere", "ja": "必要である", "hint": "辞書を引くべき"},
+    {"it": "risalire a", "ja": "〜にさかのぼる", "hint": "辞書を引くべき"},
+    {"it": "comune", "ja": "(中世の)自治都市。形容詞の「共通の」と同形", "hint": "辞書を引くべき"},
+    {"it": "restituire", "ja": "返す", "hint": "推測可"},
+    {"it": "facciata", "ja": "建物の正面", "hint": "推測可"},
+    {"it": "abitabile", "ja": "住むことのできる", "hint": "推測可"}
+  ]
+}

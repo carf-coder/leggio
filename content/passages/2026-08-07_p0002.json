@@ -1,0 +1,97 @@
+{
+  "id": "p0002",
+  "phase": "P1",
+  "genre": "practical",
+  "wordCount": 114,
+  "title_ja": "大人になってから楽器を始める人へ",
+  "text": "Chi comincia a studiare uno strumento da adulto si aspetta spesso risultati rapidi e si scoraggia dopo poche settimane. Conviene invece stabilire un tempo breve ma quotidiano: venti minuti ogni giorno valgono più di tre ore concentrate nel fine settimana.\n\nDurante l'esercizio è utile rallentare finché il passaggio non riesce senza errori, perché ripetendo un movimento sbagliato si impara soltanto a sbagliare meglio. Se il maestro suggerisce di studiare a mani separate, gli si dia retta: la difficoltà, nove volte su dieci, nasce da una sola delle due mani, e isolarla fa risparmiare settimane di esercizio inutile. Nessuno diventerebbe un buon lettore se leggesse una pagina sola all'anno; con la musica accade lo stesso.",
+  "sentences": [
+    {
+      "idx": 0,
+      "text": "Chi comincia a studiare uno strumento da adulto si aspetta spesso risultati rapidi e si scoraggia dopo poche settimane.",
+      "words": 19,
+      "skeleton": {
+        "mainVerb": "si aspetta / si scoraggia (等位)",
+        "subject": "Chi (= colui che)",
+        "core_ja": "〜する人は速い成果を期待し、そして落胆する。"
+      },
+      "clauses": [
+        {"span": [0, 7], "type": "rel", "note_ja": "Chi は融合関係詞で、この部分全体が主節の主語。comincia a + 不定詞は「〜し始める」。"}
+      ],
+      "model_ja": "大人になってから楽器を習い始める人は、往々にして早い成果を期待し、数週間で嫌になってしまう。",
+      "traps": ["SYN", "LEX"]
+    },
+    {
+      "idx": 1,
+      "text": "Conviene invece stabilire un tempo breve ma quotidiano: venti minuti ogni giorno valgono più di tre ore concentrate nel fine settimana.",
+      "words": 21,
+      "skeleton": {
+        "mainVerb": "Conviene / valgono",
+        "subject": "stabilire un tempo… (不定詞句が主語) / venti minuti",
+        "core_ja": "短いが毎日の時間を定めるのがよい。1日20分は週末の3時間に勝る。"
+      },
+      "clauses": [
+        {"span": [2, 7], "type": "sub", "note_ja": "非人称動詞 conviene の意味上の主語となる不定詞句。breve ma quotidiano は tempo にかかる二つの形容詞。"}
+      ],
+      "model_ja": "むしろ、短くてよいから毎日の時間を決めるべきである。1日20分は、週末にまとめて弾く3時間よりも価値がある。",
+      "traps": ["SYN", "OMIT"]
+    },
+    {
+      "idx": 2,
+      "text": "Durante l'esercizio è utile rallentare finché il passaggio non riesce senza errori, perché ripetendo un movimento sbagliato si impara soltanto a sbagliare meglio.",
+      "words": 23,
+      "skeleton": {
+        "mainVerb": "è utile",
+        "subject": "rallentare (不定詞)",
+        "core_ja": "練習中はテンポを落とすことが有益である。"
+      },
+      "clauses": [
+        {"span": [5, 11], "type": "sub", "note_ja": "finché の時の副詞節。この non は否定ではなく finché に伴う虚辞のnon(「〜するまで」)。否定に取ると意味が逆転する。"},
+        {"span": [12, 22], "type": "sub", "note_ja": "perché の理由節。中の si impara は非人称のsi(「人は学ぶ」)。"},
+        {"span": [13, 16], "type": "ger", "note_ja": "ripetendo 以下のジェルンディオ句。条件・手段を表し「〜を繰り返すことによって」。"}
+      ],
+      "model_ja": "練習の際は、その一節がミスなく弾けるようになるまでテンポを落とすとよい。誤った動作を繰り返せば、より上手に間違える術を覚えるだけだからである。",
+      "traps": ["MOOD", "SYN", "LEX"]
+    },
+    {
+      "idx": 3,
+      "text": "Se il maestro suggerisce di studiare a mani separate, gli si dia retta: la difficoltà, nove volte su dieci, nasce da una sola delle due mani, e isolarla fa risparmiare settimane di esercizio inutile.",
+      "words": 34,
+      "skeleton": {
+        "mainVerb": "si dia (命令的用法) / nasce / fa",
+        "subject": "(不特定のsi) / la difficoltà / isolarla",
+        "core_ja": "先生の助言には従いなさい。難所は片手から生じ、それを取り出すことが時間を節約する。"
+      },
+      "clauses": [
+        {"span": [0, 8], "type": "sub", "note_ja": "se の条件節。suggerisce di + 不定詞で「〜するよう勧める」。帰結にあたる主節は gli si dia retta で、dia は dare の接続法現在、非人称siと組んだ勧告の用法(「言うことを聞くべきだ」)。gli は il maestro を受ける間接目的語。"},
+        {"span": [15, 18], "type": "ins", "note_ja": "nove volte su dieci は主語と動詞の間に割り込む挿入句(「十中八九」)。外して la difficoltà nasce を先に確定する。"}
+      ],
+      "model_ja": "先生が片手ずつさらうよう勧めるなら、その助言に従うべきである。難所は十中八九どちらか一方の手から生じるのであり、その手だけを取り出して練習すれば、無駄な練習を何週間も省くことができる。",
+      "traps": ["MOOD", "REF", "SYN"]
+    },
+    {
+      "idx": 4,
+      "text": "Nessuno diventerebbe un buon lettore se leggesse una pagina sola all'anno; con la musica accade lo stesso.",
+      "words": 17,
+      "skeleton": {
+        "mainVerb": "diventerebbe / accade",
+        "subject": "Nessuno / lo stesso",
+        "core_ja": "誰も良い読み手にはならないだろう。音楽でも同じことが起こる。"
+      },
+      "clauses": [
+        {"span": [5, 10], "type": "sub", "note_ja": "se + 接続法半過去 leggesse と主節の条件法現在 diventerebbe で、現在の非現実を表す仮定文。"}
+      ],
+      "model_ja": "年に1ページしか読まないとしたら、誰も良い読み手にはなれまい。音楽でも事情は同じである。",
+      "traps": ["MOOD", "ADD"]
+    }
+  ],
+  "model_ja_full": "大人になってから楽器を習い始める人は、往々にして早い成果を期待し、数週間で嫌になってしまう。むしろ、短くてよいから毎日の時間を決めるべきである。1日20分は、週末にまとめて弾く3時間よりも価値がある。\n\n練習の際は、その一節がミスなく弾けるようになるまでテンポを落とすとよい。誤った動作を繰り返せば、より上手に間違える術を覚えるだけだからである。先生が片手ずつさらうよう勧めるなら、その助言に従うべきである。難所は十中八九どちらか一方の手から生じるのであり、その手だけを取り出して練習すれば、無駄な練習を何週間も省くことができる。年に1ページしか読まないとしたら、誰も良い読み手にはなれまい。音楽でも事情は同じである。",
+  "vocab": [
+    {"it": "scoraggiarsi", "ja": "気落ちする", "hint": "推測可"},
+    {"it": "convenire", "ja": "〜するのがよい(非人称)", "hint": "辞書を引くべき"},
+    {"it": "finché non", "ja": "〜するまで(nonは虚辞)", "hint": "辞書を引くべき"},
+    {"it": "dar retta a qcn", "ja": "〜の言うことを聞く", "hint": "辞書を引くべき"},
+    {"it": "isolare", "ja": "取り出す・切り離す", "hint": "推測可"},
+    {"it": "risparmiare", "ja": "節約する", "hint": "推測可"}
+  ]
+}

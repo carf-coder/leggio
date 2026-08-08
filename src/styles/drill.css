@@ -1,0 +1,222 @@
+/* src/styles/drill.css — 画面3(1文ドリル)スタイル */
+
+.drill-step {
+  margin-bottom: 4px;
+}
+
+.drill-progress {
+  display: flex;
+  gap: 6px;
+  margin-bottom: 18px;
+}
+
+.drill-progress__dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--border-strong);
+}
+
+.drill-progress__dot--active {
+  background: var(--accent);
+}
+
+.drill-progress__dot--done {
+  background: var(--ink-soft);
+}
+
+.drill-instruction {
+  font-size: 15px;
+  color: var(--ink-soft);
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.drill-sentence {
+  font-family: var(--font-it);
+  font-size: 20px;
+  line-height: 1.7;
+  padding: 22px 18px;
+  background: var(--paper-raised);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+}
+
+.drill-sentence--wrap {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+/* 主動詞タップ */
+.dword {
+  cursor: pointer;
+  padding: 9px 5px;
+  margin: 0 1px;
+  border-radius: 2px;
+  border-bottom: 2px solid transparent;
+  transition: background 120ms ease, border-color 120ms ease;
+}
+
+.dword:hover {
+  background: var(--accent-wash);
+}
+
+.dword--correct {
+  background: var(--accent-wash-strong);
+  border-bottom-color: var(--accent);
+  font-weight: 600;
+}
+
+.dword--wrong {
+  background: var(--error-wash);
+}
+
+.dword--static {
+  cursor: default;
+}
+
+/* 節境界: 語の間のギャップをタップ */
+.gap {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 14px;
+  height: 36px;
+  margin: 0 -3px;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+}
+
+.gap::before {
+  content: "";
+  width: 2px;
+  height: 22px;
+  background: var(--border-strong);
+  border-radius: 1px;
+  transition: background 120ms ease, height 120ms ease;
+}
+
+.gap--marked::before {
+  background: var(--accent);
+  height: 28px;
+  width: 3px;
+}
+
+.gap--missing::before {
+  background: var(--error);
+  height: 28px;
+  width: 3px;
+}
+
+.gap--extra::before {
+  background: var(--error);
+  height: 28px;
+  width: 3px;
+}
+
+.boundary-feedback {
+  margin-top: 14px;
+  font-size: 13px;
+  color: var(--ink-soft);
+}
+
+.boundary-feedback--correct {
+  color: var(--accent);
+  font-weight: 600;
+}
+
+/* 骨格訳・解説 */
+.skeleton-block {
+  margin-top: 4px;
+}
+
+.skeleton-row {
+  display: flex;
+  gap: 10px;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--border);
+  font-size: 14px;
+}
+
+.skeleton-row:last-child {
+  border-bottom: none;
+}
+
+.skeleton-row__label {
+  flex-shrink: 0;
+  width: 72px;
+  color: var(--ink-faint);
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: 0.04em;
+  padding-top: 2px;
+}
+
+.skeleton-row__value {
+  color: var(--ink);
+}
+
+.skeleton-row__value--ja {
+  font-weight: 600;
+}
+
+.clause-list {
+  margin-top: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.clause-item {
+  border-left: 2px solid var(--border-strong);
+  padding: 4px 0 4px 14px;
+}
+
+.clause-item__head {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 3px;
+}
+
+.clause-type-badge {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  color: var(--accent);
+  border: 1px solid var(--accent);
+  border-radius: 999px;
+  padding: 1px 8px;
+}
+
+.clause-item__span {
+  font-size: 12px;
+  color: var(--ink-faint);
+}
+
+.clause-item__note {
+  font-size: 14px;
+  color: var(--ink-soft);
+  line-height: 1.6;
+}
+
+.model-ja {
+  margin-top: 20px;
+  padding: 16px 18px;
+  background: var(--accent-wash);
+  border-radius: var(--radius-md);
+  font-size: 15px;
+  line-height: 1.8;
+  color: var(--ink);
+}
+
+.model-ja__label {
+  display: block;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  color: var(--accent);
+  margin-bottom: 6px;
+}

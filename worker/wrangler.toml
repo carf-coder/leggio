@@ -1,0 +1,13 @@
+name = "opera-italian-reader-proxy"
+main = "index.mjs"
+compatibility_date = "2026-08-01"
+
+# 非シークレットの環境変数。実際の値はデプロイ環境に合わせて書き換える。
+[vars]
+MODEL = "gemini-3.6-flash"
+ALLOWED_ORIGIN = "https://carf-coder.github.io"
+DAILY_LIMIT = 20
+
+# シークレット(このファイルには値を書かない。デプロイ後に以下で投入する):
+#   wrangler secret put ACCESS_TOKEN
+#   wrangler secret put GEMINI_API_KEY

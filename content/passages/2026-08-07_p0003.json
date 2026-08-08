@@ -1,0 +1,102 @@
+{
+  "id": "p0003",
+  "phase": "P1",
+  "genre": "narrative",
+  "wordCount": 105,
+  "title_ja": "正午過ぎの到着",
+  "text": "Il treno arrivò poco dopo mezzogiorno ed Elena fu l'unica a scendere. Sul marciapiede non c'era nessuno che l'aspettasse: l'uomo che le avevano descritto per telefono sarebbe venuto, le avevano detto, verso l'una, forse più tardi.\n\nPosò la valigia sul cemento, si sedette sopra e cominciò a guardare il paese, che da lì sembrava fatto di un unico muro giallo, interrotto soltanto dalle persiane chiuse per il caldo. Un cane le passò accanto senza degnarla di uno sguardo, come se i treni portassero ogni giorno gente come lei. Mentre aspettava, pensando alla stanza che avrebbe trovato, si accorse che quel silenzio non le dispiaceva affatto.",
+  "sentences": [
+    {
+      "idx": 0,
+      "text": "Il treno arrivò poco dopo mezzogiorno ed Elena fu l'unica a scendere.",
+      "words": 12,
+      "skeleton": {
+        "mainVerb": "arrivò / fu (等位の二主節)",
+        "subject": "Il treno / Elena",
+        "core_ja": "列車が着き、エレナが唯一の下車客だった。"
+      },
+      "clauses": [
+        {"span": [10, 11], "type": "sub", "note_ja": "直前の l'unica に従属する不定詞句。l'unica a + 不定詞で「〜する唯一の人」。"}
+      ],
+      "model_ja": "列車は正午を少し過ぎて到着し、降りたのはエレナひとりだった。",
+      "traps": ["SYN", "LEX"]
+    },
+    {
+      "idx": 1,
+      "text": "Sul marciapiede non c'era nessuno che l'aspettasse: l'uomo che le avevano descritto per telefono sarebbe venuto, le avevano detto, verso l'una, forse più tardi.",
+      "words": 24,
+      "skeleton": {
+        "mainVerb": "c'era / sarebbe venuto",
+        "subject": "nessuno / l'uomo",
+        "core_ja": "ホームには誰もいなかった。その男は来るはずだった。"
+      },
+      "clauses": [
+        {"span": [5, 6], "type": "rel", "note_ja": "先行詞が否定辞 nessuno であるため関係節の動詞が接続法半過去 aspettasse になっている。l' は Elena を受ける直接目的語。"},
+        {"span": [8, 13], "type": "rel", "note_ja": "l'uomo を修飾する関係節。che は descritto の直接目的語、le は「彼女に」の間接目的語で、主語は「彼ら」(不特定)。"},
+        {"span": [16, 18], "type": "ins", "note_ja": "le avevano detto は伝聞であることを示す挿入節。訳では「と言われていた」として文末や文頭に回す。"}
+      ],
+      "model_ja": "ホームには彼女を待つ者は誰もいなかった。電話で人相を伝えられていたその男は、1時ごろ、あるいはもう少し遅くに来るはずだ、と言われていた。",
+      "traps": ["MOOD", "REF", "SYN"]
+    },
+    {
+      "idx": 2,
+      "text": "Posò la valigia sul cemento, si sedette sopra e cominciò a guardare il paese, che da lì sembrava fatto di un unico muro giallo, interrotto soltanto dalle persiane chiuse per il caldo.",
+      "words": 32,
+      "skeleton": {
+        "mainVerb": "Posò / si sedette / cominciò (三つの等位の遠過去)",
+        "subject": "(Elena) 省略",
+        "core_ja": "彼女は鞄を置き、その上に座り、村を眺め始めた。"
+      },
+      "clauses": [
+        {"span": [14, 31], "type": "rel", "note_ja": "il paese を先行詞とする関係節。sembrava fatto di … で「〜でできているように見えた」。"},
+        {"span": [24, 31], "type": "ins", "note_ja": "interrotto 以下は muro に一致する過去分詞句(男性単数)。「〜によってのみ途切れている」と、直前の名詞に戻して訳す。"},
+        {"span": [28, 31], "type": "ins", "note_ja": "chiuse per il caldo は persiane に一致する過去分詞句(女性複数)。一致の形が修飾先を決める手がかりになる。"}
+      ],
+      "model_ja": "彼女は鞄をコンクリートの上に置き、その上に腰かけて、村を眺め始めた。そこから見ると村は、黄色い一枚の壁でできているようで、暑さのために閉ざされた鎧戸だけがその壁を途切れさせていた。",
+      "traps": ["MOD", "SYN"]
+    },
+    {
+      "idx": 3,
+      "text": "Un cane le passò accanto senza degnarla di uno sguardo, come se i treni portassero ogni giorno gente come lei.",
+      "words": 20,
+      "skeleton": {
+        "mainVerb": "passò",
+        "subject": "Un cane",
+        "core_ja": "一匹の犬が彼女のそばを通り過ぎた。"
+      },
+      "clauses": [
+        {"span": [5, 9], "type": "sub", "note_ja": "senza + 不定詞。degnare qcn di uno sguardo で「一瞥を与える」、-la は Elena。"},
+        {"span": [10, 19], "type": "sub", "note_ja": "come se は必ず接続法をとる(ここでは半過去 portassero)。「まるで〜であるかのように」。最後の come lei は比較の come で、こちらは接続詞ではない。"}
+      ],
+      "model_ja": "一匹の犬が、一瞥もくれずに彼女のそばを通り過ぎた。まるで、彼女のような人間を列車が毎日運んでくるとでもいうように。",
+      "traps": ["MOOD", "REF", "LEX"]
+    },
+    {
+      "idx": 4,
+      "text": "Mentre aspettava, pensando alla stanza che avrebbe trovato, si accorse che quel silenzio non le dispiaceva affatto.",
+      "words": 17,
+      "skeleton": {
+        "mainVerb": "si accorse",
+        "subject": "(Elena) 省略",
+        "core_ja": "彼女は〜ということに気づいた。"
+      },
+      "clauses": [
+        {"span": [0, 1], "type": "sub", "note_ja": "mentre の時の副詞節(半過去)。主節の前に置かれた前置き。"},
+        {"span": [2, 7], "type": "ger", "note_ja": "pensando 以下のジェルンディオ句。主語は主節と同じ。"},
+        {"span": [5, 7], "type": "rel", "note_ja": "la stanza を先行詞とする関係節。avrebbe trovato は過去から見た未来(過去未来)で、「これから見ることになる部屋」。"},
+        {"span": [10, 16], "type": "sub", "note_ja": "accorgersi che の目的節。dispiacere は間接目的語 le を主語ではなく「〜にとって不快である」の相手として取る。"}
+      ],
+      "model_ja": "待ちながら、これから目にする部屋のことを考えているうちに、彼女はこの静けさが少しも嫌ではないことに気づいた。",
+      "traps": ["MOOD", "REF", "SYN"]
+    }
+  ],
+  "model_ja_full": "列車は正午を少し過ぎて到着し、降りたのはエレナひとりだった。ホームには彼女を待つ者は誰もいなかった。電話で人相を伝えられていたその男は、1時ごろ、あるいはもう少し遅くに来るはずだ、と言われていた。\n\n彼女は鞄をコンクリートの上に置き、その上に腰かけて、村を眺め始めた。そこから見ると村は、黄色い一枚の壁でできているようで、暑さのために閉ざされた鎧戸だけがその壁を途切れさせていた。一匹の犬が、一瞥もくれずに彼女のそばを通り過ぎた。まるで、彼女のような人間を列車が毎日運んでくるとでもいうように。待ちながら、これから目にする部屋のことを考えているうちに、彼女はこの静けさが少しも嫌ではないことに気づいた。",
+  "vocab": [
+    {"it": "marciapiede", "ja": "(駅の)ホーム、歩道", "hint": "辞書を引くべき"},
+    {"it": "degnare di uno sguardo", "ja": "一瞥を与える", "hint": "辞書を引くべき"},
+    {"it": "persiana", "ja": "鎧戸", "hint": "辞書を引くべき"},
+    {"it": "posare", "ja": "置く", "hint": "推測可"},
+    {"it": "dispiacere a qcn", "ja": "〜に不快である", "hint": "推測可"},
+    {"it": "affatto", "ja": "(否定と共に)少しも〜ない", "hint": "辞書を引くべき"}
+  ]
+}

@@ -1,0 +1,127 @@
+{
+  "id": "p0006",
+  "phase": "P2",
+  "genre": "narrative",
+  "wordCount": 180,
+  "title_ja": "祖母の家",
+  "text": "Quando Margherita tornò nella casa della nonna, dopo undici anni, si accorse che qualcuno aveva continuato a innaffiare le piante del cortile. Nessuno le aveva scritto per avvertirla; la lettera del notaio, che le era arrivata a marzo, parlava soltanto di documenti da firmare e di una chiave che avrebbe trovato dal vicino. Salì le scale lentamente, contando i gradini come faceva da bambina, e si fermò davanti alla porta con la sensazione, del tutto irragionevole, che dall'interno qualcuno stesse per aprirle.\n\nDentro, l'odore era rimasto lo stesso, e proprio quell'odore, più delle fotografie appese nel corridoio, le restituì in un istante la voce della nonna, che la chiamava dalla cucina ogni volta che tardava a rientrare. Sul tavolo trovò un foglio piegato in due, con poche righe scritte a matita da una mano che non riconobbe, in cui si diceva che le piante andavano bagnate il martedì e il venerdì e che, se avesse voluto, poteva lasciare la chiave sotto il vaso. Rimase a lungo in piedi, senza togliersi il cappotto, prima di decidere che non avrebbe venduto niente.",
+  "sentences": [
+    {
+      "idx": 0,
+      "text": "Quando Margherita tornò nella casa della nonna, dopo undici anni, si accorse che qualcuno aveva continuato a innaffiare le piante del cortile.",
+      "words": 22,
+      "skeleton": {
+        "mainVerb": "si accorse",
+        "subject": "Margherita",
+        "core_ja": "マルゲリータは〜ということに気づいた。"
+      },
+      "clauses": [
+        {"span": [0, 9], "type": "sub", "note_ja": "quando の時の副詞節(遠過去 tornò)。dopo undici anni はその内部の副詞句。"},
+        {"span": [12, 21], "type": "sub", "note_ja": "accorgersi che の目的節。大過去 aveva continuato は主節の時点より前の継続を表す。"}
+      ],
+      "model_ja": "十一年ぶりに祖母の家に戻ったとき、マルゲリータは、誰かが中庭の植木に水をやり続けていたことに気づいた。",
+      "traps": ["SYN", "MOOD"]
+    },
+    {
+      "idx": 1,
+      "text": "Nessuno le aveva scritto per avvertirla; la lettera del notaio, che le era arrivata a marzo, parlava soltanto di documenti da firmare e di una chiave che avrebbe trovato dal vicino.",
+      "words": 31,
+      "skeleton": {
+        "mainVerb": "aveva scritto / parlava",
+        "subject": "Nessuno / la lettera",
+        "core_ja": "誰も知らせてはこなかった。公証人の手紙は〜のことしか述べていなかった。"
+      },
+      "clauses": [
+        {"span": [4, 5], "type": "sub", "note_ja": "per + 不定詞の目的節。-la は Margherita。"},
+        {"span": [10, 15], "type": "rel", "note_ja": "la lettera を先行詞とする非制限的関係節。主語と動詞 parlava の間に割り込んでいるので、外して骨格を確定する。"},
+        {"span": [20, 21], "type": "ins", "note_ja": "da firmare は documenti にかかる不定詞句で、受動+義務の意味(「署名すべき書類」)。"},
+        {"span": [26, 30], "type": "rel", "note_ja": "una chiave を先行詞とする関係節。avrebbe trovato は過去から見た未来。"}
+      ],
+      "model_ja": "誰も知らせの手紙をよこしてはいなかった。三月に届いた公証人の手紙は、署名すべき書類と、隣人のところで受け取ることになる鍵のことしか書いていなかった。",
+      "traps": ["SYN", "MOOD", "REF"]
+    },
+    {
+      "idx": 2,
+      "text": "Salì le scale lentamente, contando i gradini come faceva da bambina, e si fermò davanti alla porta con la sensazione, del tutto irragionevole, che dall'interno qualcuno stesse per aprirle.",
+      "words": 29,
+      "skeleton": {
+        "mainVerb": "Salì / si fermò (等位の遠過去)",
+        "subject": "(Margherita) 省略",
+        "core_ja": "彼女は階段をゆっくり上り、扉の前で足を止めた。"
+      },
+      "clauses": [
+        {"span": [4, 10], "type": "ger", "note_ja": "contando のジェルンディオ句。主節と同時の付帯状況。"},
+        {"span": [7, 10], "type": "sub", "note_ja": "come の様態節(半過去 faceva)。da bambina は「子どもの頃」。"},
+        {"span": [20, 22], "type": "ins", "note_ja": "del tutto irragionevole は la sensazione に係る挿入的な形容詞句。"},
+        {"span": [23, 28], "type": "sub", "note_ja": "la sensazione の内容を述べるche節。接続法半過去 stesse。stare per + 不定詞で「今にも〜しようとしている」。"}
+      ],
+      "model_ja": "彼女は、子どもの頃にそうしていたように段を数えながら、ゆっくりと階段を上り、まったく不合理な感覚を抱いて扉の前で立ち止まった。中から今にも誰かが開けてくれそうな気がしたのである。",
+      "traps": ["MOOD", "SYN"]
+    },
+    {
+      "idx": 3,
+      "text": "Dentro, l'odore era rimasto lo stesso, e proprio quell'odore, più delle fotografie appese nel corridoio, le restituì in un istante la voce della nonna, che la chiamava dalla cucina ogni volta che tardava a rientrare.",
+      "words": 35,
+      "skeleton": {
+        "mainVerb": "era rimasto / restituì",
+        "subject": "l'odore / quell'odore",
+        "core_ja": "中では匂いが変わっていなかった。その匂いが祖母の声を彼女に返した。"
+      },
+      "clauses": [
+        {"span": [9, 14], "type": "ins", "note_ja": "più delle fotografie appese nel corridoio は主語と動詞 restituì を隔てる比較の挿入句(「廊下に掛かった写真以上に」)。"},
+        {"span": [24, 34], "type": "rel", "note_ja": "la nonna(直前の名詞)を先行詞とする関係節。la は Margherita で、chiamava の主語は祖母。二つの代名詞の指す相手を取り違えやすい。"},
+        {"span": [29, 34], "type": "sub", "note_ja": "ogni volta che の時の副詞節(「〜するたびに」)。この che は関係代名詞ではなく接続表現の一部。"}
+      ],
+      "model_ja": "家の中では匂いが昔のままだった。そして廊下に掛かった写真以上に、まさにその匂いが、彼女に祖母の声を一瞬で返してよこした。帰りが遅くなるたびに台所から自分を呼んだ、あの声である。",
+      "traps": ["REF", "MOD", "SYN"]
+    },
+    {
+      "idx": 4,
+      "text": "Sul tavolo trovò un foglio piegato in due, con poche righe scritte a matita da una mano che non riconobbe, in cui si diceva che le piante andavano bagnate il martedì e il venerdì e che, se avesse voluto, poteva lasciare la chiave sotto il vaso.",
+      "words": 46,
+      "skeleton": {
+        "mainVerb": "trovò",
+        "subject": "(Margherita) 省略",
+        "core_ja": "彼女はテーブルの上に一枚の紙を見つけた。"
+      },
+      "clauses": [
+        {"span": [5, 7], "type": "ins", "note_ja": "piegato in due は foglio に一致する過去分詞句。"},
+        {"span": [11, 19], "type": "ins", "note_ja": "scritte a matita da una mano … は righe に一致する過去分詞句(女性複数)。da は行為者を示す。"},
+        {"span": [17, 19], "type": "rel", "note_ja": "una mano を先行詞とする関係節。riconobbe は遠過去で主語は Margherita。"},
+        {"span": [20, 45], "type": "rel", "note_ja": "in cui は foglio を先行詞とする関係節。si diceva は非人称のsiで「〜と書かれていた」。"},
+        {"span": [24, 33], "type": "sub", "note_ja": "si diceva に従属する第一のche節。andare + 過去分詞は義務を含む受動(「水をやらねばならない」)で、「行く」ではない。"},
+        {"span": [34, 45], "type": "sub", "note_ja": "si diceva に従属する第二のche節。che の直後に条件節が挟まるため、その主節は poteva lasciare … である。"},
+        {"span": [36, 38], "type": "sub", "note_ja": "se + 接続法大過去 avesse voluto の条件節(「もしそうしたければ」)。"}
+      ],
+      "model_ja": "テーブルの上には、二つに折られた紙が一枚あった。見覚えのない筆跡で鉛筆で数行だけ書かれており、そこには、植木には火曜と金曜に水をやること、そしてよければ鍵は鉢の下に置いていってかまわない、と記されていた。",
+      "traps": ["LEX", "MOOD", "SYN"]
+    },
+    {
+      "idx": 5,
+      "text": "Rimase a lungo in piedi, senza togliersi il cappotto, prima di decidere che non avrebbe venduto niente.",
+      "words": 17,
+      "skeleton": {
+        "mainVerb": "Rimase",
+        "subject": "(Margherita) 省略",
+        "core_ja": "彼女は長いあいだ立ったままでいた。"
+      },
+      "clauses": [
+        {"span": [5, 8], "type": "ins", "note_ja": "senza + 不定詞の挿入句(「コートも脱がずに」)。"},
+        {"span": [9, 16], "type": "sub", "note_ja": "prima di + 不定詞(「〜する前に」)。日本語では「〜してようやく〜した」と順序を入れ替えると自然。"},
+        {"span": [12, 16], "type": "sub", "note_ja": "decidere に従属するche節。avrebbe venduto は過去から見た未来。"}
+      ],
+      "model_ja": "彼女はコートも脱がずに長いあいだ立ち尽くし、それからようやく、何ひとつ売るまいと心を決めた。",
+      "traps": ["MOOD", "SYN", "ADD"]
+    }
+  ],
+  "model_ja_full": "十一年ぶりに祖母の家に戻ったとき、マルゲリータは、誰かが中庭の植木に水をやり続けていたことに気づいた。誰も知らせの手紙をよこしてはいなかった。三月に届いた公証人の手紙は、署名すべき書類と、隣人のところで受け取ることになる鍵のことしか書いていなかった。彼女は、子どもの頃にそうしていたように段を数えながら、ゆっくりと階段を上り、まったく不合理な感覚を抱いて扉の前で立ち止まった。中から今にも誰かが開けてくれそうな気がしたのである。\n\n家の中では匂いが昔のままだった。そして廊下に掛かった写真以上に、まさにその匂いが、彼女に祖母の声を一瞬で返してよこした。帰りが遅くなるたびに台所から自分を呼んだ、あの声である。テーブルの上には、二つに折られた紙が一枚あった。見覚えのない筆跡で鉛筆で数行だけ書かれており、そこには、植木には火曜と金曜に水をやること、そしてよければ鍵は鉢の下に置いていってかまわない、と記されていた。彼女はコートも脱がずに長いあいだ立ち尽くし、それからようやく、何ひとつ売るまいと心を決めた。",
+  "vocab": [
+    {"it": "innaffiare", "ja": "水をやる", "hint": "辞書を引くべき"},
+    {"it": "notaio", "ja": "公証人", "hint": "辞書を引くべき"},
+    {"it": "gradino", "ja": "階段の段", "hint": "辞書を引くべき"},
+    {"it": "stare per", "ja": "今にも〜しようとしている", "hint": "辞書を引くべき"},
+    {"it": "andare + 過去分詞", "ja": "〜されねばならない(義務の受動)", "hint": "辞書を引くべき"},
+    {"it": "restituire", "ja": "返す", "hint": "推測可"},
+    {"it": "tardare", "ja": "遅れる", "hint": "推測可"}
+  ]
+}

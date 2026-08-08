@@ -1,0 +1,69 @@
+/* src/styles/settings.css — 画面6(設定)スタイル */
+
+.settings-section {
+  margin-bottom: 32px;
+}
+
+.settings-label {
+  display: block;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  color: var(--ink-faint);
+  margin-bottom: 8px;
+}
+
+.text-input {
+  width: 100%;
+  padding: 12px 14px;
+  font-family: var(--font-ui);
+  font-size: 15px;
+  color: var(--ink);
+  background: var(--paper-raised);
+  border: 1px solid var(--border-strong);
+  border-radius: var(--radius-sm);
+}
+
+.text-input:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 1px;
+}
+
+.phase-toggle {
+  display: flex;
+  gap: 8px;
+}
+
+.phase-toggle__btn {
+  flex: 1;
+  padding: 12px 8px;
+  text-align: center;
+  font-size: 13px;
+  font-weight: 700;
+  border: 1px solid var(--border-strong);
+  border-radius: var(--radius-sm);
+  background: var(--paper-raised);
+  color: var(--ink-soft);
+  cursor: pointer;
+}
+
+.phase-toggle__btn--active {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: var(--accent-ink);
+}
+
+.export-textarea {
+  width: 100%;
+  min-height: 140px;
+  margin-top: 10px;
+  padding: 12px 14px;
+  font-family: ui-monospace, monospace;
+  font-size: 12px;
+  line-height: 1.6;
+  color: var(--ink-soft);
+  background: var(--paper-raised);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  resize: vertical;
+}

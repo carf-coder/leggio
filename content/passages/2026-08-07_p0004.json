@@ -1,0 +1,142 @@
+{
+  "id": "p0004",
+  "phase": "P2",
+  "genre": "essay",
+  "wordCount": 215,
+  "title_ja": "共同の作品としての風景",
+  "text": "Siamo abituati a pensare al paesaggio come a qualcosa di naturale, cioè a un dato che esisteva prima di noi e che continuerebbe a esistere anche se gli uomini scomparissero. Eppure quasi nulla, in un paesaggio europeo, è nato senza l'intervento di qualcuno, perché i campi, i muretti a secco, i filari e perfino i boschi che ci sembrano selvaggi sono stati piantati, tagliati e ripiantati per generazioni da uomini che non pensavano affatto di costruire un paesaggio. Chi percorre oggi una collina coltivata a viti legge, senza accorgersene, il risultato di decisioni prese da persone di cui non conosciamo il nome. Osservando una fotografia scattata cent'anni fa, ci si accorge che molti versanti oggi coperti di alberi erano allora completamente nudi.\n\nIl problema comincia quando questo lavoro accumulato viene interrotto: un terreno abbandonato non torna allo stato originario, ma diventa qualcosa di nuovo e spesso di fragile, esposto agli incendi e alle frane. Per questo molti studiosi sostengono che la tutela del paesaggio non consista nel congelarlo, come si farebbe con un quadro in un museo, bensì nel mantenere viva l'attività che lo ha prodotto. Aggiungono che, se i contadini che ancora lavorano in montagna decidessero di andarsene tutti nello stesso decennio, nessuna legge basterebbe a conservare ciò che oggi fotografiamo con tanto entusiasmo.",
+  "sentences": [
+    {
+      "idx": 0,
+      "text": "Siamo abituati a pensare al paesaggio come a qualcosa di naturale, cioè a un dato che esisteva prima di noi e che continuerebbe a esistere anche se gli uomini scomparissero.",
+      "words": 30,
+      "skeleton": {
+        "mainVerb": "Siamo abituati",
+        "subject": "(noi) 省略",
+        "core_ja": "私たちは風景を自然なものと考えることに慣れている。"
+      },
+      "clauses": [
+        {"span": [15, 19], "type": "rel", "note_ja": "un dato を先行詞とする第一の関係節(半過去 esisteva)。"},
+        {"span": [21, 29], "type": "rel", "note_ja": "同じ un dato にかかる第二の関係節。条件法現在 continuerebbe は次の仮定節と対応する。"},
+        {"span": [25, 29], "type": "sub", "note_ja": "anche se + 接続法半過去 scomparissero。条件法 continuerebbe と組んで非現実の仮定を作る。"}
+      ],
+      "model_ja": "私たちは風景を何か自然なもの、すなわち私たちより前から存在し、仮に人間が消え去っても存在し続けるであろう所与のものとして考えることに慣れている。",
+      "traps": ["MOOD", "MOD"]
+    },
+    {
+      "idx": 1,
+      "text": "Eppure quasi nulla, in un paesaggio europeo, è nato senza l'intervento di qualcuno, perché i campi, i muretti a secco, i filari e perfino i boschi che ci sembrano selvaggi sono stati piantati, tagliati e ripiantati per generazioni da uomini che non pensavano affatto di costruire un paesaggio.",
+      "words": 48,
+      "skeleton": {
+        "mainVerb": "è nato",
+        "subject": "quasi nulla",
+        "core_ja": "しかしヨーロッパの風景では、ほとんど何ひとつ誰かの手を経ずに生まれてはいない。"
+      },
+      "clauses": [
+        {"span": [13, 47], "type": "sub", "note_ja": "perché の理由節。その主語は i campi / i muretti / i filari / i boschi の四つの並列で、述語は受動態 sono stati piantati, tagliati e ripiantati。主語と動詞が大きく離れる点に注意。"},
+        {"span": [26, 29], "type": "rel", "note_ja": "i boschi のみを修飾する関係節。ci sembrano selvaggi の ci は「私たちには」。ここを主節と取り違えないこと。"},
+        {"span": [40, 47], "type": "rel", "note_ja": "da uomini を先行詞とする関係節。行為者補語のあとに置かれ、文末で意味を反転させる要になっている。"}
+      ],
+      "model_ja": "しかし、ヨーロッパの風景においては、誰かの手を経ずに生まれたものはほとんど何ひとつない。畑も、石積みの塀も、葡萄の畝も、私たちには自然のままに見える森でさえ、風景をつくろうなどとはまったく考えていなかった人々の手で、何世代にもわたって植えられ、伐られ、また植え直されてきたのである。",
+      "traps": ["SYN", "MOD", "OMIT"]
+    },
+    {
+      "idx": 2,
+      "text": "Chi percorre oggi una collina coltivata a viti legge, senza accorgersene, il risultato di decisioni prese da persone di cui non conosciamo il nome.",
+      "words": 24,
+      "skeleton": {
+        "mainVerb": "legge",
+        "subject": "Chi (= colui che)",
+        "core_ja": "今日その丘を歩く人は、〜の結果を読んでいる。"
+      },
+      "clauses": [
+        {"span": [0, 7], "type": "rel", "note_ja": "Chi で始まる融合関係詞句がそのまま主節の主語。"},
+        {"span": [5, 7], "type": "ins", "note_ja": "coltivata a viti は collina に一致する過去分詞句(「葡萄が植えられた」)。"},
+        {"span": [9, 10], "type": "ins", "note_ja": "senza accorgersene は動詞 legge とその目的語 il risultato の間に割り込む挿入句。いったん外して骨格を確定する。"},
+        {"span": [18, 23], "type": "rel", "note_ja": "di cui は persone を先行詞とする関係節。di は conosciamo il nome di … に由来する。"}
+      ],
+      "model_ja": "今日、葡萄畑となった丘を歩く人は、それと気づかぬまま、名も知らぬ人々が下した決定の結果を読んでいるのである。",
+      "traps": ["SYN", "MOD"]
+    },
+    {
+      "idx": 3,
+      "text": "Osservando una fotografia scattata cent'anni fa, ci si accorge che molti versanti oggi coperti di alberi erano allora completamente nudi.",
+      "words": 20,
+      "skeleton": {
+        "mainVerb": "ci si accorge",
+        "subject": "非人称のsi(「人は」)",
+        "core_ja": "〜すると、〜であることに気づく。"
+      },
+      "clauses": [
+        {"span": [0, 5], "type": "ger", "note_ja": "Osservando のジェルンディオ句。時・条件を表し「〜を見ると」。"},
+        {"span": [3, 5], "type": "ins", "note_ja": "scattata cent'anni fa は fotografia に一致する過去分詞句。"},
+        {"span": [9, 19], "type": "sub", "note_ja": "accorgersi che の目的節。主語 molti versanti と述語 erano … nudi の間に修飾句が挟まる。"},
+        {"span": [12, 15], "type": "ins", "note_ja": "oggi coperti di alberi は versanti にかかる過去分詞句。oggi(今日)と主節の allora(当時)の対比が要点。"}
+      ],
+      "model_ja": "百年前に撮られた写真を見ると、今日は樹木に覆われている多くの斜面が、当時はまったく裸であったことに気づく。",
+      "traps": ["MOD", "SYN"]
+    },
+    {
+      "idx": 4,
+      "text": "Il problema comincia quando questo lavoro accumulato viene interrotto: un terreno abbandonato non torna allo stato originario, ma diventa qualcosa di nuovo e spesso di fragile, esposto agli incendi e alle frane.",
+      "words": 32,
+      "skeleton": {
+        "mainVerb": "comincia / torna・diventa",
+        "subject": "Il problema / un terreno abbandonato",
+        "core_ja": "問題は〜のときに始まる。放棄された土地は元に戻らず、新しい何かになる。"
+      },
+      "clauses": [
+        {"span": [3, 8], "type": "sub", "note_ja": "quando の時の副詞節。viene interrotto は venire を用いた受動態で、動作としての中断を表す。"},
+        {"span": [26, 31], "type": "ins", "note_ja": "esposto 以下は qualcosa に一致する過去分詞句(「〜にさらされた」)。terreno にかけても意味は通るが、直前の qualcosa di fragile を承ける読みが自然。"}
+      ],
+      "model_ja": "問題が生じるのは、この積み重ねられた労働が途切れたときである。放棄された土地は元の状態に戻るのではなく、何か新しい、そしてしばしば脆いもの、すなわち火災や地滑りにさらされたものになる。",
+      "traps": ["MOD", "LEX"]
+    },
+    {
+      "idx": 5,
+      "text": "Per questo molti studiosi sostengono che la tutela del paesaggio non consista nel congelarlo, come si farebbe con un quadro in un museo, bensì nel mantenere viva l'attività che lo ha prodotto.",
+      "words": 32,
+      "skeleton": {
+        "mainVerb": "sostengono",
+        "subject": "molti studiosi",
+        "core_ja": "そのため多くの研究者は〜と主張している。"
+      },
+      "clauses": [
+        {"span": [5, 31], "type": "sub", "note_ja": "sostengono に従属するche節(接続法 consista)。non … bensì … の相関(「〜ではなく、むしろ〜」)が骨格で、nel congelarlo と nel mantenere が対応する。"},
+        {"span": [14, 22], "type": "ins", "note_ja": "come si farebbe … は比較の挿入節(条件法 farebbe + 非人称si)。non と bensì の間に割り込んでいるため、外してから相関をつかむ。"},
+        {"span": [28, 31], "type": "rel", "note_ja": "l'attività を先行詞とする関係節。lo は il paesaggio を受ける。"}
+      ],
+      "model_ja": "そのため多くの研究者は、風景の保護とは、美術館の絵に対してするように風景を凍結することではなく、それを生み出してきた営みを生かし続けることにある、と主張している。",
+      "traps": ["MOOD", "SYN", "REF"]
+    },
+    {
+      "idx": 6,
+      "text": "Aggiungono che, se i contadini che ancora lavorano in montagna decidessero di andarsene tutti nello stesso decennio, nessuna legge basterebbe a conservare ciò che oggi fotografiamo con tanto entusiasmo.",
+      "words": 29,
+      "skeleton": {
+        "mainVerb": "Aggiungono",
+        "subject": "(molti studiosi) 省略",
+        "core_ja": "彼らはさらに〜と付け加えている。"
+      },
+      "clauses": [
+        {"span": [1, 28], "type": "sub", "note_ja": "Aggiungono に従属するche節。che の直後にいきなり se の仮定節が挟まるため、che節の主節は nessuna legge basterebbe … である。"},
+        {"span": [2, 16], "type": "sub", "note_ja": "se + 接続法半過去 decidessero の仮定節。帰結は条件法現在 basterebbe。"},
+        {"span": [5, 9], "type": "rel", "note_ja": "i contadini を修飾する関係節。仮定節の主語と動詞 decidessero の間に入り込んでいる。"},
+        {"span": [22, 28], "type": "rel", "note_ja": "ciò che は「〜するもの」。conservare の目的語。"}
+      ],
+      "model_ja": "さらに彼らはこう付け加える。もし今なお山で働いている農民たちが、そろって同じ十年のうちに山を去ることを決めたなら、いかなる法律も、私たちが今日あれほど熱心に写真に収めているものを保つには足りないだろう、と。",
+      "traps": ["MOOD", "SYN", "OMIT"]
+    }
+  ],
+  "model_ja_full": "私たちは風景を何か自然なもの、すなわち私たちより前から存在し、仮に人間が消え去っても存在し続けるであろう所与のものとして考えることに慣れている。しかし、ヨーロッパの風景においては、誰かの手を経ずに生まれたものはほとんど何ひとつない。畑も、石積みの塀も、葡萄の畝も、私たちには自然のままに見える森でさえ、風景をつくろうなどとはまったく考えていなかった人々の手で、何世代にもわたって植えられ、伐られ、また植え直されてきたのである。今日、葡萄畑となった丘を歩く人は、それと気づかぬまま、名も知らぬ人々が下した決定の結果を読んでいるのである。百年前に撮られた写真を見ると、今日は樹木に覆われている多くの斜面が、当時はまったく裸であったことに気づく。\n\n問題が生じるのは、この積み重ねられた労働が途切れたときである。放棄された土地は元の状態に戻るのではなく、何か新しい、そしてしばしば脆いもの、すなわち火災や地滑りにさらされたものになる。そのため多くの研究者は、風景の保護とは、美術館の絵に対してするように風景を凍結することではなく、それを生み出してきた営みを生かし続けることにある、と主張している。さらに彼らはこう付け加える。もし今なお山で働いている農民たちが、そろって同じ十年のうちに山を去ることを決めたなら、いかなる法律も、私たちが今日あれほど熱心に写真に収めているものを保つには足りないだろう、と。",
+  "vocab": [
+    {"it": "muretto a secco", "ja": "石を積み上げただけの塀", "hint": "辞書を引くべき"},
+    {"it": "filare", "ja": "(葡萄などの)畝・並び", "hint": "辞書を引くべき"},
+    {"it": "versante", "ja": "山の斜面", "hint": "辞書を引くべき"},
+    {"it": "frana", "ja": "地滑り", "hint": "辞書を引くべき"},
+    {"it": "tutela", "ja": "保護", "hint": "推測可"},
+    {"it": "congelare", "ja": "凍結する", "hint": "推測可"},
+    {"it": "bensì", "ja": "(nonと相関して)そうではなくむしろ", "hint": "辞書を引くべき"},
+    {"it": "andarsene", "ja": "立ち去る", "hint": "辞書を引くべき"}
+  ]
+}

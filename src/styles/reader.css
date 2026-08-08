@@ -1,0 +1,82 @@
+/* src/styles/reader.css — 画面2(リーダー)・語タップ用スタイル */
+
+.passage-title {
+  font-size: 20px;
+  margin-bottom: 4px;
+}
+
+.passage-meta {
+  font-size: 13px;
+  color: var(--ink-faint);
+  margin-bottom: 22px;
+}
+
+.passage-text {
+  font-family: var(--font-it);
+  font-size: 19px;
+  line-height: 1.9;
+  color: var(--ink);
+}
+
+.passage-text p {
+  margin: 0 0 1.5em;
+}
+
+.passage-text p:last-child {
+  margin-bottom: 0;
+}
+
+.word {
+  cursor: pointer;
+  border-radius: 2px;
+  padding: 0 1px;
+  transition: background 120ms ease;
+}
+
+.word:hover {
+  background: var(--accent-wash);
+}
+
+.word--vocab {
+  border-bottom: 1.5px dotted var(--accent);
+}
+
+.word--vocab-active {
+  background: var(--accent-wash-strong);
+}
+
+.vocab-note {
+  margin-top: -4px;
+  margin-bottom: 1.6em;
+  padding: 10px 14px;
+  background: var(--accent-wash);
+  border-left: 3px solid var(--accent);
+  border-radius: var(--radius-sm);
+  font-family: var(--font-ui);
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.vocab-note__it {
+  font-family: var(--font-it);
+  font-style: italic;
+  color: var(--ink);
+  margin-right: 8px;
+}
+
+.vocab-note__ja {
+  color: var(--ink);
+}
+
+.vocab-note__hint {
+  display: block;
+  margin-top: 3px;
+  font-size: 12px;
+  color: var(--ink-faint);
+}
+
+.drill-cta {
+  margin-top: 32px;
+  padding-top: 20px;
+  border-top: 1px solid var(--border);
+}
