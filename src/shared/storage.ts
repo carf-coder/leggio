@@ -16,7 +16,11 @@ const KEY_PASSAGES_DONE = "oir.passagesDone";
 const DEFAULT_PHASE: Phase = "P1";
 
 /** 開発時の既定Workerエンドポイント(scripts/mock-worker.mjsの既定ポート)。 */
-export const DEFAULT_WORKER_ENDPOINT = "http://localhost:8787";
+// 本番の添削プロキシを既定にする(URLは秘密ではない。認証は合言葉が担う)。
+// ローカル開発時は設定画面で http://localhost:8787 に差し替える。
+export const DEFAULT_WORKER_ENDPOINT = (import.meta as { env?: { DEV?: boolean } }).env?.DEV
+  ? "http://localhost:8787"
+  : "https://leggio-proxy.carf-coder.workers.dev";
 
 const MAX_CORRECTIONS = 200;
 const MAX_EXAMPLES_PER_ISSUE = 5;
