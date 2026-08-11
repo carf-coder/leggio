@@ -12,6 +12,10 @@
 //      自己採点フローに入り統計に記録されることを確認する
 //   6. 合言葉未設定時は「写真で提出してAI添削」ボタンが無効化され、設定画面への
 //      案内が表示されることを確認する
+//   7. 判読可能な手書きが無い写真(空転写、実使用で判明した正常系)では自己採点へ
+//      フォールバックせず、photoステップに留まり撮り直しの通知を出すことを確認する
+//   8. 上記の直後に正常な写真で再送信すると、通常の転写→編集フローに戻れることを確認する
+//      (既存の正常転写フローが不変であることの確認を兼ねる)
 //
 // 事前に `npm run build` を実行してdist/を最新化しておくこと。
 // 使い方: node scripts/e2e-smoke.mjs
@@ -21,6 +25,11 @@ import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 import { existsSync } from "node:fs";
 import { chromium } from "playwright";
+
+// scripts/mock-worker.mjs の EMPTY_TEST_MIME_TYPE と同じ値。
+// mock-worker.mjs はimport時にHTTPサーバーを起動する副作用があるため、ここでは
+// 値を直接持たせて別プロセス起動(spawnProc)経由でのみ使う。
+const EMPTY_TEST_MIME_TYPE = "image/x-empty-test";
 
 const ROOT = dirname(dirname(fileURLToPath(import.meta.url)));
 const SAMPLE_IMAGE = join(ROOT, "wp1", "sample_handwriting.jpg");
@@ -209,6 +218,46 @@ async function main() {
     await page.getByRole("button", { name: "設定画面へ" }).click();
     await page.waitForSelector("text=添削サーバーURL", { timeout: 10000 });
     assert(page.url().includes("#/settings"), "設定画面へのリンクで遷移する");
+
+    /* ---------------- テスト5: 空転写(判読可能な手書きが無い正常系)は自己採点へ
+       フォールバックせず、photoステップに留まり撮り直しの通知を出す ---------------- */
+    // 直前のテスト4で設定画面に遷移済み(ヘッダーの「設定」リンクは現在のページなので非表示)。
+    await page.locator('input[placeholder*="自己採点"]').fill(WORKER_TOKEN);
+
+    await page.goto(`${PREVIEW_URL}/#/reader/2026-08-07_p0005.json`);
+    await page.getByRole("button", { name: "和訳を写真で提出する" }).click();
+    await page.waitForSelector("text=和訳の確認方法を選ぶ");
+    await page.getByRole("button", { name: "写真で提出してAI添削" }).click();
+    await page.waitForSelector("text=和訳を写真で提出");
+
+    await page.locator('input[type="file"]').setInputFiles({
+      name: "blank.png",
+      mimeType: EMPTY_TEST_MIME_TYPE,
+      buffer: Buffer.from([0x89, 0x50, 0x4e, 0x47]), // 中身はダミー(mock-workerはmimeTypeだけ見る)
+    });
+    await page.getByRole("button", { name: "写真を送信して転写する" }).click();
+
+    await page.waitForSelector(".submit-fallback-note", { timeout: 15000 });
+    const emptyNoticeText = await page.locator(".submit-fallback-note").innerText();
+    assert(
+      emptyNoticeText.includes("手書きが読み取れませんでした"),
+      `空転写時に撮り直しの通知が表示される: ${emptyNoticeText}`
+    );
+    assert(await page.getByRole("heading", { name: "和訳を写真で提出" }).isVisible(), "photoステップに留まる(自己採点へ落ちない)");
+    assert((await page.locator(".photo-thumb").count()) === 0, "選択済み写真がクリアされ選び直せる");
+    assert(
+      (await page.locator(".submit-mode-badge").innerText()) === "AI添削モード",
+      "モードはAI添削のまま(自己採点へフォールバックしていない)"
+    );
+
+    /* ---------------- テスト6: 直後に正常な写真で再送信すると通常フローに戻れる ---------------- */
+    await page.locator('input[type="file"]').setInputFiles(SAMPLE_IMAGE);
+    assert((await page.locator(".photo-thumb").count()) === 1, "撮り直し後、写真サムネイルが1枚表示される");
+    await page.getByRole("button", { name: "写真を送信して転写する" }).click();
+    await page.waitForSelector(".transcribe-textarea", { timeout: 15000 });
+    const recoveredTranscription = await page.locator(".transcribe-textarea").inputValue();
+    assert(recoveredTranscription.trim().length > 0, "撮り直し後は通常通り転写結果が入る");
+    assert((await page.locator(".submit-fallback-note").count()) === 0, "編集ステップでは撮り直し通知が消える");
 
     /* ---------------- コンソールエラーの確認 ---------------- */
     // テスト2(合言葉不一致)は意図的に401を発生させるフローで、Chromeは

@@ -42,6 +42,9 @@ const ENV = {
 };
 const DUMMY_MODE = !ENV.GEMINI_API_KEY;
 
+// 開発用フック(E2E用): このmimeTypeの画像を送ると、判読不能な手書き(空転写)を再現する。
+export const EMPTY_TEST_MIME_TYPE = "image/x-empty-test";
+
 function corsHeadersFor(originHeader) {
   if (ENV.ALLOWED_ORIGIN === "*") {
     return {
@@ -107,24 +110,32 @@ const server = createServer(async (req, res) => {
 
   try {
     if (req.url === "/transcribe") {
-      if (DUMMY_MODE) {
-        send(res, 200, cors, { transcription: dummyTranscription() });
-        return;
-      }
       const images = Array.isArray(body.images)
         ? body.images
         : body.imageBase64
           ? [{ base64: body.imageBase64, mimeType: body.mimeType || "image/jpeg" }]
           : [];
+
+      if (DUMMY_MODE) {
+        // 開発用フック(E2E用): 判読不能な手書き画像を模したmimeTypeを渡すと
+        // 空転写(実使用の「本文空」正常系)を再現できる。
+        const isEmptyTest = images.some((img) => img && img.mimeType === EMPTY_TEST_MIME_TYPE);
+        send(res, 200, cors, { transcription: isEmptyTest ? "" : dummyTranscription() });
+        return;
+      }
       const parts = [{ text: TRANSCRIBE_PROMPT }];
       for (const img of images) {
         if (!img || !img.base64) continue;
         parts.push({ inline_data: { mime_type: img.mimeType || "image/jpeg", data: img.base64 } });
       }
-      const text = await callGemini(ENV.GEMINI_API_KEY, ENV.MODEL, parts, {
-        temperature: 0,
-        maxOutputTokens: 4096,
-      });
+      // allowEmpty=true: worker/index.mjsと同じく、判読可能な手書きが無い場合の空文字応答を許容する。
+      const text = await callGemini(
+        ENV.GEMINI_API_KEY,
+        ENV.MODEL,
+        parts,
+        { temperature: 0, maxOutputTokens: 4096 },
+        true
+      );
       send(res, 200, cors, { transcription: text.trim() });
       return;
     }

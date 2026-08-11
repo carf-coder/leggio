@@ -74,6 +74,7 @@ export function SubmitScreen({ file }: Props) {
   const [transcription, setTranscription] = useState("");
   const [result, setResult] = useState<CorrectionResult | null>(null);
   const [workError, setWorkError] = useState<string | null>(null);
+  const [photoNotice, setPhotoNotice] = useState<string | null>(null);
 
   const [selectedTraps, setSelectedTraps] = useState<Map<number, Set<string>>>(new Map());
 
@@ -85,6 +86,7 @@ export function SubmitScreen({ file }: Props) {
     setResult(null);
     setWorkError(null);
     setFallbackMessage(null);
+    setPhotoNotice(null);
     setSelectedTraps(new Map());
     setStep("choice");
 
@@ -105,6 +107,7 @@ export function SubmitScreen({ file }: Props) {
     if (!hasAccessToken()) return; // ボタンは無効化されているはずだが念のため
     setMode("llm");
     setFallbackMessage(null);
+    setPhotoNotice(null);
     setStep("photo");
   }
 
@@ -130,11 +133,20 @@ export function SubmitScreen({ file }: Props) {
     if (images.length === 0) return;
     setStep("transcribing");
     setWorkError(null);
+    setPhotoNotice(null);
     try {
       const payload: TranscribeImage[] = await Promise.all(
         images.map(async (img) => ({ base64: await fileToBase64(img.file), mimeType: img.file.type || "image/jpeg" }))
       );
       const text = await transcribeImages(payload);
+      if (text.trim().length === 0) {
+        // 写真に判読可能な手書きが無い場合の正常系。APIは失敗していないので
+        // 自己採点モードへはフォールバックせず、写真の選び直しを促す。
+        setImages([]);
+        setPhotoNotice("手書きが読み取れませんでした。明るい場所で、紙全体が入るように撮り直してください。");
+        setStep("photo");
+        return;
+      }
       setTranscription(text);
       setStep("edit");
     } catch (e) {
@@ -293,6 +305,8 @@ export function SubmitScreen({ file }: Props) {
           <h1 class="page-title">和訳を写真で提出</h1>
           <p class="drill-instruction">紙に書いた和訳を撮影(またはライブラリから選択)してください。1〜2枚まで。</p>
 
+          {photoNotice ? <p class="submit-fallback-note">{photoNotice}</p> : null}
+
           <label class="photo-picker">
             <input
               type="file"
@@ -317,7 +331,14 @@ export function SubmitScreen({ file }: Props) {
           ) : null}
 
           <div class="btn-row">
-            <button type="button" class="btn btn--quiet" onClick={() => setStep("choice")}>
+            <button
+              type="button"
+              class="btn btn--quiet"
+              onClick={() => {
+                setPhotoNotice(null);
+                setStep("choice");
+              }}
+            >
               選択に戻る
             </button>
             <button type="button" class="btn btn--primary" disabled={images.length === 0} onClick={handleTranscribe}>

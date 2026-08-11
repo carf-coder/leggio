@@ -112,7 +112,13 @@ export const RESPONSE_SCHEMA = {
  * Gemini generateContent を呼ぶ。呼び出し元(worker/index.mjs・mock-worker.mjs)が
  * apiKey・model・parts・generationConfig を渡す。ネットワーク/HTTP/パース失敗時は例外を投げる。
  */
-export async function callGemini(apiKey, model, parts, generationConfig) {
+/**
+ * @param {boolean} [allowEmpty] trueの場合、本文が空でも例外を投げず空文字を返す。
+ *   実使用で判明した正常系: 写真に判読可能な手書きが無いと、Geminiは
+ *   finishReason=STOPのまま空文字を返すことがある(エラーではない)。
+ *   転写(/transcribe)呼び出しはこれを許容し、添削(/correct)側は従来通り例外を投げる。
+ */
+export async function callGemini(apiKey, model, parts, generationConfig, allowEmpty = false) {
   const url = `${API_BASE}/models/${encodeURIComponent(model)}:generateContent`;
   const body = {
     contents: [{ role: "user", parts }],
@@ -150,7 +156,7 @@ export async function callGemini(apiKey, model, parts, generationConfig) {
     .filter((x) => typeof x.text === "string" && x.thought !== true)
     .map((x) => x.text)
     .join("");
-  if (!out) {
+  if (!out && !allowEmpty) {
     throw new Error(`本文が空です (finishReason=${cand.finishReason || "不明"})`);
   }
   return out;

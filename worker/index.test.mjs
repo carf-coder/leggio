@@ -180,3 +180,34 @@ test("fetch: OPTIONSプリフライトは許可オリジンでCORSヘッダ付�
   assert.equal(res.status, 204);
   assert.equal(res.headers.get("Access-Control-Allow-Origin"), ENV.ALLOWED_ORIGIN);
 });
+
+test("fetch: /transcribeで判読可能な手書きが無くGeminiが空文字を返した場合は200+空文字(502にしない)", async () => {
+  resetRateLimitForTests();
+  const originalFetch = globalThis.fetch;
+  globalThis.fetch = async () =>
+    new Response(
+      JSON.stringify({
+        candidates: [{ content: { parts: [{ text: "" }] }, finishReason: "STOP" }],
+      }),
+      { status: 200 }
+    );
+  try {
+    const res = await worker.fetch(
+      req("/transcribe", {
+        method: "POST",
+        headers: {
+          Origin: ENV.ALLOWED_ORIGIN,
+          Authorization: `Bearer ${ENV.ACCESS_TOKEN}`,
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ images: [{ base64: "AAAA", mimeType: "image/jpeg" }] }),
+      }),
+      ENV
+    );
+    assert.equal(res.status, 200);
+    const body = await res.json();
+    assert.equal(body.transcription, "");
+  } finally {
+    globalThis.fetch = originalFetch;
+  }
+});

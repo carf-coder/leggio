@@ -123,10 +123,16 @@ export async function handleTranscribe(request, env, corsHeaders) {
   }
 
   try {
-    const text = await callGemini(env.GEMINI_API_KEY, model, parts, {
-      temperature: 0,
-      maxOutputTokens: 4096,
-    });
+    // allowEmpty=true: 写真に判読可能な手書きが無い場合、Geminiは正常に空文字を返すことがある。
+    // これはエラーではないため、502にせず200 {transcription:""} を返す(SubmitScreen側で
+    // 「手書きが読み取れなかった」通知として扱う)。
+    const text = await callGemini(
+      env.GEMINI_API_KEY,
+      model,
+      parts,
+      { temperature: 0, maxOutputTokens: 4096 },
+      true
+    );
     return jsonResponse({ transcription: text.trim() }, 200, corsHeaders);
   } catch (e) {
     return jsonResponse({ error: `転写に失敗しました: ${e.message}` }, 502, corsHeaders);
