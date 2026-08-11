@@ -15,6 +15,7 @@ import {
   TRANSCRIBE_PROMPT,
   buildCorrectionPrompt,
   RESPONSE_SCHEMA,
+  NO_HANDWRITING_SENTINEL,
   callGemini,
 } from "./gemini.mjs";
 
@@ -133,7 +134,13 @@ export async function handleTranscribe(request, env, corsHeaders) {
       { temperature: 0, maxOutputTokens: 4096 },
       true
     );
-    return jsonResponse({ transcription: text.trim() }, 200, corsHeaders);
+    const trimmed = text.trim();
+    // 番兵トークン(手書きなし)は空転写に正規化する。モデルが番兵の代わりに
+    // 「手書き文字が含まれていません」等の説明文を返した場合も同様に扱う。
+    const noHandwriting =
+      trimmed === NO_HANDWRITING_SENTINEL ||
+      (trimmed.length <= 40 && /手書き.{0,12}(含まれて|見つかり|あり)ませ/.test(trimmed));
+    return jsonResponse({ transcription: noHandwriting ? "" : trimmed }, 200, corsHeaders);
   } catch (e) {
     return jsonResponse({ error: `転写に失敗しました: ${e.message}` }, 502, corsHeaders);
   }
