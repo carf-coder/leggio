@@ -1,0 +1,95 @@
+{
+  "id": "p0023",
+  "phase": "P1",
+  "genre": "practical",
+  "wordCount": 113,
+  "title_ja": "人前で話すために",
+  "text": "Chi deve parlare in pubblico prepara di solito ogni parola, e proprio per questo si blocca appena ne dimentica una. Conviene invece imparare a memoria soltanto l'inizio e la conclusione, lasciando che il resto si formi mentre si parla.\n\nSe una frase esce male, è inutile tornare indietro: gli ascoltatori non hanno il testo davanti e se ne accorgono molto meno di quanto crediamo. Basta guardare tre persone in tre punti diversi della sala perché tutti abbiano l'impressione di essere guardati. E se la voce trema all'inizio, si può semplicemente aspettare: passa da sola dopo un minuto. Nessuno, d'altra parte, ricorda un discorso perché era perfetto; lo ricorda perché chi parlava sembrava convinto.",
+  "sentences": [
+    {
+      "idx": 0,
+      "text": "Chi deve parlare in pubblico prepara di solito ogni parola, e proprio per questo si blocca appena ne dimentica una.",
+      "words": 20,
+      "skeleton": {"mainVerb": "prepara / si blocca", "subject": "Chi (= colui che)", "core_ja": "人前で話す人は一語一語を準備し、それゆえ一語忘れると詰まる。"},
+      "clauses": [
+        {"span": [0, 4], "type": "rel", "note_ja": "Chi で始まる融合関係詞句が主語。"},
+        {"span": [16, 19], "type": "sub", "note_ja": "appena は「〜するやいなや」の接続詞。ne は「その語のうち」を受ける部分の ne で、una がその一つ。"}
+      ],
+      "model_ja": "人前で話さなければならない人は、たいてい一語一語を用意する。そしてまさにそのために、一語忘れただけで動けなくなる。",
+      "traps": ["REF", "LEX"]
+    },
+    {
+      "idx": 1,
+      "text": "Conviene invece imparare a memoria soltanto l'inizio e la conclusione, lasciando che il resto si formi mentre si parla.",
+      "words": 19,
+      "skeleton": {"mainVerb": "Conviene", "subject": "imparare(不定詞)", "core_ja": "むしろ冒頭と結びだけを暗記するのがよい。"},
+      "clauses": [
+        {"span": [10, 18], "type": "ger", "note_ja": "lasciando のジェルンディオ句。"},
+        {"span": [11, 15], "type": "sub", "note_ja": "lasciare che + 接続法(si formi)。「〜するに任せる」。"},
+        {"span": [16, 18], "type": "sub", "note_ja": "mentre の時の副詞節。si parla は非人称のsi。"}
+      ],
+      "model_ja": "むしろ、冒頭と結びだけを暗記し、残りは話しながら形になるのに任せるのがよい。",
+      "traps": ["MOOD", "SYN"]
+    },
+    {
+      "idx": 2,
+      "text": "Se una frase esce male, è inutile tornare indietro: gli ascoltatori non hanno il testo davanti e se ne accorgono molto meno di quanto crediamo.",
+      "words": 25,
+      "skeleton": {"mainVerb": "è inutile / hanno / se ne accorgono", "subject": "tornare(不定詞) / gli ascoltatori", "core_ja": "一文が失敗しても戻るのは無駄である。聴き手は気づかない。"},
+      "clauses": [
+        {"span": [0, 4], "type": "sub", "note_ja": "se の条件節。"},
+        {"span": [22, 24], "type": "sub", "note_ja": "di quanto + 直説法 crediamo。比較の第二項を導く(「私たちが思っているより」)。"}
+      ],
+      "model_ja": "一つの文がうまく出なかったとしても、後戻りするのは無駄である。聴き手は原稿を手にしているわけではなく、こちらが思うよりずっとそれに気づかない。",
+      "traps": ["REF", "SYN"]
+    },
+    {
+      "idx": 3,
+      "text": "Basta guardare tre persone in tre punti diversi della sala perché tutti abbiano l'impressione di essere guardati.",
+      "words": 17,
+      "skeleton": {"mainVerb": "Basta", "subject": "guardare(不定詞)", "core_ja": "三人を見るだけで足りる。"},
+      "clauses": [
+        {"span": [1, 9], "type": "sub", "note_ja": "basta + 不定詞(「〜するだけで十分である」)。"},
+        {"span": [10, 16], "type": "sub", "note_ja": "この perché は理由ではなく目的・結果を表し、接続法 abbiano をとる。"},
+        {"span": [14, 16], "type": "sub", "note_ja": "di essere guardati は受動の不定詞(「見られているという」)。"}
+      ],
+      "model_ja": "会場の三か所にいる三人を見るだけで、全員が自分は見られていると感じるようになる。",
+      "traps": ["MOOD", "LEX"]
+    },
+    {
+      "idx": 4,
+      "text": "E se la voce trema all'inizio, si può semplicemente aspettare: passa da sola dopo un minuto.",
+      "words": 16,
+      "skeleton": {"mainVerb": "si può / passa", "subject": "非人称 / (la voce) 省略", "core_ja": "最初に声が震えたら、ただ待てばよい。"},
+      "clauses": [
+        {"span": [1, 5], "type": "sub", "note_ja": "se の条件節。"}
+      ],
+      "model_ja": "そして最初に声が震えるなら、ただ待てばよい。一分もすれば自然におさまる。",
+      "traps": ["REF", "OMIT"]
+    },
+    {
+      "idx": 5,
+      "text": "Nessuno, d'altra parte, ricorda un discorso perché era perfetto; lo ricorda perché chi parlava sembrava convinto.",
+      "words": 16,
+      "skeleton": {"mainVerb": "ricorda (2回)", "subject": "Nessuno", "core_ja": "完璧だったから覚えているのではなく、〜だから覚えているのである。"},
+      "clauses": [
+        {"span": [1, 2], "type": "ins", "note_ja": "d'altra parte は主語と動詞の間の挿入句(「他方で」)。"},
+        {"span": [6, 8], "type": "sub", "note_ja": "第一の perché 節。否定 Nessuno と結びついて「完璧だったから覚えているのではない」の意になる。"},
+        {"span": [11, 15], "type": "sub", "note_ja": "第二の perché 節。二つの perché の対比が文の骨格。"},
+        {"span": [12, 13], "type": "rel", "note_ja": "chi は融合関係詞で、この部分が sembrava の主語。"}
+      ],
+      "model_ja": "そもそも、話が完璧だったから人がそれを覚えているのではない。話し手が確信しているように見えたから覚えているのである。",
+      "traps": ["SYN", "ADD"]
+    }
+  ],
+  "model_ja_full": "人前で話さなければならない人は、たいてい一語一語を用意する。そしてまさにそのために、一語忘れただけで動けなくなる。むしろ、冒頭と結びだけを暗記し、残りは話しながら形になるのに任せるのがよい。\n\n一つの文がうまく出なかったとしても、後戻りするのは無駄である。聴き手は原稿を手にしているわけではなく、こちらが思うよりずっとそれに気づかない。会場の三か所にいる三人を見るだけで、全員が自分は見られていると感じるようになる。そして最初に声が震えるなら、ただ待てばよい。一分もすれば自然におさまる。そもそも、話が完璧だったから人がそれを覚えているのではない。話し手が確信しているように見えたから覚えているのである。",
+  "vocab": [
+    {"it": "bloccarsi", "ja": "動けなくなる・詰まる", "hint": "推測可"},
+    {"it": "appena", "ja": "〜するやいなや", "hint": "辞書を引くべき"},
+    {"it": "imparare a memoria", "ja": "暗記する", "hint": "辞書を引くべき"},
+    {"it": "lasciare che", "ja": "〜するに任せる", "hint": "辞書を引くべき"},
+    {"it": "ascoltatore", "ja": "聴き手", "hint": "推測可"},
+    {"it": "tremare", "ja": "震える", "hint": "推測可"},
+    {"it": "convinto", "ja": "確信している", "hint": "推測可"}
+  ]
+}

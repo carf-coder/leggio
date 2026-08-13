@@ -1,0 +1,68 @@
+{
+  "id": "p0008",
+  "phase": "P1",
+  "genre": "essay",
+  "wordCount": 101,
+  "title_ja": "土地ごとのパン",
+  "text": "In Italia il pane cambia nome, forma e sapore ogni cinquanta chilometri, e chi si sposta da una regione all'altra se ne accorge prima ancora di leggere l'insegna del negozio. Queste differenze non nascono dal capriccio dei fornai, ma dal grano che cresceva in ciascuna zona e dall'acqua di cui si disponeva.\n\nIn Toscana, per esempio, il pane si prepara senza sale, e si dice che l'abitudine risalga a un'antica tassa che i fiorentini rifiutarono di pagare. Oggi la farina viaggia e chiunque potrebbe produrre ovunque lo stesso pane; se le forme locali resistono, è perché i clienti continuano a chiederle.",
+  "sentences": [
+    {
+      "idx": 0,
+      "text": "In Italia il pane cambia nome, forma e sapore ogni cinquanta chilometri, e chi si sposta da una regione all'altra se ne accorge prima ancora di leggere l'insegna del negozio.",
+      "words": 30,
+      "skeleton": {"mainVerb": "cambia / se ne accorge", "subject": "il pane / chi", "core_ja": "パンは名も形も味も変わり、移動する人はそれに気づく。"},
+      "clauses": [
+        {"span": [13, 19], "type": "rel", "note_ja": "chi は融合関係詞で、後半の主節の主語。"},
+        {"span": [23, 29], "type": "sub", "note_ja": "prima ancora di + 不定詞(「〜するよりも前に」)。ne は前半の内容(パンの違い)を受ける。"}
+      ],
+      "model_ja": "イタリアではパンは五十キロごとに名も形も味も変わり、ある州から別の州へ移る人は、店の看板を読むより先にそれに気づく。",
+      "traps": ["REF", "SYN"]
+    },
+    {
+      "idx": 1,
+      "text": "Queste differenze non nascono dal capriccio dei fornai, ma dal grano che cresceva in ciascuna zona e dall'acqua di cui si disponeva.",
+      "words": 22,
+      "skeleton": {"mainVerb": "nascono", "subject": "Queste differenze", "core_ja": "この違いは気まぐれからではなく、小麦と水から生じる。"},
+      "clauses": [
+        {"span": [11, 15], "type": "rel", "note_ja": "il grano を先行詞とする関係節(半過去 cresceva)。"},
+        {"span": [18, 21], "type": "rel", "note_ja": "di cui は l'acqua を先行詞とする関係節。disporre di qc(「〜を自由に使える」)の di に由来する。"}
+      ],
+      "model_ja": "こうした違いはパン職人の気まぐれから生まれたのではなく、それぞれの土地で育っていた小麦と、手に入る水から生まれたのである。",
+      "traps": ["MOD", "LEX"]
+    },
+    {
+      "idx": 2,
+      "text": "In Toscana, per esempio, il pane si prepara senza sale, e si dice che l'abitudine risalga a un'antica tassa che i fiorentini rifiutarono di pagare.",
+      "words": 25,
+      "skeleton": {"mainVerb": "si prepara / si dice", "subject": "il pane / 非人称", "core_ja": "トスカーナではパンは塩なしで作られ、〜と言われている。"},
+      "clauses": [
+        {"span": [2, 3], "type": "ins", "note_ja": "per esempio は挿入句。"},
+        {"span": [13, 24], "type": "sub", "note_ja": "si dice che の目的節。接続法 risalga は伝聞の内容であることの標識。"},
+        {"span": [19, 24], "type": "rel", "note_ja": "un'antica tassa を先行詞とする関係節。rifiutarono は遠過去。"}
+      ],
+      "model_ja": "たとえばトスカーナではパンは塩を使わずに作られる。この習慣は、フィレンツェの人々が支払いを拒んだ古い税にさかのぼると言われている。",
+      "traps": ["MOOD", "SYN"]
+    },
+    {
+      "idx": 3,
+      "text": "Oggi la farina viaggia e chiunque potrebbe produrre ovunque lo stesso pane; se le forme locali resistono, è perché i clienti continuano a chiederle.",
+      "words": 24,
+      "skeleton": {"mainVerb": "viaggia / potrebbe / è", "subject": "la farina / chiunque", "core_ja": "今日では小麦粉は移動し、誰でも同じパンを作れるだろう。地方の形が残るのは〜だからである。"},
+      "clauses": [
+        {"span": [12, 16], "type": "sub", "note_ja": "se の条件節。ここでは実際に起きていることを前提とする条件(直説法)。"},
+        {"span": [18, 23], "type": "sub", "note_ja": "è perché … で「〜だからである」。chiederle の le は le forme locali を受ける。"}
+      ],
+      "model_ja": "今日では小麦粉が各地を行き来し、誰でもどこでも同じパンを作ることができるだろう。それでも土地ごとの形が残っているのは、客がそれを求め続けているからである。",
+      "traps": ["MOOD", "REF"]
+    }
+  ],
+  "model_ja_full": "イタリアではパンは五十キロごとに名も形も味も変わり、ある州から別の州へ移る人は、店の看板を読むより先にそれに気づく。こうした違いはパン職人の気まぐれから生まれたのではなく、それぞれの土地で育っていた小麦と、手に入る水から生まれたのである。\n\nたとえばトスカーナではパンは塩を使わずに作られる。この習慣は、フィレンツェの人々が支払いを拒んだ古い税にさかのぼると言われている。今日では小麦粉が各地を行き来し、誰でもどこでも同じパンを作ることができるだろう。それでも土地ごとの形が残っているのは、客がそれを求め続けているからである。",
+  "vocab": [
+    {"it": "insegna", "ja": "看板", "hint": "辞書を引くべき"},
+    {"it": "capriccio", "ja": "気まぐれ", "hint": "推測可"},
+    {"it": "fornaio", "ja": "パン職人", "hint": "推測可"},
+    {"it": "disporre di", "ja": "〜を自由に使える", "hint": "辞書を引くべき"},
+    {"it": "risalire a", "ja": "〜にさかのぼる", "hint": "辞書を引くべき"},
+    {"it": "farina", "ja": "小麦粉", "hint": "推測可"}
+  ]
+}

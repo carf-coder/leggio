@@ -1,0 +1,84 @@
+{
+  "id": "p0013",
+  "phase": "P1",
+  "genre": "essay",
+  "wordCount": 105,
+  "title_ja": "絵画の修復",
+  "text": "Quando un dipinto antico viene ripulito, il pubblico si divide quasi sempre in due schiere. Alcuni si dicono felici di vedere finalmente i colori che il pittore aveva scelto; altri sostengono che si sia tolto anche qualcosa di essenziale, cioè il tempo depositato sulla superficie.\n\nI restauratori, che conoscono meglio di chiunque i rischi del proprio mestiere, rispondono che ogni intervento deve poter essere annullato da chi verrà dopo di loro. È una regola prudente, nata dagli errori di un'epoca in cui si ridipingeva senza esitazione ciò che appariva rovinato. Chi guarda un quadro restaurato, insomma, guarda anche le scelte di chi lo ha restaurato.",
+  "sentences": [
+    {
+      "idx": 0,
+      "text": "Quando un dipinto antico viene ripulito, il pubblico si divide quasi sempre in due schiere.",
+      "words": 15,
+      "skeleton": {"mainVerb": "si divide", "subject": "il pubblico", "core_ja": "古い絵が洗浄されると、世論は二つに分かれる。"},
+      "clauses": [
+        {"span": [0, 5], "type": "sub", "note_ja": "quando の時の副詞節。viene ripulito は venire を用いた受動態。"}
+      ],
+      "model_ja": "古い絵画が洗浄されると、世間の意見はほとんど必ず二つの陣営に分かれる。",
+      "traps": ["MOD", "LEX"]
+    },
+    {
+      "idx": 1,
+      "text": "Alcuni si dicono felici di vedere finalmente i colori che il pittore aveva scelto; altri sostengono che si sia tolto anche qualcosa di essenziale, cioè il tempo depositato sulla superficie.",
+      "words": 30,
+      "skeleton": {"mainVerb": "si dicono / sostengono", "subject": "Alcuni / altri", "core_ja": "ある者は喜び、ある者は〜と主張する。"},
+      "clauses": [
+        {"span": [4, 13], "type": "sub", "note_ja": "形容詞 felici に従属する不定詞句(「〜できて嬉しい」)。"},
+        {"span": [9, 13], "type": "rel", "note_ja": "i colori を先行詞とする関係節。大過去 aveva scelto。"},
+        {"span": [16, 29], "type": "sub", "note_ja": "sostengono の目的節。si sia tolto は非人称のsi + 接続法過去(「取り除かれてしまった」)。"},
+        {"span": [27, 29], "type": "ins", "note_ja": "depositato sulla superficie は il tempo に一致する過去分詞句(「表面に降り積もった時間」)。"}
+      ],
+      "model_ja": "ある者は、画家が選んだ色をようやく目にできて嬉しいと言う。別の者は、本質的な何か、すなわち表面に積もった時間までもが取り除かれてしまったと主張する。",
+      "traps": ["MOOD", "MOD", "SYN"]
+    },
+    {
+      "idx": 2,
+      "text": "I restauratori, che conoscono meglio di chiunque i rischi del proprio mestiere, rispondono che ogni intervento deve poter essere annullato da chi verrà dopo di loro.",
+      "words": 26,
+      "skeleton": {"mainVerb": "rispondono", "subject": "I restauratori", "core_ja": "修復家たちは〜と答える。"},
+      "clauses": [
+        {"span": [2, 11], "type": "rel", "note_ja": "I restauratori を修飾する非制限的関係節。主語と主動詞 rispondono を長く隔てている。"},
+        {"span": [13, 25], "type": "sub", "note_ja": "rispondono の目的節。deve poter essere annullato は助動詞が三つ重なった受動(「取り消せるものでなければならない」)。"},
+        {"span": [21, 25], "type": "rel", "note_ja": "chi は行為者を導く融合関係詞。verrà は単純未来。"}
+      ],
+      "model_ja": "自らの仕事の危うさを誰よりもよく知る修復家たちは、いかなる処置も後から来る者の手で取り消せるものでなければならない、と答える。",
+      "traps": ["SYN", "MOOD"]
+    },
+    {
+      "idx": 3,
+      "text": "È una regola prudente, nata dagli errori di un'epoca in cui si ridipingeva senza esitazione ciò che appariva rovinato.",
+      "words": 19,
+      "skeleton": {"mainVerb": "È", "subject": "(それは)省略", "core_ja": "それは慎重な原則である。"},
+      "clauses": [
+        {"span": [4, 18], "type": "ins", "note_ja": "nata は una regola に一致する過去分詞句(「〜から生まれた」)。"},
+        {"span": [9, 18], "type": "rel", "note_ja": "in cui は un'epoca を先行詞とする関係節。si ridipingeva は非人称のsi + 半過去。"},
+        {"span": [15, 18], "type": "rel", "note_ja": "ciò che は「〜であるもの」。ridipingeva の目的語で、動詞のあとに置かれている。"}
+      ],
+      "model_ja": "これは、傷んで見えるものをためらいなく塗り直していた時代の失敗から生まれた、慎重な原則である。",
+      "traps": ["MOD", "SYN"]
+    },
+    {
+      "idx": 4,
+      "text": "Chi guarda un quadro restaurato, insomma, guarda anche le scelte di chi lo ha restaurato.",
+      "words": 15,
+      "skeleton": {"mainVerb": "guarda", "subject": "Chi (= colui che)", "core_ja": "修復された絵を見る人は、〜の選択も見ている。"},
+      "clauses": [
+        {"span": [0, 4], "type": "rel", "note_ja": "Chi で始まる融合関係詞句が主節の主語。"},
+        {"span": [5, 5], "type": "ins", "note_ja": "insomma は主語と動詞の間の挿入語(「つまり」)。"},
+        {"span": [11, 14], "type": "rel", "note_ja": "二つ目の chi。前置詞 di のあとの融合関係詞で、lo は un quadro を受ける。"}
+      ],
+      "model_ja": "つまり、修復された絵を見る者は、それを修復した者の選択もまた見ているのである。",
+      "traps": ["REF", "SYN"]
+    }
+  ],
+  "model_ja_full": "古い絵画が洗浄されると、世間の意見はほとんど必ず二つの陣営に分かれる。ある者は、画家が選んだ色をようやく目にできて嬉しいと言う。別の者は、本質的な何か、すなわち表面に積もった時間までもが取り除かれてしまったと主張する。\n\n自らの仕事の危うさを誰よりもよく知る修復家たちは、いかなる処置も後から来る者の手で取り消せるものでなければならない、と答える。これは、傷んで見えるものをためらいなく塗り直していた時代の失敗から生まれた、慎重な原則である。つまり、修復された絵を見る者は、それを修復した者の選択もまた見ているのである。",
+  "vocab": [
+    {"it": "ripulire", "ja": "洗浄する", "hint": "推測可"},
+    {"it": "schiera", "ja": "隊列・陣営", "hint": "辞書を引くべき"},
+    {"it": "depositare", "ja": "堆積させる", "hint": "辞書を引くべき"},
+    {"it": "restauratore", "ja": "修復家", "hint": "推測可"},
+    {"it": "annullare", "ja": "取り消す", "hint": "推測可"},
+    {"it": "ridipingere", "ja": "塗り直す", "hint": "推測可"},
+    {"it": "esitazione", "ja": "ためらい", "hint": "辞書を引くべき"}
+  ]
+}

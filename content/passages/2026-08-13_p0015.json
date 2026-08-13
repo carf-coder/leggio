@@ -1,0 +1,90 @@
+{
+  "id": "p0015",
+  "phase": "P1",
+  "genre": "essay",
+  "wordCount": 114,
+  "title_ja": "なぜ最後にだけ拍手するのか",
+  "text": "Nelle sale da concerto di oggi il pubblico applaude soltanto alla fine dell'opera, e chi batte le mani tra un movimento e l'altro riceve occhiate severe. Questa regola, che molti considerano antichissima, si è affermata in realtà poco più di un secolo fa.\n\nNei teatri del Settecento si applaudiva a scena aperta, si chiedeva il bis di un'aria che era appena finita e si commentava ad alta voce, senza che nessuno se ne scandalizzasse. Alcuni direttori d'orchestra sostengono che il silenzio assoluto abbia fatto guadagnare concentrazione e perdere calore. Altri ribattono che nessuno, oggi, tollererebbe le distrazioni di allora. Chi entra oggi in una sala, in ogni caso, impara la regola guardando gli altri.",
+  "sentences": [
+    {
+      "idx": 0,
+      "text": "Nelle sale da concerto di oggi il pubblico applaude soltanto alla fine dell'opera, e chi batte le mani tra un movimento e l'altro riceve occhiate severe.",
+      "words": 26,
+      "skeleton": {"mainVerb": "applaude / riceve", "subject": "il pubblico / chi", "core_ja": "聴衆は最後にだけ拍手し、楽章の間で手を叩く人は睨まれる。"},
+      "clauses": [
+        {"span": [14, 22], "type": "rel", "note_ja": "chi は融合関係詞で、この部分が後半の主節の主語。動詞は riceve。"}
+      ],
+      "model_ja": "今日の演奏会場では、聴衆は曲の終わりにだけ拍手し、楽章と楽章のあいだに手を叩く者は厳しい視線を浴びる。",
+      "traps": ["SYN", "LEX"]
+    },
+    {
+      "idx": 1,
+      "text": "Questa regola, che molti considerano antichissima, si è affermata in realtà poco più di un secolo fa.",
+      "words": 17,
+      "skeleton": {"mainVerb": "si è affermata", "subject": "Questa regola", "core_ja": "この規則が定着したのは実は一世紀ほど前である。"},
+      "clauses": [
+        {"span": [2, 5], "type": "rel", "note_ja": "Questa regola を修飾する非制限的関係節。主語と動詞を隔てている。considerare A B の B が antichissima。"}
+      ],
+      "model_ja": "多くの人が非常に古いものと考えているこの規則は、実際には一世紀余り前に定着したにすぎない。",
+      "traps": ["SYN", "MOD"]
+    },
+    {
+      "idx": 2,
+      "text": "Nei teatri del Settecento si applaudiva a scena aperta, si chiedeva il bis di un'aria che era appena finita e si commentava ad alta voce, senza che nessuno se ne scandalizzasse.",
+      "words": 31,
+      "skeleton": {"mainVerb": "si applaudiva / si chiedeva / si commentava", "subject": "非人称のsi(「人々は」)", "core_ja": "十八世紀の劇場では、上演中に拍手し、アリアの再演を求め、大声で論評した。"},
+      "clauses": [
+        {"span": [15, 18], "type": "rel", "note_ja": "un'aria を先行詞とする関係節。appena は「たった今〜したばかり」。"},
+        {"span": [25, 30], "type": "sub", "note_ja": "senza che は必ず接続法をとる(半過去 scandalizzasse)。se ne は「そのことに」で、scandalizzarsi di qc に由来する。"}
+      ],
+      "model_ja": "十八世紀の劇場では、幕が開いたまま拍手が起こり、終わったばかりのアリアのアンコールが求められ、大きな声で感想が交わされた。しかもそれを見咎める者は誰もいなかった。",
+      "traps": ["SYN", "MOD", "OMIT"]
+    },
+    {
+      "idx": 3,
+      "text": "Alcuni direttori d'orchestra sostengono che il silenzio assoluto abbia fatto guadagnare concentrazione e perdere calore.",
+      "words": 15,
+      "skeleton": {"mainVerb": "sostengono", "subject": "Alcuni direttori d'orchestra", "core_ja": "一部の指揮者は〜と主張する。"},
+      "clauses": [
+        {"span": [4, 14], "type": "sub", "note_ja": "sostengono の目的節。接続法過去 abbia fatto。fare + 不定詞が guadagnare と perdere の二つに掛かる(「得させ、失わせた」)。"}
+      ],
+      "model_ja": "一部の指揮者は、完全な静寂は集中をもたらした代わりに熱気を失わせた、と主張する。",
+      "traps": ["MOOD", "OMIT"]
+    },
+    {
+      "idx": 4,
+      "text": "Altri ribattono che nessuno, oggi, tollererebbe le distrazioni di allora.",
+      "words": 10,
+      "skeleton": {"mainVerb": "ribattono", "subject": "Altri", "core_ja": "他の者は〜と反論する。"},
+      "clauses": [
+        {"span": [2, 9], "type": "sub", "note_ja": "ribattono の目的節。条件法 tollererebbe は「仮に今そうなったとしても」という含みを持つ。"},
+        {"span": [4, 4], "type": "ins", "note_ja": "oggi は主語と動詞の間に置かれた挿入語。"}
+      ],
+      "model_ja": "別の者は、当時のような気の散り方を今日では誰も我慢しないだろう、と反論する。",
+      "traps": ["MOOD", "SYN"]
+    },
+    {
+      "idx": 5,
+      "text": "Chi entra oggi in una sala, in ogni caso, impara la regola guardando gli altri.",
+      "words": 15,
+      "skeleton": {"mainVerb": "impara", "subject": "Chi (= colui che)", "core_ja": "会場に入る人は、その規則を学ぶ。"},
+      "clauses": [
+        {"span": [0, 5], "type": "rel", "note_ja": "Chi で始まる融合関係詞句が主節の主語。"},
+        {"span": [6, 8], "type": "ins", "note_ja": "in ogni caso は主語と動詞の間の挿入句(「いずれにせよ」)。"},
+        {"span": [12, 14], "type": "ger", "note_ja": "guardando のジェルンディオ句。手段を表す(「見ることによって」)。"}
+      ],
+      "model_ja": "いずれにせよ、今日その会場に入る者は、周囲の人を見ることでこの規則を学ぶのである。",
+      "traps": ["SYN"]
+    }
+  ],
+  "model_ja_full": "今日の演奏会場では、聴衆は曲の終わりにだけ拍手し、楽章と楽章のあいだに手を叩く者は厳しい視線を浴びる。多くの人が非常に古いものと考えているこの規則は、実際には一世紀余り前に定着したにすぎない。\n\n十八世紀の劇場では、幕が開いたまま拍手が起こり、終わったばかりのアリアのアンコールが求められ、大きな声で感想が交わされた。しかもそれを見咎める者は誰もいなかった。一部の指揮者は、完全な静寂は集中をもたらした代わりに熱気を失わせた、と主張する。別の者は、当時のような気の散り方を今日では誰も我慢しないだろう、と反論する。いずれにせよ、今日その会場に入る者は、周囲の人を見ることでこの規則を学ぶのである。",
+  "vocab": [
+    {"it": "occhiata", "ja": "一瞥・視線", "hint": "辞書を引くべき"},
+    {"it": "affermarsi", "ja": "定着する", "hint": "辞書を引くべき"},
+    {"it": "a scena aperta", "ja": "上演の途中で", "hint": "辞書を引くべき"},
+    {"it": "bis", "ja": "アンコール", "hint": "推測可"},
+    {"it": "ribattere", "ja": "反論する", "hint": "推測可"},
+    {"it": "tollerare", "ja": "我慢する", "hint": "推測可"},
+    {"it": "distrazione", "ja": "気の散ること", "hint": "辞書を引くべき"}
+  ]
+}

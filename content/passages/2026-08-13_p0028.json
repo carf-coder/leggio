@@ -1,0 +1,320 @@
+{
+  "id": "p0028",
+  "phase": "P2",
+  "genre": "narrative",
+  "wordCount": 197,
+  "title_ja": "店じまい",
+  "text": "Il negozio chiuse un martedì di febbraio, senza che nessuno nel quartiere se lo fosse aspettato davvero. Per quarantun anni la signora Nadia aveva aperto alle sette e mezzo, aveva servito i primi clienti mentre il caffè finiva di salire e aveva imparato a memoria non soltanto i nomi dei bambini che entravano con le madri, ma anche le abitudini di chi entrava senza salutare.\n\nQuel martedì, verso le undici, arrivò un uomo con una cartella, che nessuno del quartiere conosceva, e restò a parlare con lei per venti minuti; poi la saracinesca rimase abbassata. Nei giorni seguenti alcuni clienti si fermarono davanti alla vetrina vuota, come se il cartello con poche parole scritte a mano potesse dire qualcosa di più. La signora Nadia, che nel frattempo si era trasferita da una sorella, non tornò mai a vedere che cosa avessero messo al posto suo. Un anno dopo, al numero quarantatré, c'era un negozio di telefoni, con un'insegna che si accendeva a intermittenza; il pavimento era rimasto lo stesso, e chi lo notava era ormai molto anziano. I ragazzi che ci lavoravano, gentilissimi, non capivano perché certe signore entrassero, guardassero il pavimento e uscissero senza comprare nulla.",
+  "sentences": [
+    {
+      "idx": 0,
+      "text": "Il negozio chiuse un martedì di febbraio, senza che nessuno nel quartiere se lo fosse aspettato davvero.",
+      "words": 17,
+      "skeleton": {
+        "mainVerb": "chiuse",
+        "subject": "Il negozio",
+        "core_ja": "その店は二月のある火曜日に閉まった。"
+      },
+      "clauses": [
+        {
+          "span": [
+            7,
+            16
+          ],
+          "type": "sub",
+          "note_ja": "senza che は必ず接続法をとる(ここでは大過去 se lo fosse aspettato)。aspettarsi qc で「〜を予期する」。"
+        }
+      ],
+      "model_ja": "その店は二月のある火曜日に閉じた。界隈の誰ひとり、本当に予期してはいなかった。",
+      "traps": [
+        "MOOD",
+        "REF"
+      ]
+    },
+    {
+      "idx": 1,
+      "text": "Per quarantun anni la signora Nadia aveva aperto alle sette e mezzo, aveva servito i primi clienti mentre il caffè finiva di salire e aveva imparato a memoria non soltanto i nomi dei bambini che entravano con le madri, ma anche le abitudini di chi entrava senza salutare.",
+      "words": 48,
+      "skeleton": {
+        "mainVerb": "aveva aperto / aveva servito / aveva imparato(三つの等位の大過去)",
+        "subject": "la signora Nadia",
+        "core_ja": "四十一年のあいだ、ナディアは店を開け、客に応対し、覚えてきた。"
+      },
+      "clauses": [
+        {
+          "span": [
+            17,
+            22
+          ],
+          "type": "sub",
+          "note_ja": "mentre の時の副詞節。finire di + 不定詞。"
+        },
+        {
+          "span": [
+            34,
+            38
+          ],
+          "type": "rel",
+          "note_ja": "i bambini を先行詞とする関係節。"
+        },
+        {
+          "span": [
+            43,
+            47
+          ],
+          "type": "rel",
+          "note_ja": "chi は前置詞 di のあとの融合関係詞。non soltanto … ma anche … の相関が骨格で、二つ目の項がここに来る。"
+        },
+        {
+          "span": [
+            46,
+            47
+          ],
+          "type": "sub",
+          "note_ja": "senza + 不定詞。"
+        }
+      ],
+      "model_ja": "四十一年のあいだ、ナディアさんは七時半に店を開け、コーヒーが上がりきるのを待ちながら最初の客に応対し、母親と一緒に入ってくる子どもたちの名前だけでなく、挨拶もせずに入ってくる客の癖までも覚えてきた。",
+      "traps": [
+        "SYN",
+        "OMIT",
+        "MOD"
+      ]
+    },
+    {
+      "idx": 2,
+      "text": "Quel martedì, verso le undici, arrivò un uomo con una cartella, che nessuno del quartiere conosceva, e restò a parlare con lei per venti minuti; poi la saracinesca rimase abbassata.",
+      "words": 30,
+      "skeleton": {
+        "mainVerb": "arrivò / restò / rimase",
+        "subject": "un uomo / la saracinesca",
+        "core_ja": "その火曜日、鞄を持った男が来て、二十分話し、その後シャッターは下りたままになった。"
+      },
+      "clauses": [
+        {
+          "span": [
+            11,
+            15
+          ],
+          "type": "rel",
+          "note_ja": "un uomo を先行詞とする非制限的関係節。conosceva の主語は nessuno del quartiere。"
+        },
+        {
+          "span": [
+            18,
+            24
+          ],
+          "type": "sub",
+          "note_ja": "restare a + 不定詞(「〜し続ける」)。lei は la signora Nadia。"
+        }
+      ],
+      "model_ja": "その火曜日の十一時ごろ、界隈の誰も見たことのない、書類鞄を提げた男がやって来て、二十分ほど彼女と話し込んだ。それきりシャッターは下りたままだった。",
+      "traps": [
+        "SYN",
+        "REF"
+      ]
+    },
+    {
+      "idx": 3,
+      "text": "Nei giorni seguenti alcuni clienti si fermarono davanti alla vetrina vuota, come se il cartello con poche parole scritte a mano potesse dire qualcosa di più.",
+      "words": 26,
+      "skeleton": {
+        "mainVerb": "si fermarono",
+        "subject": "alcuni clienti",
+        "core_ja": "その後数日、何人かの客が空のショーウィンドウの前で足を止めた。"
+      },
+      "clauses": [
+        {
+          "span": [
+            11,
+            25
+          ],
+          "type": "sub",
+          "note_ja": "come se + 接続法半過去 potesse。主語 il cartello と動詞 potesse の間に長い前置詞句が入る。"
+        },
+        {
+          "span": [
+            15,
+            20
+          ],
+          "type": "ins",
+          "note_ja": "con poche parole scritte a mano は il cartello を修飾し、主語と動詞を隔てている。scritte は parole に一致。"
+        }
+      ],
+      "model_ja": "その後の数日、何人かの客が空になったショーウィンドウの前で足を止めた。手書きの数語だけの貼り紙が、それ以上の何かを語ってくれるとでもいうように。",
+      "traps": [
+        "MOOD",
+        "SYN",
+        "MOD"
+      ]
+    },
+    {
+      "idx": 4,
+      "text": "La signora Nadia, che nel frattempo si era trasferita da una sorella, non tornò mai a vedere che cosa avessero messo al posto suo.",
+      "words": 24,
+      "skeleton": {
+        "mainVerb": "non tornò",
+        "subject": "La signora Nadia",
+        "core_ja": "ナディアは見に戻ることは一度もなかった。"
+      },
+      "clauses": [
+        {
+          "span": [
+            3,
+            11
+          ],
+          "type": "rel",
+          "note_ja": "La signora Nadia を修飾する非制限的関係節。主語と動詞 non tornò を隔てている。"
+        },
+        {
+          "span": [
+            15,
+            23
+          ],
+          "type": "sub",
+          "note_ja": "tornare a + 不定詞(「再び〜する」)。"
+        },
+        {
+          "span": [
+            17,
+            23
+          ],
+          "type": "sub",
+          "note_ja": "che cosa が導く間接疑問文。接続法大過去 avessero messo。主語は不特定の「彼ら」。"
+        }
+      ],
+      "model_ja": "その間に姉妹の家へ移っていたナディアさんは、自分の店の跡に何が入ったのかを見に戻ることは一度もなかった。",
+      "traps": [
+        "MOOD",
+        "SYN",
+        "REF"
+      ]
+    },
+    {
+      "idx": 5,
+      "text": "Un anno dopo, al numero quarantatré, c'era un negozio di telefoni, con un'insegna che si accendeva a intermittenza; il pavimento era rimasto lo stesso, e chi lo notava era ormai molto anziano.",
+      "words": 32,
+      "skeleton": {
+        "mainVerb": "c'era / era rimasto / era",
+        "subject": "un negozio / il pavimento / chi",
+        "core_ja": "一年後、そこには携帯電話の店があった。床は同じままで、それに気づく人はもう高齢だった。"
+      },
+      "clauses": [
+        {
+          "span": [
+            13,
+            17
+          ],
+          "type": "rel",
+          "note_ja": "un'insegna を先行詞とする関係節。a intermittenza で「断続的に」。"
+        },
+        {
+          "span": [
+            25,
+            27
+          ],
+          "type": "rel",
+          "note_ja": "chi は融合関係詞で、最後の主節の主語。lo は il pavimento を受ける。"
+        }
+      ],
+      "model_ja": "一年後、四十三番地には、明滅する看板を掲げた携帯電話の店があった。床は昔のままで、それに気づく者はもうずいぶん年老いていた。",
+      "traps": [
+        "REF",
+        "SYN"
+      ]
+    },
+    {
+      "idx": 6,
+      "text": "I ragazzi che ci lavoravano, gentilissimi, non capivano perché certe signore entrassero, guardassero il pavimento e uscissero senza comprare nulla.",
+      "words": 20,
+      "skeleton": {
+        "mainVerb": "non capivano",
+        "subject": "I ragazzi",
+        "core_ja": "そこで働く若者たちは、なぜ〜なのか分からなかった。"
+      },
+      "clauses": [
+        {
+          "span": [
+            2,
+            4
+          ],
+          "type": "rel",
+          "note_ja": "I ragazzi を先行詞とする関係節。ci は「そこで」を意味する副詞的代名詞。"
+        },
+        {
+          "span": [
+            5,
+            5
+          ],
+          "type": "ins",
+          "note_ja": "gentilissimi は主語に係る挿入的な形容詞。"
+        },
+        {
+          "span": [
+            8,
+            19
+          ],
+          "type": "sub",
+          "note_ja": "perché が導く間接疑問文。接続法半過去が entrassero / guardassero / uscissero の三つに及ぶ。"
+        },
+        {
+          "span": [
+            17,
+            19
+          ],
+          "type": "sub",
+          "note_ja": "senza + 不定詞。"
+        }
+      ],
+      "model_ja": "そこで働くとても感じのよい若者たちには、なぜある種の婦人たちが入ってきて、床を見つめ、何も買わずに出ていくのかが分からなかった。",
+      "traps": [
+        "MOOD",
+        "REF",
+        "OMIT"
+      ]
+    }
+  ],
+  "model_ja_full": "その店は二月のある火曜日に閉じた。界隈の誰ひとり、本当に予期してはいなかった。四十一年のあいだ、ナディアさんは七時半に店を開け、コーヒーが上がりきるのを待ちながら最初の客に応対し、母親と一緒に入ってくる子どもたちの名前だけでなく、挨拶もせずに入ってくる客の癖までも覚えてきた。\n\nその火曜日の十一時ごろ、界隈の誰も見たことのない、書類鞄を提げた男がやって来て、二十分ほど彼女と話し込んだ。それきりシャッターは下りたままだった。その後の数日、何人かの客が空になったショーウィンドウの前で足を止めた。手書きの数語だけの貼り紙が、それ以上の何かを語ってくれるとでもいうように。その間に姉妹の家へ移っていたナディアさんは、自分の店の跡に何が入ったのかを見に戻ることは一度もなかった。一年後、四十三番地には、明滅する看板を掲げた携帯電話の店があった。床は昔のままで、それに気づく者はもうずいぶん年老いていた。そこで働くとても感じのよい若者たちには、なぜある種の婦人たちが入ってきて、床を見つめ、何も買わずに出ていくのかが分からなかった。",
+  "vocab": [
+    {
+      "it": "aspettarsi",
+      "ja": "予期する",
+      "hint": "辞書を引くべき"
+    },
+    {
+      "it": "cartella",
+      "ja": "書類鞄",
+      "hint": "辞書を引くべき"
+    },
+    {
+      "it": "saracinesca",
+      "ja": "(店の)シャッター",
+      "hint": "辞書を引くべき"
+    },
+    {
+      "it": "vetrina",
+      "ja": "ショーウィンドウ",
+      "hint": "推測可"
+    },
+    {
+      "it": "cartello",
+      "ja": "貼り紙・札",
+      "hint": "推測可"
+    },
+    {
+      "it": "nel frattempo",
+      "ja": "その間に",
+      "hint": "辞書を引くべき"
+    },
+    {
+      "it": "trasferirsi",
+      "ja": "引っ越す",
+      "hint": "推測可"
+    },
+    {
+      "it": "pavimento",
+      "ja": "床",
+      "hint": "辞書を引くべき"
+    }
+  ]
+}

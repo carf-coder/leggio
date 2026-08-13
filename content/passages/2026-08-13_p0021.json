@@ -1,0 +1,94 @@
+{
+  "id": "p0021",
+  "phase": "P1",
+  "genre": "narrative",
+  "wordCount": 112,
+  "title_ja": "本にはさまれた手紙",
+  "text": "Nel libro comprato per due euro sulla bancarella c'era una lettera, piegata in quattro tra le ultime pagine. Non portava data né firma, e le poche righe scritte a penna sembravano interrotte a metà.\n\nChi l'aveva scritta si scusava di qualcosa che non veniva mai nominato, come se il destinatario dovesse saperlo già. Paolo la lesse due volte, poi la rimise dov'era e chiuse il libro. Per settimane pensò di riportarlo alla bancarella e di chiedere a chi glielo aveva venduto, ma non lo fece mai. Restava però una domanda che tornava ogni volta che apriva un libro di seconda mano: quante altre pagine nascondevano qualcosa che non era destinato a lui.",
+  "sentences": [
+    {
+      "idx": 0,
+      "text": "Nel libro comprato per due euro sulla bancarella c'era una lettera, piegata in quattro tra le ultime pagine.",
+      "words": 18,
+      "skeleton": {"mainVerb": "c'era", "subject": "una lettera", "core_ja": "その本の中に一通の手紙があった。"},
+      "clauses": [
+        {"span": [2, 7], "type": "ins", "note_ja": "comprato 以下は il libro に一致する過去分詞句。"},
+        {"span": [11, 17], "type": "ins", "note_ja": "piegata は una lettera に一致する過去分詞句(女性単数)。一致の形が修飾先を決める。"}
+      ],
+      "model_ja": "露店で二ユーロで買ったその本には、終わりの数ページのあいだに四つ折りの手紙がはさまっていた。",
+      "traps": ["MOD", "SYN"]
+    },
+    {
+      "idx": 1,
+      "text": "Non portava data né firma, e le poche righe scritte a penna sembravano interrotte a metà.",
+      "words": 16,
+      "skeleton": {"mainVerb": "portava / sembravano", "subject": "(la lettera) 省略 / le poche righe", "core_ja": "日付も署名もなく、数行は途中で切れているように見えた。"},
+      "clauses": [
+        {"span": [9, 11], "type": "ins", "note_ja": "scritte a penna は le righe に一致する過去分詞句(女性複数)。主語と動詞 sembravano を隔てている。"},
+        {"span": [13, 15], "type": "ins", "note_ja": "interrotte は sembravano の補語となる過去分詞(「中断されているように見えた」)。"}
+      ],
+      "model_ja": "日付も署名もなく、ペンで書かれたわずかな行は、半ばで途切れているように見えた。",
+      "traps": ["MOD", "OMIT"]
+    },
+    {
+      "idx": 2,
+      "text": "Chi l'aveva scritta si scusava di qualcosa che non veniva mai nominato, come se il destinatario dovesse saperlo già.",
+      "words": 19,
+      "skeleton": {"mainVerb": "si scusava", "subject": "Chi (= colui che)", "core_ja": "それを書いた人は何かを詫びていた。"},
+      "clauses": [
+        {"span": [0, 2], "type": "rel", "note_ja": "Chi で始まる融合関係詞句が主語。scritta が女性単数なのは目的語 l'(= la lettera)に一致するため。"},
+        {"span": [7, 11], "type": "rel", "note_ja": "qualcosa を先行詞とする関係節。veniva nominato は venire 受動の半過去。"},
+        {"span": [12, 18], "type": "sub", "note_ja": "come se + 接続法半過去 dovesse。saperlo の lo は「その何か」。"}
+      ],
+      "model_ja": "それを書いた人は、一度も名指されない何かについて詫びていた。まるで、受け取る側はそれをすでに知っているはずだとでもいうように。",
+      "traps": ["MOOD", "REF", "MOD"]
+    },
+    {
+      "idx": 3,
+      "text": "Paolo la lesse due volte, poi la rimise dov'era e chiuse il libro.",
+      "words": 13,
+      "skeleton": {"mainVerb": "lesse / rimise / chiuse", "subject": "Paolo", "core_ja": "パオロは二度読み、元の場所に戻し、本を閉じた。"},
+      "clauses": [
+        {"span": [8, 8], "type": "sub", "note_ja": "dov'era = dove era の縮約。場所を表す従属節(「それがあった場所に」)。"}
+      ],
+      "model_ja": "パオロはそれを二度読み、元あった場所に戻して、本を閉じた。",
+      "traps": ["REF", "SYN"]
+    },
+    {
+      "idx": 4,
+      "text": "Per settimane pensò di riportarlo alla bancarella e di chiedere a chi glielo aveva venduto, ma non lo fece mai.",
+      "words": 20,
+      "skeleton": {"mainVerb": "pensò / fece", "subject": "(Paolo) 省略", "core_ja": "何週間も彼は〜しようと考えたが、決してしなかった。"},
+      "clauses": [
+        {"span": [3, 14], "type": "sub", "note_ja": "pensare di + 不定詞が二つ並列している(riportarlo と chiedere)。riportarlo の lo は il libro。"},
+        {"span": [11, 14], "type": "rel", "note_ja": "chi は前置詞 a のあとの融合関係詞。glielo は「彼にそれを」で、gli(彼に)+ lo(それを)の結合形。"}
+      ],
+      "model_ja": "何週間ものあいだ、彼はその本を露店に持ち帰り、売った相手に尋ねてみようと考えた。しかし結局、一度もそうしなかった。",
+      "traps": ["REF", "SYN", "OMIT"]
+    },
+    {
+      "idx": 5,
+      "text": "Restava però una domanda che tornava ogni volta che apriva un libro di seconda mano: quante altre pagine nascondevano qualcosa che non era destinato a lui.",
+      "words": 26,
+      "skeleton": {"mainVerb": "Restava", "subject": "una domanda(動詞のあとに置かれた主語)", "core_ja": "しかし一つの問いが残っていた。"},
+      "clauses": [
+        {"span": [4, 14], "type": "rel", "note_ja": "una domanda を先行詞とする関係節。"},
+        {"span": [6, 14], "type": "sub", "note_ja": "ogni volta che の時の副詞節(「〜するたびに」)。この che は関係代名詞ではない。"},
+        {"span": [15, 25], "type": "sub", "note_ja": "コロンのあとは una domanda の内容を示す間接疑問文。quante は pagine に係る疑問形容詞。"},
+        {"span": [20, 25], "type": "rel", "note_ja": "qualcosa を先行詞とする関係節。"}
+      ],
+      "model_ja": "しかし一つの問いが残った。中古の本を開くたびに戻ってくる問い、すなわち、ほかにどれだけのページが、自分に宛てられたのではない何かを隠しているのか、という問いである。",
+      "traps": ["SYN", "MOD", "LEX"]
+    }
+  ],
+  "model_ja_full": "露店で二ユーロで買ったその本には、終わりの数ページのあいだに四つ折りの手紙がはさまっていた。日付も署名もなく、ペンで書かれたわずかな行は、半ばで途切れているように見えた。\n\nそれを書いた人は、一度も名指されない何かについて詫びていた。まるで、受け取る側はそれをすでに知っているはずだとでもいうように。パオロはそれを二度読み、元あった場所に戻して、本を閉じた。何週間ものあいだ、彼はその本を露店に持ち帰り、売った相手に尋ねてみようと考えた。しかし結局、一度もそうしなかった。しかし一つの問いが残った。中古の本を開くたびに戻ってくる問い、すなわち、ほかにどれだけのページが、自分に宛てられたのではない何かを隠しているのか、という問いである。",
+  "vocab": [
+    {"it": "bancarella", "ja": "露店", "hint": "辞書を引くべき"},
+    {"it": "piegare", "ja": "折る", "hint": "推測可"},
+    {"it": "firma", "ja": "署名", "hint": "推測可"},
+    {"it": "nominare", "ja": "名を挙げる", "hint": "辞書を引くべき"},
+    {"it": "destinatario", "ja": "受取人", "hint": "推測可"},
+    {"it": "di seconda mano", "ja": "中古の", "hint": "辞書を引くべき"},
+    {"it": "essere destinato a", "ja": "〜に宛てられている", "hint": "推測可"}
+  ]
+}

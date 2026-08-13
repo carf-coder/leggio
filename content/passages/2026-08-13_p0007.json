@@ -1,0 +1,80 @@
+{
+  "id": "p0007",
+  "phase": "P1",
+  "genre": "essay",
+  "wordCount": 116,
+  "title_ja": "水道と街角の水飲み場",
+  "text": "Chi arriva per la prima volta a Roma nota subito che l'acqua scorre senza interruzione da centinaia di fontanelle di ghisa. Non si tratta di uno spreco recente: la città riceve ancora oggi, attraverso condotti in parte antichi, l'acqua di sorgenti che si trovano a decine di chilometri di distanza.\n\nGli ingegneri romani avevano capito che una città non può crescere se non le si garantisce l'acqua, e costruirono acquedotti la cui pendenza era calcolata con una precisione sorprendente. Molti visitatori credono che quelle fontane siano semplici ornamenti, mentre servivano e servono ancora a chi lavora per strada. Le fontanelle non hanno un rubinetto perché l'acqua in eccesso torna nelle condutture e contribuisce a tenerle pulite.",
+  "sentences": [
+    {
+      "idx": 0,
+      "text": "Chi arriva per la prima volta a Roma nota subito che l'acqua scorre senza interruzione da centinaia di fontanelle di ghisa.",
+      "words": 21,
+      "skeleton": {"mainVerb": "nota", "subject": "Chi (= colui che)", "core_ja": "初めて来る人はすぐに〜に気づく。"},
+      "clauses": [
+        {"span": [0, 7], "type": "rel", "note_ja": "Chi は融合関係詞。この部分全体が主節の主語。"},
+        {"span": [10, 20], "type": "sub", "note_ja": "nota の目的節。主語は l'acqua、動詞は scorre。"}
+      ],
+      "model_ja": "初めてローマを訪れる人は、数百の鋳鉄製の水飲み場から水が絶えず流れ続けていることにすぐ気づく。",
+      "traps": ["SYN", "LEX"]
+    },
+    {
+      "idx": 1,
+      "text": "Non si tratta di uno spreco recente: la città riceve ancora oggi, attraverso condotti in parte antichi, l'acqua di sorgenti che si trovano a decine di chilometri di distanza.",
+      "words": 29,
+      "skeleton": {"mainVerb": "si tratta / riceve", "subject": "非人称 / la città", "core_ja": "それは浪費ではない。街は今も水源の水を受け取っている。"},
+      "clauses": [
+        {"span": [12, 16], "type": "ins", "note_ja": "動詞 riceve と目的語 l'acqua の間に割り込む挿入句。外して骨格を先に確定する。"},
+        {"span": [20, 28], "type": "rel", "note_ja": "sorgenti を先行詞とする関係節。動詞が複数形 si trovano であることが、先行詞は l'acqua ではなく sorgenti であることを示す。"}
+      ],
+      "model_ja": "これは最近始まった浪費ではない。この街は今日もなお、一部は古代の導管を通って、数十キロ離れた場所にある水源の水を受け取っているのである。",
+      "traps": ["MOD", "SYN"]
+    },
+    {
+      "idx": 2,
+      "text": "Gli ingegneri romani avevano capito che una città non può crescere se non le si garantisce l'acqua, e costruirono acquedotti la cui pendenza era calcolata con una precisione sorprendente.",
+      "words": 29,
+      "skeleton": {"mainVerb": "avevano capito / costruirono", "subject": "Gli ingegneri romani", "core_ja": "ローマの技師たちは〜を理解しており、水道橋を建設した。"},
+      "clauses": [
+        {"span": [5, 16], "type": "sub", "note_ja": "avevano capito の目的節。"},
+        {"span": [11, 16], "type": "sub", "note_ja": "se の条件節が目的節の内部に入れ子になっている。le は alla città を受ける間接目的語、si は非人称。"},
+        {"span": [20, 28], "type": "rel", "note_ja": "la cui pendenza = 「その勾配が」。cui は所有を表す関係詞で、直後の名詞に冠詞が付く形に注意。"}
+      ],
+      "model_ja": "ローマの技師たちは、水を確保しなければ都市は成長できないと理解しており、驚くほど正確に勾配を計算した水道橋を建設した。",
+      "traps": ["REF", "SYN", "MOD"]
+    },
+    {
+      "idx": 3,
+      "text": "Molti visitatori credono che quelle fontane siano semplici ornamenti, mentre servivano e servono ancora a chi lavora per strada.",
+      "words": 19,
+      "skeleton": {"mainVerb": "credono", "subject": "Molti visitatori", "core_ja": "多くの訪問者は〜と思っているが、実際は〜である。"},
+      "clauses": [
+        {"span": [3, 8], "type": "sub", "note_ja": "credono に従属するche節。接続法 siano。"},
+        {"span": [9, 18], "type": "sub", "note_ja": "この mentre は時ではなく対比(「ところが実際は」)。servivano(半過去)と servono(現在)の時制の対比が要点。"},
+        {"span": [15, 18], "type": "rel", "note_ja": "chi は「〜する人」。前置詞 a のあとに置かれた融合関係詞。"}
+      ],
+      "model_ja": "多くの訪問者はそれらの水場を単なる装飾だと思っているが、実際には路上で働く人々の役に立ってきたし、今も立っている。",
+      "traps": ["MOOD", "SYN"]
+    },
+    {
+      "idx": 4,
+      "text": "Le fontanelle non hanno un rubinetto perché l'acqua in eccesso torna nelle condutture e contribuisce a tenerle pulite.",
+      "words": 18,
+      "skeleton": {"mainVerb": "hanno", "subject": "Le fontanelle", "core_ja": "水場に蛇口はない。なぜなら〜だからである。"},
+      "clauses": [
+        {"span": [6, 17], "type": "sub", "note_ja": "perché の理由節。主語は l'acqua で、torna と contribuisce の二つの動詞を取る。"}
+      ],
+      "model_ja": "これらの水場に蛇口がないのは、あふれた水が導管に戻り、それを清潔に保つのに役立っているからである。",
+      "traps": ["REF", "OMIT"]
+    }
+  ],
+  "model_ja_full": "初めてローマを訪れる人は、数百の鋳鉄製の水飲み場から水が絶えず流れ続けていることにすぐ気づく。これは最近始まった浪費ではない。この街は今日もなお、一部は古代の導管を通って、数十キロ離れた場所にある水源の水を受け取っているのである。\n\nローマの技師たちは、水を確保しなければ都市は成長できないと理解しており、驚くほど正確に勾配を計算した水道橋を建設した。多くの訪問者はそれらの水場を単なる装飾だと思っているが、実際には路上で働く人々の役に立ってきたし、今も立っている。これらの水場に蛇口がないのは、あふれた水が導管に戻り、それを清潔に保つのに役立っているからである。",
+  "vocab": [
+    {"it": "ghisa", "ja": "鋳鉄", "hint": "辞書を引くべき"},
+    {"it": "spreco", "ja": "浪費", "hint": "辞書を引くべき"},
+    {"it": "sorgente", "ja": "泉・水源", "hint": "推測可"},
+    {"it": "pendenza", "ja": "勾配", "hint": "辞書を引くべき"},
+    {"it": "condutture", "ja": "導管", "hint": "推測可"},
+    {"it": "rubinetto", "ja": "蛇口", "hint": "辞書を引くべき"}
+  ]
+}

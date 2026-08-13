@@ -1,0 +1,92 @@
+{
+  "id": "p0020",
+  "phase": "P1",
+  "genre": "narrative",
+  "wordCount": 110,
+  "title_ja": "書店での最初の一日",
+  "text": "Marta cominciò a lavorare in libreria un lunedì di ottobre, e per tutta la mattina non fece altro che sbagliare. Mise i romanzi tra i libri di storia, dimenticò il nome dell'autore che tutti chiedevano e consigliò a un signore un volume che era esaurito da mesi.\n\nIl proprietario, che la osservava senza dire nulla, intervenne soltanto una volta, per chiedere al cliente se avesse tempo di aspettare. La sera, mentre chiudevano, le disse che nei primi giorni contava soltanto imparare dove si trovavano le cose. Marta capì che sarebbe rimasta. Il giorno dopo arrivò mezz'ora prima dell'apertura e cominciò a girare fra gli scaffali con un quaderno in mano.",
+  "sentences": [
+    {
+      "idx": 0,
+      "text": "Marta cominciò a lavorare in libreria un lunedì di ottobre, e per tutta la mattina non fece altro che sbagliare.",
+      "words": 20,
+      "skeleton": {"mainVerb": "cominciò / non fece", "subject": "Marta", "core_ja": "マルタは書店で働き始め、午前中は間違えてばかりいた。"},
+      "clauses": [
+        {"span": [2, 9], "type": "sub", "note_ja": "cominciare a + 不定詞の不定詞句。"},
+        {"span": [15, 19], "type": "sub", "note_ja": "non fare altro che + 不定詞で「〜してばかりいる」。この che を関係詞と取らないこと。"}
+      ],
+      "model_ja": "マルタは十月のある月曜日に書店で働き始め、午前中はひたすら失敗を重ねた。",
+      "traps": ["LEX", "SYN"]
+    },
+    {
+      "idx": 1,
+      "text": "Mise i romanzi tra i libri di storia, dimenticò il nome dell'autore che tutti chiedevano e consigliò a un signore un volume che era esaurito da mesi.",
+      "words": 27,
+      "skeleton": {"mainVerb": "Mise / dimenticò / consigliò", "subject": "(Marta) 省略", "core_ja": "彼女は小説を歴史書の中に置き、著者名を忘れ、ある紳士に本を勧めた。"},
+      "clauses": [
+        {"span": [12, 14], "type": "rel", "note_ja": "l'autore を先行詞とする関係節。tutti が主語、che が目的語。"},
+        {"span": [22, 26], "type": "rel", "note_ja": "un volume を先行詞とする関係節。era esaurito da mesi は「何か月も前から品切れだった」。"}
+      ],
+      "model_ja": "彼女は小説を歴史書の棚に入れ、誰もが尋ねる著者の名前を忘れ、ある紳士に何か月も前から品切れの本を勧めた。",
+      "traps": ["SYN", "MOD", "LEX"]
+    },
+    {
+      "idx": 2,
+      "text": "Il proprietario, che la osservava senza dire nulla, intervenne soltanto una volta, per chiedere al cliente se avesse tempo di aspettare.",
+      "words": 21,
+      "skeleton": {"mainVerb": "intervenne", "subject": "Il proprietario", "core_ja": "店主が口をはさんだのは一度だけだった。"},
+      "clauses": [
+        {"span": [2, 7], "type": "rel", "note_ja": "Il proprietario を修飾する非制限的関係節。主語と動詞 intervenne を隔てている。la は Marta。"},
+        {"span": [5, 7], "type": "sub", "note_ja": "senza + 不定詞。"},
+        {"span": [12, 20], "type": "sub", "note_ja": "per + 不定詞の目的節。"},
+        {"span": [16, 20], "type": "sub", "note_ja": "se が導く間接疑問文。接続法半過去 avesse。"}
+      ],
+      "model_ja": "何も言わずに彼女を見ていた店主が口を出したのは一度だけで、それは客に、待つ時間があるかどうかを尋ねるためだった。",
+      "traps": ["SYN", "MOOD", "REF"]
+    },
+    {
+      "idx": 3,
+      "text": "La sera, mentre chiudevano, le disse che nei primi giorni contava soltanto imparare dove si trovavano le cose.",
+      "words": 18,
+      "skeleton": {"mainVerb": "disse", "subject": "(Il proprietario) 省略", "core_ja": "夕方、店を閉めながら、彼は彼女に〜と言った。"},
+      "clauses": [
+        {"span": [2, 3], "type": "sub", "note_ja": "mentre の時の副詞節。"},
+        {"span": [6, 17], "type": "sub", "note_ja": "disse の目的節。contava は非人称的に「重要である」の意味で、その主語は不定詞 imparare。"},
+        {"span": [13, 17], "type": "sub", "note_ja": "dove が導く間接疑問文。si trovavano の主語は le cose。"}
+      ],
+      "model_ja": "夕方、店を閉めながら、彼は彼女に、最初の数日は物の置き場所を覚えることだけが大事なのだと言った。",
+      "traps": ["LEX", "SYN", "REF"]
+    },
+    {
+      "idx": 4,
+      "text": "Marta capì che sarebbe rimasta.",
+      "words": 5,
+      "skeleton": {"mainVerb": "capì", "subject": "Marta", "core_ja": "マルタは〜と悟った。"},
+      "clauses": [
+        {"span": [2, 4], "type": "sub", "note_ja": "capì の目的節。sarebbe rimasta は過去から見た未来(「これから留まることになる」)。過去完了と取り違えないこと。"}
+      ],
+      "model_ja": "マルタは、自分はここに残ることになる、と悟った。",
+      "traps": ["MOOD"]
+    },
+    {
+      "idx": 5,
+      "text": "Il giorno dopo arrivò mezz'ora prima dell'apertura e cominciò a girare fra gli scaffali con un quaderno in mano.",
+      "words": 19,
+      "skeleton": {"mainVerb": "arrivò / cominciò", "subject": "(Marta) 省略", "core_ja": "翌日、彼女は開店の三十分前に来て、棚を回り始めた。"},
+      "clauses": [
+        {"span": [9, 18], "type": "sub", "note_ja": "cominciare a + 不定詞の不定詞句。con un quaderno in mano は付帯状況(「手帳を手にして」)。"}
+      ],
+      "model_ja": "翌日、彼女は開店の三十分前に来て、手帳を手に書棚のあいだを歩き回り始めた。",
+      "traps": ["SYN", "OMIT"]
+    }
+  ],
+  "model_ja_full": "マルタは十月のある月曜日に書店で働き始め、午前中はひたすら失敗を重ねた。彼女は小説を歴史書の棚に入れ、誰もが尋ねる著者の名前を忘れ、ある紳士に何か月も前から品切れの本を勧めた。\n\n何も言わずに彼女を見ていた店主が口を出したのは一度だけで、それは客に、待つ時間があるかどうかを尋ねるためだった。夕方、店を閉めながら、彼は彼女に、最初の数日は物の置き場所を覚えることだけが大事なのだと言った。マルタは、自分はここに残ることになる、と悟った。翌日、彼女は開店の三十分前に来て、手帳を手に書棚のあいだを歩き回り始めた。",
+  "vocab": [
+    {"it": "non fare altro che", "ja": "〜してばかりいる", "hint": "辞書を引くべき"},
+    {"it": "esaurito", "ja": "品切れの", "hint": "辞書を引くべき"},
+    {"it": "intervenire", "ja": "口をはさむ・介入する", "hint": "推測可"},
+    {"it": "contare", "ja": "重要である", "hint": "辞書を引くべき"},
+    {"it": "scaffale", "ja": "棚", "hint": "辞書を引くべき"},
+    {"it": "apertura", "ja": "開店", "hint": "推測可"}
+  ]
+}

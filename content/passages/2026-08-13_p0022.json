@@ -1,0 +1,92 @@
+{
+  "id": "p0022",
+  "phase": "P1",
+  "genre": "practical",
+  "wordCount": 124,
+  "title_ja": "賃貸物件の見方",
+  "text": "Chi cerca una casa in affitto dovrebbe visitarla due volte, e la seconda volta a un'ora diversa dalla prima. La luce del mattino nasconde le macchie di umidità, e il rumore della strada, che a mezzogiorno sembra tollerabile, cambia completamente dopo le sette di sera.\n\nConviene aprire i rubinetti, chiedere quanto si è speso l'inverno scorso per il riscaldamento e guardare i soffitti negli angoli. Se il proprietario si mostra infastidito da queste domande, è bene ricordare che si sta per firmare un contratto di anni. Nessuno, in fondo, rimpiange di aver perso mezz'ora in più prima di decidere. Vale la pena inoltre parlare con chi abita al piano di sotto, perché nessun annuncio dirà mai quanto rumore fa la scala condominiale di notte.",
+  "sentences": [
+    {
+      "idx": 0,
+      "text": "Chi cerca una casa in affitto dovrebbe visitarla due volte, e la seconda volta a un'ora diversa dalla prima.",
+      "words": 19,
+      "skeleton": {"mainVerb": "dovrebbe visitarla", "subject": "Chi (= colui che)", "core_ja": "賃貸物件を探す人は二度見に行くべきである。"},
+      "clauses": [
+        {"span": [0, 5], "type": "rel", "note_ja": "Chi で始まる融合関係詞句が主節の主語。visitarla の la は una casa。"}
+      ],
+      "model_ja": "賃貸の家を探す人は、二度その家を見に行くべきである。しかも二度目は、一度目とは違う時刻に行くべきだ。",
+      "traps": ["REF", "MOOD"]
+    },
+    {
+      "idx": 1,
+      "text": "La luce del mattino nasconde le macchie di umidità, e il rumore della strada, che a mezzogiorno sembra tollerabile, cambia completamente dopo le sette di sera.",
+      "words": 26,
+      "skeleton": {"mainVerb": "nasconde / cambia", "subject": "La luce del mattino / il rumore della strada", "core_ja": "朝の光は湿気の染みを隠し、通りの騒音は夕方以降まったく変わる。"},
+      "clauses": [
+        {"span": [14, 18], "type": "rel", "note_ja": "il rumore を先行詞とする非制限的関係節。主語と動詞 cambia を隔てているので、いったん外して骨格を取る。"}
+      ],
+      "model_ja": "朝の光は湿気の染みを覆い隠す。そして、昼には我慢できる程度に思える通りの騒音も、夜七時を過ぎると全く変わってしまう。",
+      "traps": ["SYN", "MOD"]
+    },
+    {
+      "idx": 2,
+      "text": "Conviene aprire i rubinetti, chiedere quanto si è speso l'inverno scorso per il riscaldamento e guardare i soffitti negli angoli.",
+      "words": 20,
+      "skeleton": {"mainVerb": "Conviene", "subject": "aprire / chiedere / guardare(三つの不定詞)", "core_ja": "蛇口を開け、費用を尋ね、天井を見るのがよい。"},
+      "clauses": [
+        {"span": [5, 13], "type": "sub", "note_ja": "quanto が導く間接疑問文。si è speso は非人称のsi + 近過去(「いくら使われたか」)。"}
+      ],
+      "model_ja": "蛇口を全部開けてみること、昨冬の暖房費がいくらかかったかを尋ねること、そして部屋の隅の天井を見ておくことが望ましい。",
+      "traps": ["SYN", "OMIT"]
+    },
+    {
+      "idx": 3,
+      "text": "Se il proprietario si mostra infastidito da queste domande, è bene ricordare che si sta per firmare un contratto di anni.",
+      "words": 21,
+      "skeleton": {"mainVerb": "è bene", "subject": "ricordare(不定詞)", "core_ja": "大家が嫌がるなら、〜を思い出すのがよい。"},
+      "clauses": [
+        {"span": [0, 8], "type": "sub", "note_ja": "se の条件節。mostrarsi + 形容詞で「〜な様子を見せる」。"},
+        {"span": [12, 20], "type": "sub", "note_ja": "ricordare の目的節。stare per + 不定詞で「今にも〜しようとしている」。"}
+      ],
+      "model_ja": "こうした質問に大家が不快そうな様子を見せるなら、自分がこれから何年もの契約に署名しようとしているのだと思い出すとよい。",
+      "traps": ["LEX", "MOOD"]
+    },
+    {
+      "idx": 4,
+      "text": "Nessuno, in fondo, rimpiange di aver perso mezz'ora in più prima di decidere.",
+      "words": 13,
+      "skeleton": {"mainVerb": "rimpiange", "subject": "Nessuno", "core_ja": "結局のところ、誰も後悔しない。"},
+      "clauses": [
+        {"span": [1, 2], "type": "ins", "note_ja": "in fondo は主語と動詞の間の挿入句。"},
+        {"span": [4, 12], "type": "sub", "note_ja": "rimpiangere di + 完了不定詞(「〜したことを惜しむ」)。"},
+        {"span": [10, 12], "type": "sub", "note_ja": "prima di + 不定詞。"}
+      ],
+      "model_ja": "結局のところ、決める前に三十分余計にかけたことを惜しむ人など誰もいない。",
+      "traps": ["SYN", "ADD"]
+    },
+    {
+      "idx": 5,
+      "text": "Vale la pena inoltre parlare con chi abita al piano di sotto, perché nessun annuncio dirà mai quanto rumore fa la scala condominiale di notte.",
+      "words": 25,
+      "skeleton": {"mainVerb": "Vale la pena", "subject": "parlare(不定詞)", "core_ja": "下の階の住人と話す価値がある。"},
+      "clauses": [
+        {"span": [6, 11], "type": "rel", "note_ja": "chi は前置詞 con のあとの融合関係詞(「〜する人」)。"},
+        {"span": [12, 24], "type": "sub", "note_ja": "perché の理由節。dirà は単純未来。"},
+        {"span": [17, 24], "type": "sub", "note_ja": "quanto が導く間接疑問文。主語 la scala が動詞 fa のあとに置かれている。"}
+      ],
+      "model_ja": "さらに、下の階に住む人と話しておく価値がある。夜に共用階段がどれほど音を立てるかは、どんな広告にも決して書かれていないからである。",
+      "traps": ["SYN", "MOOD"]
+    }
+  ],
+  "model_ja_full": "賃貸の家を探す人は、二度その家を見に行くべきである。しかも二度目は、一度目とは違う時刻に行くべきだ。朝の光は湿気の染みを覆い隠す。そして、昼には我慢できる程度に思える通りの騒音も、夜七時を過ぎると全く変わってしまう。\n\n蛇口を全部開けてみること、昨冬の暖房費がいくらかかったかを尋ねること、そして部屋の隅の天井を見ておくことが望ましい。こうした質問に大家が不快そうな様子を見せるなら、自分がこれから何年もの契約に署名しようとしているのだと思い出すとよい。結局のところ、決める前に三十分余計にかけたことを惜しむ人など誰もいない。さらに、下の階に住む人と話しておく価値がある。夜に共用階段がどれほど音を立てるかは、どんな広告にも決して書かれていないからである。",
+  "vocab": [
+    {"it": "affitto", "ja": "賃貸・家賃", "hint": "辞書を引くべき"},
+    {"it": "macchia di umidità", "ja": "湿気の染み", "hint": "推測可"},
+    {"it": "rubinetto", "ja": "蛇口", "hint": "辞書を引くべき"},
+    {"it": "riscaldamento", "ja": "暖房", "hint": "推測可"},
+    {"it": "soffitto", "ja": "天井", "hint": "辞書を引くべき"},
+    {"it": "infastidito", "ja": "不快に思った", "hint": "推測可"},
+    {"it": "valere la pena", "ja": "〜する価値がある", "hint": "辞書を引くべき"},
+    {"it": "condominiale", "ja": "集合住宅の共用の", "hint": "辞書を引くべき"}
+  ]
+}

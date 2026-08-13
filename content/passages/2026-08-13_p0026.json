@@ -1,0 +1,112 @@
+{
+  "id": "p0026",
+  "phase": "P2",
+  "genre": "essay",
+  "wordCount": 182,
+  "title_ja": "休みの日をめぐる歴史",
+  "text": "Per secoli il riposo settimanale non è stato una conquista dei lavoratori, ma un obbligo religioso, e chi lavorava di domenica poteva essere punito. Quando, tra Ottocento e Novecento, gli operai cominciarono a chiedere che quel giorno fosse riconosciuto anche dalle fabbriche, molti proprietari risposero che un uomo abituato all'ozio avrebbe reso meno negli altri sei giorni, e ci vollero decenni di scioperi perché quell'argomento venisse abbandonato.\n\nOggi il problema si è capovolto: non è il padrone a impedirci di riposare, ma un telefono che ci raggiunge dovunque. Alcuni sociologi osservano che il tempo libero, una volta ottenuto, è stato riempito di attività organizzate, come se non sapessimo che farcene. Il riposo, del resto, non consiste soltanto nel non lavorare, ma nel disporre di ore di cui nessuno chiede conto. Chi propone di aprire i negozi tutti i giorni sostiene che ciascuno sceglierà quando riposare, ma un giorno di riposo comune vale proprio perché è comune. Forse per questo la domenica pomeriggio, in molte città, conserva ancora quel silenzio un po' malinconico che a molti dà fastidio e che pochi vorrebbero perdere.",
+  "sentences": [
+    {
+      "idx": 0,
+      "text": "Per secoli il riposo settimanale non è stato una conquista dei lavoratori, ma un obbligo religioso, e chi lavorava di domenica poteva essere punito.",
+      "words": 24,
+      "skeleton": {"mainVerb": "non è stato / poteva", "subject": "il riposo settimanale / chi", "core_ja": "週の休みは労働者の勝ち取ったものではなく宗教上の義務だった。"},
+      "clauses": [
+        {"span": [17, 20], "type": "rel", "note_ja": "chi は融合関係詞で、この部分が後半の主節の主語。essere punito は受動の不定詞。"}
+      ],
+      "model_ja": "何世紀ものあいだ、週ごとの休みは労働者が勝ち取ったものではなく宗教上の義務であり、日曜に働く者は罰せられることもあった。",
+      "traps": ["SYN", "MOD"]
+    },
+    {
+      "idx": 1,
+      "text": "Quando, tra Ottocento e Novecento, gli operai cominciarono a chiedere che quel giorno fosse riconosciuto anche dalle fabbriche, molti proprietari risposero che un uomo abituato all'ozio avrebbe reso meno negli altri sei giorni, e ci vollero decenni di scioperi perché quell'argomento venisse abbandonato.",
+      "words": 43,
+      "skeleton": {"mainVerb": "risposero / ci vollero", "subject": "molti proprietari / decenni di scioperi", "core_ja": "労働者が要求し始めたとき、経営者は〜と答え、その主張が捨てられるまで数十年かかった。"},
+      "clauses": [
+        {"span": [0, 17], "type": "sub", "note_ja": "quando の時の副詞節。冒頭に挿入句が入るため、主語 gli operai の登場が遅れる。"},
+        {"span": [1, 4], "type": "ins", "note_ja": "tra Ottocento e Novecento は quando の直後に割り込む挿入句。"},
+        {"span": [10, 17], "type": "sub", "note_ja": "chiedere che + 接続法(fosse riconosciuto)。受動態の接続法半過去。"},
+        {"span": [21, 32], "type": "sub", "note_ja": "risposero の目的節。avrebbe reso は過去から見た未来(「〜することになるだろう」)。rendere は自動詞的に「成果を上げる」。"},
+        {"span": [24, 25], "type": "ins", "note_ja": "abituato all'ozio は un uomo に一致する過去分詞句。"},
+        {"span": [39, 42], "type": "sub", "note_ja": "この perché は目的・結果を表し接続法 venisse をとる。ci volle(volere の非人称用法)は「〜を要した」。"}
+      ],
+      "model_ja": "十九世紀から二十世紀にかけて、労働者たちがその日を工場にも認めさせようと要求し始めたとき、多くの経営者は、怠惰に慣れた人間は残りの六日の働きが落ちる、と答えた。そしてその論法が捨て去られるまでには、数十年に及ぶストライキを要した。",
+      "traps": ["MOOD", "SYN", "LEX"]
+    },
+    {
+      "idx": 2,
+      "text": "Oggi il problema si è capovolto: non è il padrone a impedirci di riposare, ma un telefono che ci raggiunge dovunque.",
+      "words": 21,
+      "skeleton": {"mainVerb": "si è capovolto / è", "subject": "il problema / il padrone・un telefono", "core_ja": "今日問題は逆転した。休息を妨げるのは雇い主ではなく電話である。"},
+      "clauses": [
+        {"span": [10, 13], "type": "sub", "note_ja": "essere + 主語 + a + 不定詞の強調構文(「〜するのは〜だ」)。impedirci の ci は「私たちが」。"},
+        {"span": [17, 20], "type": "rel", "note_ja": "un telefono を先行詞とする関係節。"}
+      ],
+      "model_ja": "今日、問題は逆さまになった。私たちの休息を妨げているのは雇い主ではなく、どこにいても追いかけてくる電話である。",
+      "traps": ["SYN", "REF"]
+    },
+    {
+      "idx": 3,
+      "text": "Alcuni sociologi osservano che il tempo libero, una volta ottenuto, è stato riempito di attività organizzate, come se non sapessimo che farcene.",
+      "words": 22,
+      "skeleton": {"mainVerb": "osservano", "subject": "Alcuni sociologi", "core_ja": "一部の社会学者は〜と指摘する。"},
+      "clauses": [
+        {"span": [3, 21], "type": "sub", "note_ja": "osservano の目的節。主語 il tempo libero と動詞 è stato riempito の間に挿入句が入る。"},
+        {"span": [7, 9], "type": "ins", "note_ja": "una volta ottenuto は「ひとたび手に入れられると」を表す挿入的な分詞構文。"},
+        {"span": [16, 21], "type": "sub", "note_ja": "come se + 接続法半過去 sapessimo。che farcene は「それをどうしたらよいか」の慣用表現。"}
+      ],
+      "model_ja": "一部の社会学者は、自由な時間はひとたび手に入るや、組織された活動で埋め尽くされてしまった、まるでそれをどう扱えばよいか分からないかのように、と指摘する。",
+      "traps": ["MOOD", "SYN", "LEX"]
+    },
+    {
+      "idx": 4,
+      "text": "Il riposo, del resto, non consiste soltanto nel non lavorare, ma nel disporre di ore di cui nessuno chiede conto.",
+      "words": 20,
+      "skeleton": {"mainVerb": "consiste", "subject": "Il riposo", "core_ja": "休息とは働かないことだけでなく、〜を持つことにある。"},
+      "clauses": [
+        {"span": [2, 3], "type": "ins", "note_ja": "del resto は主語と動詞の間の挿入句。"},
+        {"span": [15, 19], "type": "rel", "note_ja": "di cui は ore を先行詞とする関係節。chiedere conto di qc で「〜について説明を求める」。"}
+      ],
+      "model_ja": "そもそも休息とは、働かずにいることだけを意味するのではなく、誰からも説明を求められない時間を自由に持つことを意味する。",
+      "traps": ["SYN", "LEX"]
+    },
+    {
+      "idx": 5,
+      "text": "Chi propone di aprire i negozi tutti i giorni sostiene che ciascuno sceglierà quando riposare, ma un giorno di riposo comune vale proprio perché è comune.",
+      "words": 26,
+      "skeleton": {"mainVerb": "sostiene / vale", "subject": "Chi / un giorno di riposo comune", "core_ja": "毎日開店を提案する人は〜と主張するが、共通の休日は共通だからこそ価値がある。"},
+      "clauses": [
+        {"span": [0, 8], "type": "rel", "note_ja": "Chi で始まる融合関係詞句が前半の主語。"},
+        {"span": [10, 14], "type": "sub", "note_ja": "sostiene の目的節。sceglierà は単純未来。"},
+        {"span": [13, 14], "type": "sub", "note_ja": "quando が導く間接疑問文(「いつ休むかを」)。"},
+        {"span": [23, 25], "type": "sub", "note_ja": "perché の理由節。同じ語 comune が主語側と理由節側で繰り返される点が要点。"}
+      ],
+      "model_ja": "店を毎日開けようと提案する人は、休む時は各自が選べばよいと主張する。しかし共通の休日は、まさに共通であるからこそ価値がある。",
+      "traps": ["SYN", "ADD"]
+    },
+    {
+      "idx": 6,
+      "text": "Forse per questo la domenica pomeriggio, in molte città, conserva ancora quel silenzio un po' malinconico che a molti dà fastidio e che pochi vorrebbero perdere.",
+      "words": 26,
+      "skeleton": {"mainVerb": "conserva", "subject": "la domenica pomeriggio", "core_ja": "おそらくそのために、日曜の午後は今もあの静けさを保っている。"},
+      "clauses": [
+        {"span": [6, 8], "type": "ins", "note_ja": "in molte città は主語と動詞を隔てる挿入句。"},
+        {"span": [16, 20], "type": "rel", "note_ja": "quel silenzio を先行詞とする第一の関係節。dare fastidio a qcn で「〜を不快にさせる」。"},
+        {"span": [22, 25], "type": "rel", "note_ja": "同じ先行詞にかかる第二の関係節。条件法 vorrebbero。二つの関係節が逆の評価を並べている。"}
+      ],
+      "model_ja": "おそらくそのために、多くの街では日曜の午後が今なお、多くの人には煩わしく、しかし失うことを望む人はほとんどいない、あのわずかに物悲しい静けさを保っている。",
+      "traps": ["SYN", "MOD", "REF"]
+    }
+  ],
+  "model_ja_full": "何世紀ものあいだ、週ごとの休みは労働者が勝ち取ったものではなく宗教上の義務であり、日曜に働く者は罰せられることもあった。十九世紀から二十世紀にかけて、労働者たちがその日を工場にも認めさせようと要求し始めたとき、多くの経営者は、怠惰に慣れた人間は残りの六日の働きが落ちる、と答えた。そしてその論法が捨て去られるまでには、数十年に及ぶストライキを要した。\n\n今日、問題は逆さまになった。私たちの休息を妨げているのは雇い主ではなく、どこにいても追いかけてくる電話である。一部の社会学者は、自由な時間はひとたび手に入るや、組織された活動で埋め尽くされてしまった、まるでそれをどう扱えばよいか分からないかのように、と指摘する。そもそも休息とは、働かずにいることだけを意味するのではなく、誰からも説明を求められない時間を自由に持つことを意味する。店を毎日開けようと提案する人は、休む時は各自が選べばよいと主張する。しかし共通の休日は、まさに共通であるからこそ価値がある。おそらくそのために、多くの街では日曜の午後が今なお、多くの人には煩わしく、しかし失うことを望む人はほとんどいない、あのわずかに物悲しい静けさを保っている。",
+  "vocab": [
+    {"it": "conquista", "ja": "勝ち取ったもの", "hint": "推測可"},
+    {"it": "ozio", "ja": "怠惰・無為", "hint": "辞書を引くべき"},
+    {"it": "rendere", "ja": "成果を上げる", "hint": "辞書を引くべき"},
+    {"it": "sciopero", "ja": "ストライキ", "hint": "辞書を引くべき"},
+    {"it": "capovolgersi", "ja": "逆さまになる", "hint": "推測可"},
+    {"it": "chiedere conto di", "ja": "〜について説明を求める", "hint": "辞書を引くべき"},
+    {"it": "dare fastidio", "ja": "煩わしく思わせる", "hint": "辞書を引くべき"},
+    {"it": "malinconico", "ja": "物悲しい", "hint": "推測可"}
+  ]
+}

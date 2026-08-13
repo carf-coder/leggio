@@ -1,0 +1,80 @@
+{
+  "id": "p0024",
+  "phase": "P1",
+  "genre": "practical",
+  "wordCount": 100,
+  "title_ja": "眠れない夜と画面の光",
+  "text": "Chi fatica ad addormentarsi accusa quasi sempre il caffè, e quasi mai la luce degli schermi. Eppure il corpo decide l'ora del sonno in base alla luce che riceve, e uno schermo tenuto vicino agli occhi somiglia più al mattino che alla sera.\n\nNon è necessario rinunciare a tutto: basta che l'ultima mezz'ora della giornata sia occupata da qualcosa che non si illumini da solo. Chi ha provato racconta che il sonno arriva prima, anche se all'inizio la sera sembra più lunga. Il rimedio più efficace, del resto, è anche il più noioso: andare a letto sempre alla stessa ora.",
+  "sentences": [
+    {
+      "idx": 0,
+      "text": "Chi fatica ad addormentarsi accusa quasi sempre il caffè, e quasi mai la luce degli schermi.",
+      "words": 16,
+      "skeleton": {"mainVerb": "accusa", "subject": "Chi (= colui che)", "core_ja": "寝つけない人は、たいていコーヒーのせいにする。"},
+      "clauses": [
+        {"span": [0, 3], "type": "rel", "note_ja": "Chi で始まる融合関係詞句が主語。faticare a + 不定詞で「〜するのに苦労する」。"}
+      ],
+      "model_ja": "寝つきの悪い人は、ほとんどいつもコーヒーを責め、画面の光を責めることはまずない。",
+      "traps": ["SYN", "OMIT"]
+    },
+    {
+      "idx": 1,
+      "text": "Eppure il corpo decide l'ora del sonno in base alla luce che riceve, e uno schermo tenuto vicino agli occhi somiglia più al mattino che alla sera.",
+      "words": 27,
+      "skeleton": {"mainVerb": "decide / somiglia", "subject": "il corpo / uno schermo", "core_ja": "身体は受ける光をもとに眠る時刻を決め、画面は夕方より朝に似ている。"},
+      "clauses": [
+        {"span": [11, 12], "type": "rel", "note_ja": "la luce を先行詞とする関係節。riceve の主語は il corpo。"},
+        {"span": [16, 19], "type": "ins", "note_ja": "tenuto vicino agli occhi は uno schermo に一致する過去分詞句。主語と動詞 somiglia を隔てている。"}
+      ],
+      "model_ja": "しかし身体は、受け取る光をもとに眠る時刻を決めている。目の近くに置かれた画面は、夕方よりもむしろ朝に似ているのである。",
+      "traps": ["MOD", "SYN"]
+    },
+    {
+      "idx": 2,
+      "text": "Non è necessario rinunciare a tutto: basta che l'ultima mezz'ora della giornata sia occupata da qualcosa che non si illumini da solo.",
+      "words": 22,
+      "skeleton": {"mainVerb": "è necessario / basta", "subject": "rinunciare(不定詞) / che節", "core_ja": "すべてを諦める必要はない。〜であれば十分だ。"},
+      "clauses": [
+        {"span": [7, 21], "type": "sub", "note_ja": "basta che + 接続法(sia occupata)。「〜でありさえすればよい」。"},
+        {"span": [16, 21], "type": "rel", "note_ja": "qualcosa を先行詞とする関係節。不特定のものを指すため接続法 illumini になる。"}
+      ],
+      "model_ja": "すべてを諦める必要はない。一日の最後の三十分が、自分では光らない何かで占められていれば十分である。",
+      "traps": ["MOOD", "MOD"]
+    },
+    {
+      "idx": 3,
+      "text": "Chi ha provato racconta che il sonno arriva prima, anche se all'inizio la sera sembra più lunga.",
+      "words": 17,
+      "skeleton": {"mainVerb": "racconta", "subject": "Chi (= colui che)", "core_ja": "試した人は〜と語る。"},
+      "clauses": [
+        {"span": [0, 2], "type": "rel", "note_ja": "Chi で始まる融合関係詞句が主語。"},
+        {"span": [4, 16], "type": "sub", "note_ja": "racconta の目的節。"},
+        {"span": [9, 16], "type": "sub", "note_ja": "anche se の譲歩節。事実を述べているので直説法 sembra。"}
+      ],
+      "model_ja": "試した人は、最初のうちは夜が長く感じられるものの、眠気は早く訪れるようになると語る。",
+      "traps": ["MOOD", "SYN"]
+    },
+    {
+      "idx": 4,
+      "text": "Il rimedio più efficace, del resto, è anche il più noioso: andare a letto sempre alla stessa ora.",
+      "words": 18,
+      "skeleton": {"mainVerb": "è", "subject": "Il rimedio più efficace", "core_ja": "最も効く手立ては、最も退屈なものでもある。"},
+      "clauses": [
+        {"span": [4, 5], "type": "ins", "note_ja": "del resto は主語と動詞の間の挿入句(「もっとも」)。"},
+        {"span": [11, 17], "type": "sub", "note_ja": "コロンのあとの不定詞句が il più noioso の内容を示す。"}
+      ],
+      "model_ja": "もっとも、最も効き目のある手立ては、同時に最も退屈な手立てでもある。すなわち、いつも同じ時刻に床につくことである。",
+      "traps": ["SYN", "ADD"]
+    }
+  ],
+  "model_ja_full": "寝つきの悪い人は、ほとんどいつもコーヒーを責め、画面の光を責めることはまずない。しかし身体は、受け取る光をもとに眠る時刻を決めている。目の近くに置かれた画面は、夕方よりもむしろ朝に似ているのである。\n\nすべてを諦める必要はない。一日の最後の三十分が、自分では光らない何かで占められていれば十分である。試した人は、最初のうちは夜が長く感じられるものの、眠気は早く訪れるようになると語る。もっとも、最も効き目のある手立ては、同時に最も退屈な手立てでもある。すなわち、いつも同じ時刻に床につくことである。",
+  "vocab": [
+    {"it": "faticare a", "ja": "〜するのに苦労する", "hint": "辞書を引くべき"},
+    {"it": "addormentarsi", "ja": "寝つく", "hint": "推測可"},
+    {"it": "accusare", "ja": "責める・〜のせいにする", "hint": "辞書を引くべき"},
+    {"it": "in base a", "ja": "〜に基づいて", "hint": "辞書を引くべき"},
+    {"it": "somigliare a", "ja": "〜に似ている", "hint": "推測可"},
+    {"it": "rinunciare a", "ja": "〜を諦める", "hint": "推測可"},
+    {"it": "rimedio", "ja": "対処法", "hint": "辞書を引くべき"}
+  ]
+}

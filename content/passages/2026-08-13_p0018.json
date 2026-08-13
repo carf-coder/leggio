@@ -1,0 +1,94 @@
+{
+  "id": "p0018",
+  "phase": "P1",
+  "genre": "narrative",
+  "wordCount": 117,
+  "title_ja": "雪に閉ざされた村",
+  "text": "La neve cominciò a cadere il pomeriggio del ventidue, e per due giorni nessuno riuscì a scendere in pianura. Al terzo giorno il sindaco fece suonare la campana, e gli uomini che erano rimasti nel paese si trovarono davanti al municipio con le pale.\n\nErano meno di trenta, quasi tutti oltre i sessant'anni, perché i più giovani lavoravano da anni in città. Lavorarono fino al buio senza parlare molto, aprendo un passaggio largo quanto bastava per un'automobile. La sera, mentre bevevano qualcosa nell'unico bar rimasto aperto, qualcuno disse che l'anno seguente non sarebbero stati abbastanza, e nessuno gli rispose. Il giorno dopo, quando la strada fu aperta, nessuno andò a vedere se in pianura fosse cambiato qualcosa.",
+  "sentences": [
+    {
+      "idx": 0,
+      "text": "La neve cominciò a cadere il pomeriggio del ventidue, e per due giorni nessuno riuscì a scendere in pianura.",
+      "words": 19,
+      "skeleton": {"mainVerb": "cominciò / riuscì", "subject": "La neve / nessuno", "core_ja": "雪が降り始め、二日間誰も平野へ下りられなかった。"},
+      "clauses": [
+        {"span": [3, 8], "type": "sub", "note_ja": "cominciare a + 不定詞の不定詞句。il pomeriggio del ventidue は時を表す名詞句で、a cadere の目的語ではない。"},
+        {"span": [15, 18], "type": "sub", "note_ja": "riuscire a + 不定詞(「〜することができる」)。"}
+      ],
+      "model_ja": "雪は二十二日の午後に降り始め、二日のあいだ誰も平野へ下りることができなかった。",
+      "traps": ["SYN", "LEX"]
+    },
+    {
+      "idx": 1,
+      "text": "Al terzo giorno il sindaco fece suonare la campana, e gli uomini che erano rimasti nel paese si trovarono davanti al municipio con le pale.",
+      "words": 25,
+      "skeleton": {"mainVerb": "fece / si trovarono", "subject": "il sindaco / gli uomini", "core_ja": "三日目に村長は鐘を鳴らさせ、村に残っていた男たちが役場の前に集まった。"},
+      "clauses": [
+        {"span": [12, 16], "type": "rel", "note_ja": "gli uomini を先行詞とする関係節。主語と動詞 si trovarono を隔てている。"},
+        {"span": [6, 8], "type": "sub", "note_ja": "直前の fece に従属する不定詞句。fare + 不定詞の使役(「鳴らさせた」)で、鳴らしたのは村長自身ではない。"}
+      ],
+      "model_ja": "三日目に村長は鐘を鳴らさせ、村に残っていた男たちがスコップを手に役場の前に集まった。",
+      "traps": ["LEX", "SYN"]
+    },
+    {
+      "idx": 2,
+      "text": "Erano meno di trenta, quasi tutti oltre i sessant'anni, perché i più giovani lavoravano da anni in città.",
+      "words": 18,
+      "skeleton": {"mainVerb": "Erano", "subject": "(gli uomini) 省略", "core_ja": "彼らは三十人に満たなかった。"},
+      "clauses": [
+        {"span": [4, 8], "type": "ins", "note_ja": "quasi tutti oltre i sessant'anni は主語の状態を補足する挿入句(動詞がない)。"},
+        {"span": [9, 17], "type": "sub", "note_ja": "perché の理由節。lavoravano da anni は半過去 + da で「何年も前から働いていた」。"}
+      ],
+      "model_ja": "彼らは三十人に満たず、そのほとんどが六十を超えていた。若い者たちは何年も前から街で働いていたからである。",
+      "traps": ["MOOD", "OMIT"]
+    },
+    {
+      "idx": 3,
+      "text": "Lavorarono fino al buio senza parlare molto, aprendo un passaggio largo quanto bastava per un'automobile.",
+      "words": 15,
+      "skeleton": {"mainVerb": "Lavorarono", "subject": "(gli uomini) 省略", "core_ja": "彼らは暗くなるまで働いた。"},
+      "clauses": [
+        {"span": [4, 6], "type": "sub", "note_ja": "senza + 不定詞(「あまり話さずに」)。"},
+        {"span": [7, 14], "type": "ger", "note_ja": "aprendo のジェルンディオ句。結果を表す(「そして〜を開けた」)。"},
+        {"span": [11, 14], "type": "sub", "note_ja": "largo quanto bastava で「足りるだけの幅の」。quanto は比較の従属節を導く。"}
+      ],
+      "model_ja": "彼らは暗くなるまで、ほとんど言葉も交わさずに働き、車が一台通れるだけの幅の道を開けた。",
+      "traps": ["SYN", "LEX"]
+    },
+    {
+      "idx": 4,
+      "text": "La sera, mentre bevevano qualcosa nell'unico bar rimasto aperto, qualcuno disse che l'anno seguente non sarebbero stati abbastanza, e nessuno gli rispose.",
+      "words": 22,
+      "skeleton": {"mainVerb": "disse / rispose", "subject": "qualcuno / nessuno", "core_ja": "夜、誰かが〜と言い、誰も答えなかった。"},
+      "clauses": [
+        {"span": [2, 8], "type": "sub", "note_ja": "mentre の時の副詞節。"},
+        {"span": [7, 8], "type": "ins", "note_ja": "rimasto aperto は bar に一致する過去分詞句(「開いたままだった」)。"},
+        {"span": [11, 17], "type": "sub", "note_ja": "disse の目的節。sarebbero stati は過去から見た未来(「翌年には〜だろう」)。"}
+      ],
+      "model_ja": "その晩、ただ一軒だけ開いていた店で何か飲んでいるとき、誰かが、来年は人数が足りなくなるだろうと言った。誰も彼に答えなかった。",
+      "traps": ["MOOD", "REF", "SYN"]
+    },
+    {
+      "idx": 5,
+      "text": "Il giorno dopo, quando la strada fu aperta, nessuno andò a vedere se in pianura fosse cambiato qualcosa.",
+      "words": 18,
+      "skeleton": {"mainVerb": "andò", "subject": "nessuno", "core_ja": "翌日、誰も見に行かなかった。"},
+      "clauses": [
+        {"span": [3, 7], "type": "sub", "note_ja": "quando の時の副詞節。fu aperta は遠過去の受動態。"},
+        {"span": [12, 17], "type": "sub", "note_ja": "se が導く間接疑問文。接続法大過去 fosse cambiato で、主節より前の時点を表す。qualcosa が主語。"}
+      ],
+      "model_ja": "翌日、道が開いても、平野で何かが変わったかどうかを見に行く者は誰もいなかった。",
+      "traps": ["MOOD", "SYN"]
+    }
+  ],
+  "model_ja_full": "雪は二十二日の午後に降り始め、二日のあいだ誰も平野へ下りることができなかった。三日目に村長は鐘を鳴らさせ、村に残っていた男たちがスコップを手に役場の前に集まった。\n\n彼らは三十人に満たず、そのほとんどが六十を超えていた。若い者たちは何年も前から街で働いていたからである。彼らは暗くなるまで、ほとんど言葉も交わさずに働き、車が一台通れるだけの幅の道を開けた。その晩、ただ一軒だけ開いていた店で何か飲んでいるとき、誰かが、来年は人数が足りなくなるだろうと言った。誰も彼に答えなかった。翌日、道が開いても、平野で何かが変わったかどうかを見に行く者は誰もいなかった。",
+  "vocab": [
+    {"it": "pianura", "ja": "平野", "hint": "辞書を引くべき"},
+    {"it": "sindaco", "ja": "村長・市長", "hint": "辞書を引くべき"},
+    {"it": "campana", "ja": "鐘", "hint": "推測可"},
+    {"it": "municipio", "ja": "役場", "hint": "推測可"},
+    {"it": "pala", "ja": "スコップ", "hint": "辞書を引くべき"},
+    {"it": "passaggio", "ja": "通り道", "hint": "推測可"},
+    {"it": "bastare", "ja": "足りる", "hint": "推測可"}
+  ]
+}

@@ -3,9 +3,10 @@
 
 import { useEffect, useState } from "preact/hooks";
 import { fetchIndex } from "../shared/content";
-import { getPhase, getStreak, type Streak } from "../shared/storage";
+import { getPassagesDone, getPhase, getStreak, type Streak } from "../shared/storage";
 import { goDrill, goReader } from "../shared/router";
-import type { ContentIndex, PassageIndexEntry, Phase } from "../shared/types";
+import { pickDaily } from "../shared/dailyPick";
+import type { ContentIndex, Phase } from "../shared/types";
 
 const PHASE_LABEL: Record<Phase, string> = {
   P1: "P1 構文基礎",
@@ -18,6 +19,14 @@ const GENRE_LABEL: Record<string, string> = {
   narrative: "物語",
   practical: "実用文",
 };
+
+/** 端末ローカル日付をYYYY-MM-DDで返す(UTCではなく、その場所の「今日」)。 */
+function localDateStr(d: Date): string {
+  const y = d.getFullYear();
+  const m = String(d.getMonth() + 1).padStart(2, "0");
+  const day = String(d.getDate()).padStart(2, "0");
+  return `${y}-${m}-${day}`;
+}
 
 export function HomeScreen() {
   const [index, setIndex] = useState<ContentIndex | null>(null);
@@ -49,7 +58,11 @@ export function HomeScreen() {
   }
 
   const phasePassages = index.passages.filter((p) => p.phase === phase);
-  const today: PassageIndexEntry | undefined = phasePassages[0] ?? index.passages[0];
+  const dateStr = localDateStr(new Date());
+  const daily =
+    pickDaily(dateStr, phasePassages, getPassagesDone()) ??
+    pickDaily(dateStr, index.passages, getPassagesDone());
+  const today = daily?.passage;
 
   return (
     <div class="container">
@@ -57,13 +70,21 @@ export function HomeScreen() {
       <h1 class="page-title">今日のメニュー</h1>
       <p class="page-lede">紙に書く前の下ごしらえ。長い文をひとつずつ分解する。</p>
 
-      {today ? (
+      {today && daily ? (
         <>
-          <button type="button" class="menu-card" onClick={() => goDrill(today.file, 0)}>
+          <button
+            type="button"
+            class="menu-card"
+            onClick={() => goDrill(today.file, daily.sentenceIdx)}
+          >
             <div class="menu-card__row">
               <div>
-                <div class="menu-card__label">今日の1文</div>
-                <div class="menu-card__title">{today.title_ja}の第1文を分解する</div>
+                <div class="menu-card__label">
+                  今日の1文{daily.isReview ? <span class="menu-card__review-badge">復習</span> : null}
+                </div>
+                <div class="menu-card__title">
+                  {today.title_ja}の第{daily.sentenceIdx + 1}文を分解する
+                </div>
                 <div class="menu-card__meta">主動詞→節境界→骨格訳の順に確かめる</div>
               </div>
               <span class="menu-card__arrow" aria-hidden="true">
@@ -75,7 +96,9 @@ export function HomeScreen() {
           <button type="button" class="menu-card" onClick={() => goReader(today.file)}>
             <div class="menu-card__row">
               <div>
-                <div class="menu-card__label">パッセージを読む</div>
+                <div class="menu-card__label">
+                  パッセージを読む{daily.isReview ? <span class="menu-card__review-badge">復習</span> : null}
+                </div>
                 <div class="menu-card__title">{today.title_ja}</div>
                 <div class="menu-card__meta">
                   {GENRE_LABEL[today.genre] ?? today.genre} ・ 約{today.wordCount}語 ・{" "}

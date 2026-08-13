@@ -118,6 +118,13 @@ async function main() {
   }
 
   try {
+    /* ---------------- テスト0: ホーム画面(今日の1文/パッセージの日替わり選定)が壊れていない ---------------- */
+    await page.goto(PREVIEW_URL);
+    await page.waitForSelector("text=今日のメニュー");
+    assert(await page.getByRole("button", { name: /今日の1文/ }).isVisible(), "ホームに「今日の1文」カードが表示される");
+    assert(await page.getByRole("button", { name: /パッセージを読む/ }).isVisible(), "ホームに「パッセージを読む」カードが表示される");
+    assert((await page.locator(".empty-state").count()) === 0, "「教材がまだありません」エラー表示が出ていない");
+
     /* ---------------- テスト1: 主線フロー(AI添削) ---------------- */
     await page.goto(PREVIEW_URL);
     await page.getByRole("button", { name: "設定" }).click();

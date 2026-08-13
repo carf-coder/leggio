@@ -1,0 +1,80 @@
+{
+  "id": "p0011",
+  "phase": "P1",
+  "genre": "essay",
+  "wordCount": 110,
+  "title_ja": "夜の明かりと星空",
+  "text": "Fino a poco più di un secolo fa chiunque, uscendo di casa dopo il tramonto, poteva vedere la Via Lattea. Oggi più di metà degli europei non l'ha mai vista, perché la luce che le nostre città mandano verso l'alto rende invisibili le stelle più deboli.\n\nIl fenomeno non dipende soltanto dal numero delle lampade, ma dal modo in cui sono orientate: una lampada che illumini il cielo invece del marciapiede spreca energia e non serve a nessuno. Alcuni comuni hanno cominciato a sostituirle, convinti che si possa illuminare meglio consumando meno. Le stelle, in fondo, non si sono spostate: siamo noi ad aver acceso troppe luci nella direzione sbagliata.",
+  "sentences": [
+    {
+      "idx": 0,
+      "text": "Fino a poco più di un secolo fa chiunque, uscendo di casa dopo il tramonto, poteva vedere la Via Lattea.",
+      "words": 20,
+      "skeleton": {"mainVerb": "poteva vedere", "subject": "chiunque", "core_ja": "一世紀ほど前まで、誰でも天の川を見ることができた。"},
+      "clauses": [
+        {"span": [9, 14], "type": "ger", "note_ja": "uscendo のジェルンディオ句が主語 chiunque と動詞 poteva を隔てている。主語は主節と同じ。"}
+      ],
+      "model_ja": "一世紀余り前までは、日が沈んだあとに家を出れば、誰でも天の川を見ることができた。",
+      "traps": ["SYN"]
+    },
+    {
+      "idx": 1,
+      "text": "Oggi più di metà degli europei non l'ha mai vista, perché la luce che le nostre città mandano verso l'alto rende invisibili le stelle più deboli.",
+      "words": 26,
+      "skeleton": {"mainVerb": "non l'ha mai vista", "subject": "più di metà degli europei", "core_ja": "今日ヨーロッパ人の半数以上はそれを見たことがない。"},
+      "clauses": [
+        {"span": [10, 25], "type": "sub", "note_ja": "perché の理由節。主語は la luce、動詞は rende で、その間に関係節が挟まる。"},
+        {"span": [13, 19], "type": "rel", "note_ja": "la luce を先行詞とする関係節。主語は le nostre città、動詞は mandano。理由節の主語と動詞を隔てている。"}
+      ],
+      "model_ja": "今日、ヨーロッパ人の半数以上はそれを一度も見たことがない。私たちの都市が空へ放つ光が、弱い星を見えなくしてしまうからである。",
+      "traps": ["SYN", "REF", "MOD"]
+    },
+    {
+      "idx": 2,
+      "text": "Il fenomeno non dipende soltanto dal numero delle lampade, ma dal modo in cui sono orientate: una lampada che illumini il cielo invece del marciapiede spreca energia e non serve a nessuno.",
+      "words": 32,
+      "skeleton": {"mainVerb": "dipende / spreca", "subject": "Il fenomeno / una lampada", "core_ja": "この現象は数だけでなく向け方にもよる。〜する照明は無駄である。"},
+      "clauses": [
+        {"span": [12, 15], "type": "rel", "note_ja": "in cui は il modo を先行詞とする関係節。sono orientate の主語は le lampade。"},
+        {"span": [18, 24], "type": "rel", "note_ja": "una lampada を先行詞とする関係節。先行詞が特定されていない仮定的なものなので接続法 illumini になる。"}
+      ],
+      "model_ja": "この現象は照明の数だけによるのではなく、その向けられ方にもよる。歩道ではなく空を照らすような照明は、エネルギーを無駄にし、誰の役にも立たない。",
+      "traps": ["MOOD", "MOD", "SYN"]
+    },
+    {
+      "idx": 3,
+      "text": "Alcuni comuni hanno cominciato a sostituirle, convinti che si possa illuminare meglio consumando meno.",
+      "words": 14,
+      "skeleton": {"mainVerb": "hanno cominciato", "subject": "Alcuni comuni", "core_ja": "一部の自治体はそれらの交換を始めた。"},
+      "clauses": [
+        {"span": [6, 13], "type": "ins", "note_ja": "convinti は主語 Alcuni comuni に一致する叙述的付加(「〜と確信して」)。"},
+        {"span": [7, 13], "type": "sub", "note_ja": "convinti に従属するche節。接続法 possa。si は非人称。"},
+        {"span": [12, 13], "type": "ger", "note_ja": "consumando meno は手段を表すジェルンディオ句(「より少なく消費しながら」)。"}
+      ],
+      "model_ja": "一部の自治体は、消費を減らしながらより良く照らすことができると確信して、照明の交換を始めた。",
+      "traps": ["MOOD", "REF"]
+    },
+    {
+      "idx": 4,
+      "text": "Le stelle, in fondo, non si sono spostate: siamo noi ad aver acceso troppe luci nella direzione sbagliata.",
+      "words": 18,
+      "skeleton": {"mainVerb": "non si sono spostate / siamo", "subject": "Le stelle / noi", "core_ja": "星は動いていない。動いたのは私たちのほうだ。"},
+      "clauses": [
+        {"span": [2, 3], "type": "ins", "note_ja": "in fondo は主語と動詞の間の挿入句(「結局のところ」)。"},
+        {"span": [10, 17], "type": "sub", "note_ja": "essere + 主語 + a + 不定詞の強調構文(「〜したのは私たちだ」)。aver acceso は完了不定詞で、主節より前の時点を表す。"}
+      ],
+      "model_ja": "結局のところ、星が動いたのではない。間違った方向にあまりに多くの明かりを灯したのは、私たちのほうなのである。",
+      "traps": ["SYN", "MOOD"]
+    }
+  ],
+  "model_ja_full": "一世紀余り前までは、日が沈んだあとに家を出れば、誰でも天の川を見ることができた。今日、ヨーロッパ人の半数以上はそれを一度も見たことがない。私たちの都市が空へ放つ光が、弱い星を見えなくしてしまうからである。\n\nこの現象は照明の数だけによるのではなく、その向けられ方にもよる。歩道ではなく空を照らすような照明は、エネルギーを無駄にし、誰の役にも立たない。一部の自治体は、消費を減らしながらより良く照らすことができると確信して、照明の交換を始めた。結局のところ、星が動いたのではない。間違った方向にあまりに多くの明かりを灯したのは、私たちのほうなのである。",
+  "vocab": [
+    {"it": "tramonto", "ja": "日没", "hint": "推測可"},
+    {"it": "Via Lattea", "ja": "天の川", "hint": "辞書を引くべき"},
+    {"it": "orientare", "ja": "向ける", "hint": "推測可"},
+    {"it": "marciapiede", "ja": "歩道", "hint": "辞書を引くべき"},
+    {"it": "sprecare", "ja": "無駄にする", "hint": "辞書を引くべき"},
+    {"it": "in fondo", "ja": "結局のところ", "hint": "辞書を引くべき"},
+    {"it": "spostarsi", "ja": "移動する", "hint": "推測可"}
+  ]
+}

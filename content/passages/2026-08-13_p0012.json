@@ -1,0 +1,81 @@
+{
+  "id": "p0012",
+  "phase": "P1",
+  "genre": "essay",
+  "wordCount": 112,
+  "title_ja": "方言とテレビ",
+  "text": "Quando la televisione cominciò a trasmettere, negli anni Cinquanta, la maggior parte degli italiani parlava abitualmente il proprio dialetto e usava l'italiano soltanto a scuola o negli uffici. In pochi decenni la situazione si rovesciò, e molti linguisti ritengono che nessuna scuola avrebbe ottenuto in un secolo quello che le trasmissioni serali ottennero in venti anni.\n\nIl dialetto, però, non è scomparso: si è ritirato negli usi familiari e affettivi, dove continua a essere trasmesso. Chi lo dà per morto dimentica che una lingua non muore finché c'è qualcuno che la insegna ai bambini. Molti insegnanti raccontano che i bambini di oggi capiscono il dialetto dei nonni, anche se non lo parlano.",
+  "sentences": [
+    {
+      "idx": 0,
+      "text": "Quando la televisione cominciò a trasmettere, negli anni Cinquanta, la maggior parte degli italiani parlava abitualmente il proprio dialetto e usava l'italiano soltanto a scuola o negli uffici.",
+      "words": 28,
+      "skeleton": {"mainVerb": "parlava / usava", "subject": "la maggior parte degli italiani", "core_ja": "テレビが放送を始めた頃、イタリア人の大半は方言を話し、イタリア語は限られた場でしか使わなかった。"},
+      "clauses": [
+        {"span": [0, 5], "type": "sub", "note_ja": "quando の時の副詞節。cominciò は遠過去。"},
+        {"span": [6, 8], "type": "ins", "note_ja": "negli anni Cinquanta は時期を補足する挿入句。"}
+      ],
+      "model_ja": "テレビが放送を始めた一九五〇年代、イタリア人の大半は普段は自分の方言を話し、イタリア語は学校か役所でしか使っていなかった。",
+      "traps": ["SYN", "REF"]
+    },
+    {
+      "idx": 1,
+      "text": "In pochi decenni la situazione si rovesciò, e molti linguisti ritengono che nessuna scuola avrebbe ottenuto in un secolo quello che le trasmissioni serali ottennero in venti anni.",
+      "words": 28,
+      "skeleton": {"mainVerb": "si rovesciò / ritengono", "subject": "la situazione / molti linguisti", "core_ja": "状況は逆転し、多くの言語学者は〜と考えている。"},
+      "clauses": [
+        {"span": [11, 27], "type": "sub", "note_ja": "ritengono の目的節。avrebbe ottenuto は条件法過去で、実現しなかった仮定の帰結(「〜できなかっただろう」)を表す。"},
+        {"span": [19, 27], "type": "rel", "note_ja": "quello che は「〜したこと」。avrebbe ottenuto の目的語で、内部の動詞 ottennero は遠過去。同じ動詞が二つの時制で現れる対比が要点。"}
+      ],
+      "model_ja": "数十年のうちに状況は逆転した。多くの言語学者は、いかなる学校も百年かけて成し得なかったであろうことを、夜の番組が二十年で成し遂げたと考えている。",
+      "traps": ["MOOD", "SYN", "LEX"]
+    },
+    {
+      "idx": 2,
+      "text": "Il dialetto, però, non è scomparso: si è ritirato negli usi familiari e affettivi, dove continua a essere trasmesso.",
+      "words": 19,
+      "skeleton": {"mainVerb": "non è scomparso / si è ritirato", "subject": "Il dialetto", "core_ja": "方言は消えたのではなく、退いたのである。"},
+      "clauses": [
+        {"span": [2, 2], "type": "ins", "note_ja": "però は主語と動詞の間に置かれた挿入的な接続副詞。"},
+        {"span": [14, 18], "type": "rel", "note_ja": "dove は場所を表す関係副詞で、先行詞は negli usi familiari e affettivi。essere trasmesso は受動の不定詞。"}
+      ],
+      "model_ja": "しかし方言は消えたのではない。家庭的で情愛に結びついた用法へと退き、そこでは今も受け渡され続けている。",
+      "traps": ["LEX", "MOD"]
+    },
+    {
+      "idx": 3,
+      "text": "Chi lo dà per morto dimentica che una lingua non muore finché c'è qualcuno che la insegna ai bambini.",
+      "words": 19,
+      "skeleton": {"mainVerb": "dimentica", "subject": "Chi (= colui che)", "core_ja": "それを死んだものとみなす人は、〜を忘れている。"},
+      "clauses": [
+        {"span": [0, 4], "type": "rel", "note_ja": "Chi で始まる融合関係詞句が主節の主語。dare per morto で「死んだものとみなす」。lo は il dialetto。"},
+        {"span": [6, 18], "type": "sub", "note_ja": "dimentica の目的節。"},
+        {"span": [11, 18], "type": "sub", "note_ja": "finché の時の副詞節(「〜するあいだは」)。ここには虚辞の non が付いていないことに注意。"},
+        {"span": [14, 18], "type": "rel", "note_ja": "qualcuno を先行詞とする関係節。la は una lingua を受ける。"}
+      ],
+      "model_ja": "方言を死んだものとみなす人は、子どもにそれを教える者がいるかぎり言語は死なない、ということを忘れている。",
+      "traps": ["LEX", "REF", "MOOD"]
+    },
+    {
+      "idx": 4,
+      "text": "Molti insegnanti raccontano che i bambini di oggi capiscono il dialetto dei nonni, anche se non lo parlano.",
+      "words": 18,
+      "skeleton": {"mainVerb": "raccontano", "subject": "Molti insegnanti", "core_ja": "多くの教師は〜と語っている。"},
+      "clauses": [
+        {"span": [3, 17], "type": "sub", "note_ja": "raccontano の目的節。"},
+        {"span": [13, 17], "type": "sub", "note_ja": "anche se の譲歩節。ここは事実を述べているので直説法 parlano。lo は il dialetto。"}
+      ],
+      "model_ja": "多くの教師は、今日の子どもたちは祖父母の方言を、話しはしないものの理解はしている、と語っている。",
+      "traps": ["REF", "MOOD"]
+    }
+  ],
+  "model_ja_full": "テレビが放送を始めた一九五〇年代、イタリア人の大半は普段は自分の方言を話し、イタリア語は学校か役所でしか使っていなかった。数十年のうちに状況は逆転した。多くの言語学者は、いかなる学校も百年かけて成し得なかったであろうことを、夜の番組が二十年で成し遂げたと考えている。\n\nしかし方言は消えたのではない。家庭的で情愛に結びついた用法へと退き、そこでは今も受け渡され続けている。方言を死んだものとみなす人は、子どもにそれを教える者がいるかぎり言語は死なない、ということを忘れている。多くの教師は、今日の子どもたちは祖父母の方言を、話しはしないものの理解はしている、と語っている。",
+  "vocab": [
+    {"it": "trasmettere", "ja": "放送する・伝える", "hint": "辞書を引くべき"},
+    {"it": "rovesciarsi", "ja": "逆転する", "hint": "辞書を引くべき"},
+    {"it": "ritirarsi", "ja": "退く", "hint": "推測可"},
+    {"it": "affettivo", "ja": "情愛に関わる", "hint": "推測可"},
+    {"it": "dare per morto", "ja": "死んだものとみなす", "hint": "辞書を引くべき"},
+    {"it": "finché", "ja": "〜するあいだは", "hint": "辞書を引くべき"}
+  ]
+}

@@ -1,0 +1,89 @@
+{
+  "id": "p0019",
+  "phase": "P1",
+  "genre": "narrative",
+  "wordCount": 113,
+  "title_ja": "黒い傘",
+  "text": "Il vecchio entrò nel bar alle sette e chiese se qualcuno avesse restituito un ombrello nero. La ragazza dietro il banco rispose di no, come faceva ogni mattina da una settimana. Lui ringraziò, ordinò un caffè e si sedette al solito tavolo, quello vicino alla porta.\n\nChi lo vedeva per la prima volta pensava che aspettasse qualcuno; in realtà aspettava soltanto che smettesse di piovere. Quando finalmente uscì, la ragazza si accorse che sul tavolo era rimasto un ombrello nero, e non capì se lo avesse dimenticato di nuovo o lasciato apposta. Fuori aveva smesso di piovere da un pezzo, ma il vecchio non si era voltato verso la finestra nemmeno una volta.",
+  "sentences": [
+    {
+      "idx": 0,
+      "text": "Il vecchio entrò nel bar alle sette e chiese se qualcuno avesse restituito un ombrello nero.",
+      "words": 16,
+      "skeleton": {"mainVerb": "entrò / chiese", "subject": "Il vecchio", "core_ja": "老人はバールに入り、〜かどうか尋ねた。"},
+      "clauses": [
+        {"span": [9, 15], "type": "sub", "note_ja": "se が導く間接疑問文。接続法大過去 avesse restituito は主節より前の時点を表す。"}
+      ],
+      "model_ja": "老人は七時にバールに入り、誰かが黒い傘を届けていないかと尋ねた。",
+      "traps": ["MOOD"]
+    },
+    {
+      "idx": 1,
+      "text": "La ragazza dietro il banco rispose di no, come faceva ogni mattina da una settimana.",
+      "words": 15,
+      "skeleton": {"mainVerb": "rispose", "subject": "La ragazza", "core_ja": "カウンターの奥の娘はいいえと答えた。"},
+      "clauses": [
+        {"span": [8, 14], "type": "sub", "note_ja": "come の様態節。faceva は半過去、da una settimana は「一週間前から」で、反復されてきた行為であることを示す。"}
+      ],
+      "model_ja": "カウンターの奥にいた娘は、この一週間毎朝そうしてきたように、いいえと答えた。",
+      "traps": ["MOOD", "LEX"]
+    },
+    {
+      "idx": 2,
+      "text": "Lui ringraziò, ordinò un caffè e si sedette al solito tavolo, quello vicino alla porta.",
+      "words": 15,
+      "skeleton": {"mainVerb": "ringraziò / ordinò / si sedette", "subject": "Lui", "core_ja": "彼は礼を言い、コーヒーを頼み、いつもの席に座った。"},
+      "clauses": [
+        {"span": [11, 14], "type": "ins", "note_ja": "quello vicino alla porta は al solito tavolo を言い換える同格の挿入句。"}
+      ],
+      "model_ja": "彼は礼を言い、コーヒーを注文し、いつもの席、扉のそばの席に腰を下ろした。",
+      "traps": ["SYN"]
+    },
+    {
+      "idx": 3,
+      "text": "Chi lo vedeva per la prima volta pensava che aspettasse qualcuno; in realtà aspettava soltanto che smettesse di piovere.",
+      "words": 19,
+      "skeleton": {"mainVerb": "pensava / aspettava", "subject": "Chi / (il vecchio) 省略", "core_ja": "初めて見る人は誰かを待っていると思ったが、実際は雨がやむのを待っていた。"},
+      "clauses": [
+        {"span": [0, 6], "type": "rel", "note_ja": "Chi で始まる融合関係詞句が前半の主語。lo は il vecchio。"},
+        {"span": [8, 10], "type": "sub", "note_ja": "pensava の目的節。接続法半過去 aspettasse。"},
+        {"span": [15, 18], "type": "sub", "note_ja": "aspettava の目的節。接続法半過去 smettesse。前後で aspettare の主語が入れ替わっている点に注意。"}
+      ],
+      "model_ja": "初めて彼を見る者は誰かを待っているのだと思った。実際には、彼はただ雨がやむのを待っていただけだった。",
+      "traps": ["MOOD", "SYN", "REF"]
+    },
+    {
+      "idx": 4,
+      "text": "Quando finalmente uscì, la ragazza si accorse che sul tavolo era rimasto un ombrello nero, e non capì se lo avesse dimenticato di nuovo o lasciato apposta.",
+      "words": 27,
+      "skeleton": {"mainVerb": "si accorse / non capì", "subject": "la ragazza", "core_ja": "彼が出て行ったとき、娘は〜に気づき、〜が分からなかった。"},
+      "clauses": [
+        {"span": [0, 2], "type": "sub", "note_ja": "quando の時の副詞節。uscì の主語は老人で、主節の主語 la ragazza とは別。"},
+        {"span": [7, 14], "type": "sub", "note_ja": "si accorse の目的節。主語 un ombrello nero が動詞のあとに置かれている。"},
+        {"span": [18, 26], "type": "sub", "note_ja": "se が導く間接疑問文。接続法大過去が dimenticato と lasciato の二つの過去分詞に掛かる。"}
+      ],
+      "model_ja": "彼がようやく店を出たとき、娘はテーブルに黒い傘が残されていることに気づいた。そして、彼がまた忘れたのか、それともわざと置いていったのかは分からなかった。",
+      "traps": ["MOOD", "SYN", "OMIT"]
+    },
+    {
+      "idx": 5,
+      "text": "Fuori aveva smesso di piovere da un pezzo, ma il vecchio non si era voltato verso la finestra nemmeno una volta.",
+      "words": 21,
+      "skeleton": {"mainVerb": "aveva smesso / non si era voltato", "subject": "(非人称の天候) / il vecchio", "core_ja": "外ではとうに雨がやんでいたが、老人は一度も窓を振り返らなかった。"},
+      "clauses": [
+        {"span": [3, 4], "type": "sub", "note_ja": "smettere di + 不定詞(「〜するのをやめる」)。piovere は非人称動詞なので主語を探さない。"}
+      ],
+      "model_ja": "外ではとっくに雨はやんでいた。しかし老人は一度として窓のほうを振り向かなかった。",
+      "traps": ["SYN", "LEX"]
+    }
+  ],
+  "model_ja_full": "老人は七時にバールに入り、誰かが黒い傘を届けていないかと尋ねた。カウンターの奥にいた娘は、この一週間毎朝そうしてきたように、いいえと答えた。彼は礼を言い、コーヒーを注文し、いつもの席、扉のそばの席に腰を下ろした。\n\n初めて彼を見る者は誰かを待っているのだと思った。実際には、彼はただ雨がやむのを待っていただけだった。彼がようやく店を出たとき、娘はテーブルに黒い傘が残されていることに気づいた。そして、彼がまた忘れたのか、それともわざと置いていったのかは分からなかった。外ではとっくに雨はやんでいた。しかし老人は一度として窓のほうを振り向かなかった。",
+  "vocab": [
+    {"it": "restituire", "ja": "返す・届け出る", "hint": "推測可"},
+    {"it": "banco", "ja": "カウンター", "hint": "辞書を引くべき"},
+    {"it": "apposta", "ja": "わざと", "hint": "辞書を引くべき"},
+    {"it": "da un pezzo", "ja": "ずいぶん前から", "hint": "辞書を引くべき"},
+    {"it": "voltarsi", "ja": "振り向く", "hint": "推測可"},
+    {"it": "nemmeno", "ja": "〜さえも〜ない", "hint": "推測可"}
+  ]
+}

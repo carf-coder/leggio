@@ -1,0 +1,84 @@
+{
+  "id": "p0010",
+  "phase": "P1",
+  "genre": "essay",
+  "wordCount": 111,
+  "title_ja": "市民農園",
+  "text": "Da qualche anno molte città hanno concesso ai cittadini piccoli appezzamenti di terra ai margini dei quartieri, perché vi coltivino ortaggi. Chi ottiene un orto si accorge presto che la fatica è maggiore di quanto immaginasse e che il raccolto, se si contano le ore, costa più della verdura del supermercato.\n\nEppure le liste d'attesa continuano ad allungarsi: quello che si cerca, evidentemente, non è il risparmio. Gli amministratori che hanno promosso questi progetti sostengono che un terreno curato da qualcuno costi al comune assai meno di un terreno abbandonato. Chi coltiva un orto torna a casa stanco, è vero, ma con la sensazione di aver fatto qualcosa che si vede.",
+  "sentences": [
+    {
+      "idx": 0,
+      "text": "Da qualche anno molte città hanno concesso ai cittadini piccoli appezzamenti di terra ai margini dei quartieri, perché vi coltivino ortaggi.",
+      "words": 21,
+      "skeleton": {"mainVerb": "hanno concesso", "subject": "molte città", "core_ja": "数年前から多くの都市が市民に小さな土地を与えてきた。"},
+      "clauses": [
+        {"span": [17, 20], "type": "sub", "note_ja": "この perché は理由ではなく目的を表し、接続法 coltivino をとる(「〜するために」)。vi は「そこで」を意味する副詞的代名詞。"}
+      ],
+      "model_ja": "数年前から、多くの都市が市民に、街区のはずれの小さな土地を、そこで野菜を作れるようにと与えてきた。",
+      "traps": ["MOOD", "REF"]
+    },
+    {
+      "idx": 1,
+      "text": "Chi ottiene un orto si accorge presto che la fatica è maggiore di quanto immaginasse e che il raccolto, se si contano le ore, costa più della verdura del supermercato.",
+      "words": 30,
+      "skeleton": {"mainVerb": "si accorge", "subject": "Chi (= colui che)", "core_ja": "畑を得た人はすぐに〜と〜に気づく。"},
+      "clauses": [
+        {"span": [0, 3], "type": "rel", "note_ja": "Chi で始まる融合関係詞句が主節の主語。"},
+        {"span": [7, 14], "type": "sub", "note_ja": "si accorge に従属する第一のche節。"},
+        {"span": [12, 14], "type": "sub", "note_ja": "di quanto + 接続法半過去 immaginasse。比較の第二項を導く(「想像していたよりも」)。"},
+        {"span": [16, 29], "type": "sub", "note_ja": "si accorge に従属する第二のche節。主語 il raccolto と動詞 costa の間に条件節が挟まる。"},
+        {"span": [19, 23], "type": "ins", "note_ja": "se si contano le ore は主語と動詞を隔てる挿入的な条件節(「時間を数えれば」)。"}
+      ],
+      "model_ja": "畑を手に入れた人は、その労力が想像していた以上であること、そして時間を計算に入れれば収穫はスーパーの野菜より高くつくことに、すぐ気づく。",
+      "traps": ["MOOD", "SYN", "OMIT"]
+    },
+    {
+      "idx": 2,
+      "text": "Eppure le liste d'attesa continuano ad allungarsi: quello che si cerca, evidentemente, non è il risparmio.",
+      "words": 16,
+      "skeleton": {"mainVerb": "continuano / è", "subject": "le liste d'attesa / quello", "core_ja": "それでも順番待ちの列は伸び続ける。求められているのは節約ではない。"},
+      "clauses": [
+        {"span": [7, 10], "type": "rel", "note_ja": "quello che は「〜するもの」。si cerca は非人称のsi。この部分全体が後半の主語。"},
+        {"span": [11, 11], "type": "ins", "note_ja": "evidentemente は主語と動詞の間に置かれた挿入的な副詞。"}
+      ],
+      "model_ja": "それにもかかわらず順番待ちの名簿は伸び続けている。求められているのは、明らかに、節約ではない。",
+      "traps": ["SYN", "LEX"]
+    },
+    {
+      "idx": 3,
+      "text": "Gli amministratori che hanno promosso questi progetti sostengono che un terreno curato da qualcuno costi al comune assai meno di un terreno abbandonato.",
+      "words": 23,
+      "skeleton": {"mainVerb": "sostengono", "subject": "Gli amministratori", "core_ja": "この事業を進めた行政担当者は〜と主張する。"},
+      "clauses": [
+        {"span": [2, 6], "type": "rel", "note_ja": "Gli amministratori を修飾する関係節。主語と主動詞 sostengono を隔てている。"},
+        {"span": [8, 22], "type": "sub", "note_ja": "sostengono の目的節。接続法 costi。"},
+        {"span": [11, 13], "type": "ins", "note_ja": "curato da qualcuno は un terreno に一致する過去分詞句(「誰かが手入れしている」)。"}
+      ],
+      "model_ja": "こうした事業を推し進めた行政担当者は、誰かが手入れしている土地のほうが、放置された土地よりも自治体にとってはるかに安くつく、と主張している。",
+      "traps": ["MOOD", "MOD", "SYN"]
+    },
+    {
+      "idx": 4,
+      "text": "Chi coltiva un orto torna a casa stanco, è vero, ma con la sensazione di aver fatto qualcosa che si vede.",
+      "words": 21,
+      "skeleton": {"mainVerb": "torna", "subject": "Chi (= colui che)", "core_ja": "畑を耕す人は疲れて帰る。しかし〜という感覚を持って帰る。"},
+      "clauses": [
+        {"span": [0, 3], "type": "rel", "note_ja": "Chi で始まる融合関係詞句が主節の主語。"},
+        {"span": [8, 9], "type": "ins", "note_ja": "è vero は譲歩を表す挿入(「確かに〜ではあるが」)。外すと stanco … ma con la sensazione の対比が見える。"},
+        {"span": [18, 20], "type": "rel", "note_ja": "qualcosa を先行詞とする関係節。si vede は非人称のsi(「目に見える」)。"}
+      ],
+      "model_ja": "畑を耕す人は、確かに疲れて家に帰る。しかし、目に見える何かを成し遂げたという感覚とともに帰るのである。",
+      "traps": ["SYN", "ADD"]
+    }
+  ],
+  "model_ja_full": "数年前から、多くの都市が市民に、街区のはずれの小さな土地を、そこで野菜を作れるようにと与えてきた。畑を手に入れた人は、その労力が想像していた以上であること、そして時間を計算に入れれば収穫はスーパーの野菜より高くつくことに、すぐ気づく。\n\nそれにもかかわらず順番待ちの名簿は伸び続けている。求められているのは、明らかに、節約ではない。こうした事業を推し進めた行政担当者は、誰かが手入れしている土地のほうが、放置された土地よりも自治体にとってはるかに安くつく、と主張している。畑を耕す人は、確かに疲れて家に帰る。しかし、目に見える何かを成し遂げたという感覚とともに帰るのである。",
+  "vocab": [
+    {"it": "appezzamento", "ja": "区画された土地", "hint": "辞書を引くべき"},
+    {"it": "ortaggi", "ja": "野菜", "hint": "辞書を引くべき"},
+    {"it": "orto", "ja": "菜園", "hint": "推測可"},
+    {"it": "raccolto", "ja": "収穫", "hint": "推測可"},
+    {"it": "lista d'attesa", "ja": "順番待ちの名簿", "hint": "推測可"},
+    {"it": "risparmio", "ja": "節約", "hint": "推測可"},
+    {"it": "curare", "ja": "手入れする", "hint": "辞書を引くべき"}
+  ]
+}

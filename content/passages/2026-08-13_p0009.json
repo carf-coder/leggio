@@ -1,0 +1,81 @@
+{
+  "id": "p0009",
+  "phase": "P1",
+  "genre": "essay",
+  "wordCount": 115,
+  "title_ja": "通りの名前",
+  "text": "I nomi delle strade sembrano dati una volta per sempre, eppure quasi tutti sono stati cambiati almeno una volta. Ogni amministrazione che considera importante un avvenimento lo scrive sulle targhe, e le targhe restano anche quando quell'avvenimento non dice più nulla a nessuno.\n\nCamminando per un quartiere costruito nell'Ottocento, si incontrano date che pochi saprebbero collocare e cognomi di persone di cui non resta altra traccia. Alcuni studiosi sostengono che una città vada letta come un archivio, in cui gli strati più antichi non vengono cancellati ma coperti. Chi propone di sostituire una targa scopre quasi subito che il passato di un quartiere non appartiene a una sola generazione, e che ogni scelta scontenta qualcuno.",
+  "sentences": [
+    {
+      "idx": 0,
+      "text": "I nomi delle strade sembrano dati una volta per sempre, eppure quasi tutti sono stati cambiati almeno una volta.",
+      "words": 19,
+      "skeleton": {"mainVerb": "sembrano / sono stati cambiati", "subject": "I nomi delle strade / quasi tutti", "core_ja": "通りの名は永久に決まっているように見えるが、ほとんどが変えられてきた。"},
+      "clauses": [
+        {"span": [5, 9], "type": "ins", "note_ja": "dati は dare の過去分詞で I nomi に一致(男性複数)。sembrare + 過去分詞で「〜されているように見える」。"}
+      ],
+      "model_ja": "通りの名前は一度決まればそのままであるように見えるが、実際にはほとんどが少なくとも一度は変更されている。",
+      "traps": ["MOD", "SYN"]
+    },
+    {
+      "idx": 1,
+      "text": "Ogni amministrazione che considera importante un avvenimento lo scrive sulle targhe, e le targhe restano anche quando quell'avvenimento non dice più nulla a nessuno.",
+      "words": 24,
+      "skeleton": {"mainVerb": "scrive / restano", "subject": "Ogni amministrazione / le targhe", "core_ja": "行政はそれを標識に書き、標識は残る。"},
+      "clauses": [
+        {"span": [2, 6], "type": "rel", "note_ja": "Ogni amministrazione を修飾する関係節。considerare A B(「AをBとみなす」)の語順が倒れており、importante が補語、un avvenimento が目的語。"},
+        {"span": [16, 23], "type": "sub", "note_ja": "quando の時の副詞節。non … più nulla a nessuno は否定の重なりだが、日本語では一つの否定にまとめる。"}
+      ],
+      "model_ja": "ある出来事を重要とみなす行政は、それを標識に書き記す。そして、その出来事がもはや誰にも何も語らなくなっても、標識は残り続ける。",
+      "traps": ["SYN", "REF", "OMIT"]
+    },
+    {
+      "idx": 2,
+      "text": "Camminando per un quartiere costruito nell'Ottocento, si incontrano date che pochi saprebbero collocare e cognomi di persone di cui non resta altra traccia.",
+      "words": 23,
+      "skeleton": {"mainVerb": "si incontrano", "subject": "date / cognomi(非人称siの受動的用法)", "core_ja": "歩いていると、日付と姓に出会う。"},
+      "clauses": [
+        {"span": [0, 5], "type": "ger", "note_ja": "Camminando のジェルンディオ句(「歩いていると」)。"},
+        {"span": [4, 5], "type": "ins", "note_ja": "costruito nell'Ottocento は quartiere に一致する過去分詞句。"},
+        {"span": [9, 12], "type": "rel", "note_ja": "date を先行詞とする関係節。saprebbero は条件法(「〜できるだろう人は少ない」)。"},
+        {"span": [17, 22], "type": "rel", "note_ja": "di cui は persone を先行詞とする関係節。restare のあとの altra traccia が主語。"}
+      ],
+      "model_ja": "十九世紀に造られた界隈を歩いていると、ほとんど誰も年代を言い当てられない日付や、ほかに何の痕跡も残っていない人々の姓に出会う。",
+      "traps": ["SYN", "MOD"]
+    },
+    {
+      "idx": 3,
+      "text": "Alcuni studiosi sostengono che una città vada letta come un archivio, in cui gli strati più antichi non vengono cancellati ma coperti.",
+      "words": 22,
+      "skeleton": {"mainVerb": "sostengono", "subject": "Alcuni studiosi", "core_ja": "一部の研究者は〜と主張している。"},
+      "clauses": [
+        {"span": [3, 21], "type": "sub", "note_ja": "sostengono の目的節。vada letta は andare + 過去分詞で義務を含む受動(「読まれるべきだ」)。「行く」ではない。"},
+        {"span": [11, 21], "type": "rel", "note_ja": "in cui は un archivio を先行詞とする関係節。vengono cancellati は venire 受動。"}
+      ],
+      "model_ja": "一部の研究者は、都市は古い層が消されるのではなく覆われていく文書館として読まれるべきだ、と主張している。",
+      "traps": ["LEX", "MOOD", "MOD"]
+    },
+    {
+      "idx": 4,
+      "text": "Chi propone di sostituire una targa scopre quasi subito che il passato di un quartiere non appartiene a una sola generazione, e che ogni scelta scontenta qualcuno.",
+      "words": 27,
+      "skeleton": {"mainVerb": "scopre", "subject": "Chi (= colui che)", "core_ja": "標識を替えようと提案する人は、すぐに〜と〜に気づく。"},
+      "clauses": [
+        {"span": [0, 5], "type": "rel", "note_ja": "Chi で始まる融合関係詞句が主節の主語。"},
+        {"span": [9, 20], "type": "sub", "note_ja": "scopre に従属する第一のche節。"},
+        {"span": [22, 26], "type": "sub", "note_ja": "scopre に従属する第二のche節。che が繰り返されている点を見落とすと、前の節の内部に取り込んでしまう。"}
+      ],
+      "model_ja": "標識を掛け替えようと提案する人は、ある界隈の過去が一つの世代だけのものではないこと、そしてどの選択も誰かを不満にさせることに、ほどなく気づく。",
+      "traps": ["SYN", "OMIT"]
+    }
+  ],
+  "model_ja_full": "通りの名前は一度決まればそのままであるように見えるが、実際にはほとんどが少なくとも一度は変更されている。ある出来事を重要とみなす行政は、それを標識に書き記す。そして、その出来事がもはや誰にも何も語らなくなっても、標識は残り続ける。\n\n十九世紀に造られた界隈を歩いていると、ほとんど誰も年代を言い当てられない日付や、ほかに何の痕跡も残っていない人々の姓に出会う。一部の研究者は、都市は古い層が消されるのではなく覆われていく文書館として読まれるべきだ、と主張している。標識を掛け替えようと提案する人は、ある界隈の過去が一つの世代だけのものではないこと、そしてどの選択も誰かを不満にさせることに、ほどなく気づく。",
+  "vocab": [
+    {"it": "targa", "ja": "標識・銘板", "hint": "辞書を引くべき"},
+    {"it": "avvenimento", "ja": "出来事", "hint": "推測可"},
+    {"it": "collocare", "ja": "位置づける・年代を定める", "hint": "辞書を引くべき"},
+    {"it": "traccia", "ja": "痕跡", "hint": "推測可"},
+    {"it": "andare + 過去分詞", "ja": "〜されねばならない(義務の受動)", "hint": "辞書を引くべき"},
+    {"it": "scontentare", "ja": "不満にさせる", "hint": "推測可"}
+  ]
+}

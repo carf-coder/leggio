@@ -1,0 +1,368 @@
+{
+  "id": "p0025",
+  "phase": "P2",
+  "genre": "essay",
+  "wordCount": 193,
+  "title_ja": "外から来る言葉",
+  "text": "Ogni volta che una parola straniera entra nell'uso comune, qualcuno annuncia che la lingua si sta impoverendo e propone di sostituirla con un termine che nessuno adopererà mai. Chi ha studiato la storia dell'italiano sa però che la maggior parte delle parole che oggi ci sembrano nostre, dai termini della banca a quelli della cucina, è arrivata in tempi diversi da altre lingue, e che nessuno, dopo due o tre generazioni, ricorda più da dove venissero. Il problema non è dunque l'origine di una parola, ma il fatto che se ne adottino cento senza tradurne nessuna.\n\nUna lingua sana, sostengono i linguisti, non è quella che si difende dalle altre, bensì quella che riesce ad assorbirle piegandole alle proprie regole. Quando un forestierismo prende il plurale italiano o genera un verbo, il segnale è chiaro: non è più un ospite, è diventato un abitante. Preoccuparsi è legittimo, ma le lingue che sono morte davvero non sono morte perché avevano accolto troppe parole, bensì perché nessuno le parlava più. Chi difende oggi una parola contro un'altra, insomma, combatte una battaglia che si è già combattuta molte volte, e quasi sempre con lo stesso esito.",
+  "sentences": [
+    {
+      "idx": 0,
+      "text": "Ogni volta che una parola straniera entra nell'uso comune, qualcuno annuncia che la lingua si sta impoverendo e propone di sostituirla con un termine che nessuno adopererà mai.",
+      "words": 28,
+      "skeleton": {
+        "mainVerb": "annuncia / propone",
+        "subject": "qualcuno",
+        "core_ja": "外来語が入るたびに、誰かが〜と告げ、〜を提案する。"
+      },
+      "clauses": [
+        {
+          "span": [
+            0,
+            8
+          ],
+          "type": "sub",
+          "note_ja": "ogni volta che の時の副詞節(「〜するたびに」)。この che は関係代名詞ではない。"
+        },
+        {
+          "span": [
+            11,
+            16
+          ],
+          "type": "sub",
+          "note_ja": "annuncia の目的節。stare + ジェルンディオで進行を表す。"
+        },
+        {
+          "span": [
+            19,
+            27
+          ],
+          "type": "sub",
+          "note_ja": "proporre di + 不定詞。sostituirla の la は la parola straniera。"
+        },
+        {
+          "span": [
+            24,
+            27
+          ],
+          "type": "rel",
+          "note_ja": "un termine を先行詞とする関係節。adopererà は単純未来。"
+        }
+      ],
+      "model_ja": "外国語がひとつ日常の言葉に入り込むたびに、誰かが言語は貧しくなりつつあると告げ、誰も決して使わないような語で置き換えることを提案する。",
+      "traps": [
+        "REF",
+        "SYN",
+        "LEX"
+      ]
+    },
+    {
+      "idx": 1,
+      "text": "Chi ha studiato la storia dell'italiano sa però che la maggior parte delle parole che oggi ci sembrano nostre, dai termini della banca a quelli della cucina, è arrivata in tempi diversi da altre lingue, e che nessuno, dopo due o tre generazioni, ricorda più da dove venissero.",
+      "words": 48,
+      "skeleton": {
+        "mainVerb": "sa",
+        "subject": "Chi (= colui che)",
+        "core_ja": "イタリア語の歴史を学んだ人は、〜と〜を知っている。"
+      },
+      "clauses": [
+        {
+          "span": [
+            0,
+            2
+          ],
+          "type": "rel",
+          "note_ja": "Chi で始まる融合関係詞句が主節の主語。"
+        },
+        {
+          "span": [
+            8,
+            34
+          ],
+          "type": "sub",
+          "note_ja": "sa に従属する第一のche節。主語 la maggior parte と動詞 è arrivata の間に関係節と挿入句が入る。動詞が単数なのは parte に一致するため。"
+        },
+        {
+          "span": [
+            14,
+            18
+          ],
+          "type": "rel",
+          "note_ja": "le parole を先行詞とする関係節。ci は「私たちには」。"
+        },
+        {
+          "span": [
+            19,
+            26
+          ],
+          "type": "ins",
+          "note_ja": "dai termini … a quelli … は例示の挿入句。主語と動詞をさらに引き離している。"
+        },
+        {
+          "span": [
+            36,
+            47
+          ],
+          "type": "sub",
+          "note_ja": "sa に従属する第二のche節。che が繰り返されている点を見落とさないこと。"
+        },
+        {
+          "span": [
+            38,
+            42
+          ],
+          "type": "ins",
+          "note_ja": "dopo due o tre generazioni は主語 nessuno と動詞 ricorda の間の挿入句。"
+        },
+        {
+          "span": [
+            45,
+            47
+          ],
+          "type": "sub",
+          "note_ja": "da dove が導く間接疑問文。接続法半過去 venissero。"
+        }
+      ],
+      "model_ja": "しかしイタリア語の歴史を学んだ者は知っている。今日われわれが自国のものと感じている語の大半は、銀行の用語から台所の用語にいたるまで、時期を異にして他の言語から入ってきたものであり、二、三世代もたてば、それがどこから来たのかを覚えている者はもういない、ということを。",
+      "traps": [
+        "SYN",
+        "MOOD",
+        "MOD"
+      ]
+    },
+    {
+      "idx": 2,
+      "text": "Il problema non è dunque l'origine di una parola, ma il fatto che se ne adottino cento senza tradurne nessuna.",
+      "words": 20,
+      "skeleton": {
+        "mainVerb": "è",
+        "subject": "Il problema",
+        "core_ja": "問題は語の出自ではなく、〜という事実である。"
+      },
+      "clauses": [
+        {
+          "span": [
+            12,
+            19
+          ],
+          "type": "sub",
+          "note_ja": "il fatto che に続く従属節。接続法 adottino。se は非人称のsi が ne の前で se に変わった形。"
+        },
+        {
+          "span": [
+            17,
+            19
+          ],
+          "type": "sub",
+          "note_ja": "senza + 不定詞。tradurne の ne は「それらのうちの」。"
+        }
+      ],
+      "model_ja": "したがって問題は語の出自ではなく、百語を受け入れながら一語も訳さないという事実のほうである。",
+      "traps": [
+        "MOOD",
+        "REF",
+        "SYN"
+      ]
+    },
+    {
+      "idx": 3,
+      "text": "Una lingua sana, sostengono i linguisti, non è quella che si difende dalle altre, bensì quella che riesce ad assorbirle piegandole alle proprie regole.",
+      "words": 24,
+      "skeleton": {
+        "mainVerb": "è",
+        "subject": "Una lingua sana",
+        "core_ja": "健全な言語とは〜ではなく、〜である。"
+      },
+      "clauses": [
+        {
+          "span": [
+            3,
+            5
+          ],
+          "type": "ins",
+          "note_ja": "sostengono i linguisti は伝達の挿入節。主語が動詞のあとに置かれている。"
+        },
+        {
+          "span": [
+            9,
+            13
+          ],
+          "type": "rel",
+          "note_ja": "quella(= la lingua)を先行詞とする関係節。"
+        },
+        {
+          "span": [
+            16,
+            23
+          ],
+          "type": "rel",
+          "note_ja": "二つ目の quella を先行詞とする関係節。non … bensì の相関が骨格。"
+        },
+        {
+          "span": [
+            20,
+            23
+          ],
+          "type": "ger",
+          "note_ja": "piegandole のジェルンディオ句。手段を表す。-le は assorbirle と同じく le altre (lingue) を受ける(事実上はそこから入ってくる語彙)。別の対象に飛ぶと誤読しないこと。"
+        }
+      ],
+      "model_ja": "言語学者の言うところでは、健全な言語とは他の言語から身を守る言語ではなく、それらを自らの規則に従わせながら吸収できる言語である。",
+      "traps": [
+        "SYN",
+        "REF"
+      ]
+    },
+    {
+      "idx": 4,
+      "text": "Quando un forestierismo prende il plurale italiano o genera un verbo, il segnale è chiaro: non è più un ospite, è diventato un abitante.",
+      "words": 24,
+      "skeleton": {
+        "mainVerb": "è",
+        "subject": "il segnale",
+        "core_ja": "外来語がイタリア語の複数形を取るとき、合図は明らかである。"
+      },
+      "clauses": [
+        {
+          "span": [
+            0,
+            10
+          ],
+          "type": "sub",
+          "note_ja": "quando の時の副詞節。prende と genera の二つの動詞が主語 un forestierismo を共有する。"
+        }
+      ],
+      "model_ja": "外来語がイタリア語の複数形を取り、あるいは動詞を派生させるようになれば、しるしは明らかである。それはもはや客ではなく、住人になったのである。",
+      "traps": [
+        "SYN",
+        "LEX"
+      ]
+    },
+    {
+      "idx": 5,
+      "text": "Preoccuparsi è legittimo, ma le lingue che sono morte davvero non sono morte perché avevano accolto troppe parole, bensì perché nessuno le parlava più.",
+      "words": 24,
+      "skeleton": {
+        "mainVerb": "è / non sono morte",
+        "subject": "Preoccuparsi(不定詞) / le lingue",
+        "core_ja": "心配は正当だが、死んだ言語は〜のために死んだのではない。"
+      },
+      "clauses": [
+        {
+          "span": [
+            6,
+            9
+          ],
+          "type": "rel",
+          "note_ja": "le lingue を先行詞とする関係節。主語と動詞 non sono morte を隔てている。"
+        },
+        {
+          "span": [
+            13,
+            17
+          ],
+          "type": "sub",
+          "note_ja": "第一の perché 節。否定と結びつき「〜だから死んだのではない」の意になる。"
+        },
+        {
+          "span": [
+            19,
+            23
+          ],
+          "type": "sub",
+          "note_ja": "bensì に導かれる第二の perché 節。二つの理由節の対比が骨格。"
+        }
+      ],
+      "model_ja": "心配すること自体は正当である。しかし本当に死んだ言語が死んだのは、あまりに多くの語を受け入れたからではなく、誰もそれを話さなくなったからである。",
+      "traps": [
+        "SYN",
+        "REF",
+        "OMIT"
+      ]
+    },
+    {
+      "idx": 6,
+      "text": "Chi difende oggi una parola contro un'altra, insomma, combatte una battaglia che si è già combattuta molte volte, e quasi sempre con lo stesso esito.",
+      "words": 25,
+      "skeleton": {
+        "mainVerb": "combatte",
+        "subject": "Chi (= colui che)",
+        "core_ja": "ある語を別の語から守ろうとする人は、〜という戦いを戦っている。"
+      },
+      "clauses": [
+        {
+          "span": [
+            0,
+            6
+          ],
+          "type": "rel",
+          "note_ja": "Chi で始まる融合関係詞句が主節の主語。"
+        },
+        {
+          "span": [
+            7,
+            7
+          ],
+          "type": "ins",
+          "note_ja": "insomma は主語と動詞の間の挿入語。"
+        },
+        {
+          "span": [
+            11,
+            17
+          ],
+          "type": "rel",
+          "note_ja": "una battaglia を先行詞とする関係節。si è combattuta は非人称のsi による受動的用法で、過去分詞が主語 battaglia に一致している。"
+        }
+      ],
+      "model_ja": "つまり、今日ある語を別の語に対して擁護する者は、これまで何度も、しかもほとんど同じ結末で戦われてきた戦いを戦っているのである。",
+      "traps": [
+        "MOD",
+        "SYN"
+      ]
+    }
+  ],
+  "model_ja_full": "外国語がひとつ日常の言葉に入り込むたびに、誰かが言語は貧しくなりつつあると告げ、誰も決して使わないような語で置き換えることを提案する。しかしイタリア語の歴史を学んだ者は知っている。今日われわれが自国のものと感じている語の大半は、銀行の用語から台所の用語にいたるまで、時期を異にして他の言語から入ってきたものであり、二、三世代もたてば、それがどこから来たのかを覚えている者はもういない、ということを。したがって問題は語の出自ではなく、百語を受け入れながら一語も訳さないという事実のほうである。\n\n言語学者の言うところでは、健全な言語とは他の言語から身を守る言語ではなく、それらを自らの規則に従わせながら吸収できる言語である。外来語がイタリア語の複数形を取り、あるいは動詞を派生させるようになれば、しるしは明らかである。それはもはや客ではなく、住人になったのである。心配すること自体は正当である。しかし本当に死んだ言語が死んだのは、あまりに多くの語を受け入れたからではなく、誰もそれを話さなくなったからである。つまり、今日ある語を別の語に対して擁護する者は、これまで何度も、しかもほとんど同じ結末で戦われてきた戦いを戦っているのである。",
+  "vocab": [
+    {
+      "it": "impoverirsi",
+      "ja": "貧しくなる",
+      "hint": "推測可"
+    },
+    {
+      "it": "adoperare",
+      "ja": "使用する",
+      "hint": "辞書を引くべき"
+    },
+    {
+      "it": "forestierismo",
+      "ja": "外来語",
+      "hint": "辞書を引くべき"
+    },
+    {
+      "it": "assorbire",
+      "ja": "吸収する",
+      "hint": "推測可"
+    },
+    {
+      "it": "piegare",
+      "ja": "従わせる・曲げる",
+      "hint": "辞書を引くべき"
+    },
+    {
+      "it": "bensì",
+      "ja": "(nonと相関して)そうではなくむしろ",
+      "hint": "辞書を引くべき"
+    },
+    {
+      "it": "esito",
+      "ja": "結果",
+      "hint": "辞書を引くべき"
+    },
+    {
+      "it": "legittimo",
+      "ja": "正当な",
+      "hint": "推測可"
+    }
+  ]
+}

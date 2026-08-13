@@ -1,0 +1,80 @@
+{
+  "id": "p0014",
+  "phase": "P1",
+  "genre": "essay",
+  "wordCount": 107,
+  "title_ja": "蜜蜂と果樹園",
+  "text": "Molti credono che le api servano soltanto a produrre il miele, e restano sorpresi quando scoprono che gli agricoltori le noleggiano. Nei mesi della fioritura gli apicoltori spostano le arnie di frutteto in frutteto, perché senza insetti che trasportino il polline gran parte dei frutti non si formerebbe.\n\nIl servizio che le api rendono all'agricoltura vale, secondo alcune stime, molto più del miele che se ne ricava. Quando in una zona le api diminuiscono, i danni compaiono con qualche anno di ritardo, e allora è difficile risalire alla causa. Per questo alcuni contadini seminano fiori ai bordi dei campi, anche se quei fiori non daranno mai frutto.",
+  "sentences": [
+    {
+      "idx": 0,
+      "text": "Molti credono che le api servano soltanto a produrre il miele, e restano sorpresi quando scoprono che gli agricoltori le noleggiano.",
+      "words": 21,
+      "skeleton": {"mainVerb": "credono / restano", "subject": "Molti", "core_ja": "多くの人は〜と信じており、〜を知って驚く。"},
+      "clauses": [
+        {"span": [2, 10], "type": "sub", "note_ja": "credono の目的節。接続法 servano。servire a + 不定詞で「〜するのに役立つ」。"},
+        {"span": [14, 20], "type": "sub", "note_ja": "quando の時の副詞節。"},
+        {"span": [16, 20], "type": "sub", "note_ja": "scoprono の目的節が入れ子になっている。le は le api を受ける。"}
+      ],
+      "model_ja": "多くの人は蜜蜂が蜜を作るためだけにいると信じており、農家が蜜蜂を借りていると知って驚く。",
+      "traps": ["MOOD", "REF"]
+    },
+    {
+      "idx": 1,
+      "text": "Nei mesi della fioritura gli apicoltori spostano le arnie di frutteto in frutteto, perché senza insetti che trasportino il polline gran parte dei frutti non si formerebbe.",
+      "words": 27,
+      "skeleton": {"mainVerb": "spostano", "subject": "gli apicoltori", "core_ja": "開花期に養蜂家は巣箱を果樹園から果樹園へ移す。"},
+      "clauses": [
+        {"span": [13, 26], "type": "sub", "note_ja": "perché の理由節。主語は gran parte dei frutti、動詞は non si formerebbe(条件法)で、その前に長い前置詞句が置かれている。"},
+        {"span": [16, 19], "type": "rel", "note_ja": "insetti を先行詞とする関係節。仮定的な存在を指すため接続法 trasportino になる。"}
+      ],
+      "model_ja": "開花の時期になると、養蜂家は巣箱を果樹園から果樹園へと移す。花粉を運ぶ昆虫がいなければ、果実の大半は実らないからである。",
+      "traps": ["MOOD", "SYN", "OMIT"]
+    },
+    {
+      "idx": 2,
+      "text": "Il servizio che le api rendono all'agricoltura vale, secondo alcune stime, molto più del miele che se ne ricava.",
+      "words": 19,
+      "skeleton": {"mainVerb": "vale", "subject": "Il servizio", "core_ja": "その働きは蜜よりはるかに価値がある。"},
+      "clauses": [
+        {"span": [2, 6], "type": "rel", "note_ja": "Il servizio を先行詞とする関係節。主語と動詞 vale を隔てている。"},
+        {"span": [8, 10], "type": "ins", "note_ja": "secondo alcune stime は動詞のあとに割り込む挿入句。"},
+        {"span": [15, 18], "type": "rel", "note_ja": "il miele を先行詞とする関係節。ne は「そこから(蜜蜂から)」を受け、si は非人称。"}
+      ],
+      "model_ja": "蜜蜂が農業にもたらす働きは、ある試算によれば、そこから得られる蜜よりもはるかに大きな価値がある。",
+      "traps": ["SYN", "REF"]
+    },
+    {
+      "idx": 3,
+      "text": "Quando in una zona le api diminuiscono, i danni compaiono con qualche anno di ritardo, e allora è difficile risalire alla causa.",
+      "words": 22,
+      "skeleton": {"mainVerb": "compaiono / è", "subject": "i danni / risalire(不定詞)", "core_ja": "蜜蜂が減ると、被害は数年遅れて現れ、原因をたどるのは難しい。"},
+      "clauses": [
+        {"span": [0, 6], "type": "sub", "note_ja": "quando の時の副詞節。主語 le api が場所の句のあとに置かれている。"}
+      ],
+      "model_ja": "ある地域で蜜蜂が減ると、被害は数年遅れて現れる。そしてその時にはもう、原因をさかのぼるのは難しい。",
+      "traps": ["SYN", "LEX"]
+    },
+    {
+      "idx": 4,
+      "text": "Per questo alcuni contadini seminano fiori ai bordi dei campi, anche se quei fiori non daranno mai frutto.",
+      "words": 18,
+      "skeleton": {"mainVerb": "seminano", "subject": "alcuni contadini", "core_ja": "そのため一部の農民は畑の縁に花を蒔く。"},
+      "clauses": [
+        {"span": [10, 17], "type": "sub", "note_ja": "anche se の譲歩節。daranno は単純未来。dare frutto で「実を結ぶ」。"}
+      ],
+      "model_ja": "そのため一部の農民は、決して実を結ぶことのない花を、畑の縁にわざわざ蒔いている。",
+      "traps": ["LEX", "MOOD"]
+    }
+  ],
+  "model_ja_full": "多くの人は蜜蜂が蜜を作るためだけにいると信じており、農家が蜜蜂を借りていると知って驚く。開花の時期になると、養蜂家は巣箱を果樹園から果樹園へと移す。花粉を運ぶ昆虫がいなければ、果実の大半は実らないからである。\n\n蜜蜂が農業にもたらす働きは、ある試算によれば、そこから得られる蜜よりもはるかに大きな価値がある。ある地域で蜜蜂が減ると、被害は数年遅れて現れる。そしてその時にはもう、原因をさかのぼるのは難しい。そのため一部の農民は、決して実を結ぶことのない花を、畑の縁にわざわざ蒔いている。",
+  "vocab": [
+    {"it": "noleggiare", "ja": "賃借りする・賃貸しする", "hint": "辞書を引くべき"},
+    {"it": "fioritura", "ja": "開花", "hint": "推測可"},
+    {"it": "arnia", "ja": "蜂の巣箱", "hint": "辞書を引くべき"},
+    {"it": "frutteto", "ja": "果樹園", "hint": "推測可"},
+    {"it": "polline", "ja": "花粉", "hint": "推測可"},
+    {"it": "stima", "ja": "見積もり・試算", "hint": "辞書を引くべき"},
+    {"it": "dare frutto", "ja": "実を結ぶ", "hint": "辞書を引くべき"}
+  ]
+}

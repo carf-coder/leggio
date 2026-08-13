@@ -1,0 +1,116 @@
+{
+  "id": "p0027",
+  "phase": "P2",
+  "genre": "essay",
+  "wordCount": 183,
+  "title_ja": "記念像と公共の記憶",
+  "text": "Nelle piazze europee si trovano statue di uomini che quasi nessuno saprebbe nominare, e che pure sono state pagate con denaro pubblico, in anni in cui quel denaro era scarso. Ogni generazione, quando decide chi merita una statua, non descrive soltanto il passato ma dichiara che cosa vuole essere, e proprio per questo le discussioni sui monumenti, che a molti sembrano una perdita di tempo, si accendono con una violenza che sorprende chi le osserva da fuori.\n\nAlcuni chiedono che le statue più ingombranti vengano rimosse; altri ribattono che cancellarle significherebbe fingere che quel passato non sia mai esistito. Una terza posizione, meno rumorosa, propone di lasciarle dove sono aggiungendo accanto una spiegazione. Il vantaggio è evidente: chi passa vede insieme la statua e il giudizio che oggi ne diamo, e capisce che entrambi sono stati scelti da qualcuno. Chi propone di aggiungere targhe esplicative, del resto, si accorge presto che scrivere poche righe condivise è più difficile che erigere un monumento nuovo. Nessuna soluzione, però, evita la domanda di fondo, cioè chi abbia il diritto di parlare a nome di una città.",
+  "sentences": [
+    {
+      "idx": 0,
+      "text": "Nelle piazze europee si trovano statue di uomini che quasi nessuno saprebbe nominare, e che pure sono state pagate con denaro pubblico, in anni in cui quel denaro era scarso.",
+      "words": 30,
+      "skeleton": {"mainVerb": "si trovano", "subject": "statue", "core_ja": "ヨーロッパの広場には人物像がある。"},
+      "clauses": [
+        {"span": [8, 12], "type": "rel", "note_ja": "uomini を先行詞とする第一の関係節。saprebbe は条件法。"},
+        {"span": [14, 21], "type": "rel", "note_ja": "第二の関係節。先行詞は uomini ではなく statue(過去分詞 pagate が女性複数で一致している)。一致の形が先行詞を決める。"},
+        {"span": [24, 29], "type": "rel", "note_ja": "in cui は anni を先行詞とする関係節。"}
+      ],
+      "model_ja": "ヨーロッパの広場には、ほとんど誰も名を言えないような人物の像が立っている。しかもそれらは、金が乏しかった時代に、公金で作られたものである。",
+      "traps": ["MOD", "SYN"]
+    },
+    {
+      "idx": 1,
+      "text": "Ogni generazione, quando decide chi merita una statua, non descrive soltanto il passato ma dichiara che cosa vuole essere, e proprio per questo le discussioni sui monumenti, che a molti sembrano una perdita di tempo, si accendono con una violenza che sorprende chi le osserva da fuori.",
+      "words": 47,
+      "skeleton": {"mainVerb": "descrive・dichiara / si accendono", "subject": "Ogni generazione / le discussioni", "core_ja": "各世代は過去を語るだけでなく自らを宣言する。それゆえ議論は激しく燃え上がる。"},
+      "clauses": [
+        {"span": [2, 7], "type": "sub", "note_ja": "quando の時の副詞節。主語と動詞 descrive を隔てている。"},
+        {"span": [4, 7], "type": "rel", "note_ja": "chi は融合関係詞で decide の目的節を成す(「誰が像に値するかを」)。"},
+        {"span": [15, 18], "type": "sub", "note_ja": "che cosa が導く間接疑問文。dichiara の目的語。"},
+        {"span": [27, 34], "type": "rel", "note_ja": "le discussioni を先行詞とする非制限的関係節。主語と動詞 si accendono を隔てている。"},
+        {"span": [40, 46], "type": "rel", "note_ja": "una violenza を先行詞とする関係節。"},
+        {"span": [42, 46], "type": "rel", "note_ja": "chi は sorprende の目的語となる融合関係詞。le は le discussioni を受ける。"}
+      ],
+      "model_ja": "各世代は、誰が像に値するかを決めるとき、単に過去を描いているのではなく、自分たちが何でありたいかを宣言している。まさにそのために、多くの人には時間の無駄に見える記念像をめぐる議論は、外から眺める者を驚かせるほどの激しさで燃え上がるのである。",
+      "traps": ["SYN", "MOD", "REF"]
+    },
+    {
+      "idx": 2,
+      "text": "Alcuni chiedono che le statue più ingombranti vengano rimosse; altri ribattono che cancellarle significherebbe fingere che quel passato non sia mai esistito.",
+      "words": 22,
+      "skeleton": {"mainVerb": "chiedono / ribattono", "subject": "Alcuni / altri", "core_ja": "ある者は撤去を求め、ある者は〜と反論する。"},
+      "clauses": [
+        {"span": [2, 8], "type": "sub", "note_ja": "chiedere che + 接続法。vengano rimosse は venire 受動の接続法現在。"},
+        {"span": [11, 21], "type": "sub", "note_ja": "ribattono の目的節。主語は不定詞 cancellarle、述語は条件法 significherebbe。"},
+        {"span": [15, 21], "type": "sub", "note_ja": "fingere に従属するche節。接続法過去 non sia mai esistito。"}
+      ],
+      "model_ja": "ある者は最も目障りな像の撤去を求め、別の者は、それを消し去ることはあの過去が存在しなかったふりをすることになる、と反論する。",
+      "traps": ["MOOD", "REF", "SYN"]
+    },
+    {
+      "idx": 3,
+      "text": "Una terza posizione, meno rumorosa, propone di lasciarle dove sono aggiungendo accanto una spiegazione.",
+      "words": 14,
+      "skeleton": {"mainVerb": "propone", "subject": "Una terza posizione", "core_ja": "第三の立場は〜を提案する。"},
+      "clauses": [
+        {"span": [3, 4], "type": "ins", "note_ja": "meno rumorosa は主語に係る挿入的な形容詞句。"},
+        {"span": [6, 13], "type": "sub", "note_ja": "proporre di + 不定詞。lasciarle の le は le statue。"},
+        {"span": [8, 9], "type": "sub", "note_ja": "dove sono は場所を表す従属節(「今あるところに」)。"},
+        {"span": [10, 13], "type": "ger", "note_ja": "aggiungendo のジェルンディオ句。手段を表す。"}
+      ],
+      "model_ja": "声高でない第三の立場は、像はそのままにして、その傍らに説明を添えることを提案する。",
+      "traps": ["REF", "SYN"]
+    },
+    {
+      "idx": 4,
+      "text": "Il vantaggio è evidente: chi passa vede insieme la statua e il giudizio che oggi ne diamo, e capisce che entrambi sono stati scelti da qualcuno.",
+      "words": 26,
+      "skeleton": {"mainVerb": "è / vede・capisce", "subject": "Il vantaggio / chi", "core_ja": "利点は明らかだ。通りかかる人は像と評価を同時に見る。"},
+      "clauses": [
+        {"span": [4, 5], "type": "rel", "note_ja": "chi は融合関係詞で、vede と capisce の主語。"},
+        {"span": [13, 16], "type": "rel", "note_ja": "il giudizio を先行詞とする関係節。ne は「その像について」を受ける。"},
+        {"span": [19, 25], "type": "sub", "note_ja": "capisce の目的節。entrambi は「像と評価の両方」を指す。"}
+      ],
+      "model_ja": "利点は明らかである。通りかかる者は、像と、今日われわれがそれに下している評価とを同時に目にし、そのどちらもが誰かによって選ばれたものだと理解する。",
+      "traps": ["REF", "SYN"]
+    },
+    {
+      "idx": 5,
+      "text": "Chi propone di aggiungere targhe esplicative, del resto, si accorge presto che scrivere poche righe condivise è più difficile che erigere un monumento nuovo.",
+      "words": 24,
+      "skeleton": {"mainVerb": "si accorge", "subject": "Chi (= colui che)", "core_ja": "説明板の追加を提案する人は、すぐに〜と気づく。"},
+      "clauses": [
+        {"span": [0, 5], "type": "rel", "note_ja": "Chi で始まる融合関係詞句が主語。"},
+        {"span": [6, 7], "type": "ins", "note_ja": "del resto は主語と動詞の間の挿入句。"},
+        {"span": [11, 23], "type": "sub", "note_ja": "si accorge の目的節。主語は不定詞 scrivere。"},
+        {"span": [19, 23], "type": "sub", "note_ja": "più difficile che + 不定詞。比較の第二項を導く che で、関係代名詞ではない。"}
+      ],
+      "model_ja": "もっとも、説明板を添えようと提案する者は、皆が納得する数行を書くほうが、新しい記念像を建てるよりも難しいことにすぐ気づく。",
+      "traps": ["SYN", "LEX"]
+    },
+    {
+      "idx": 6,
+      "text": "Nessuna soluzione, però, evita la domanda di fondo, cioè chi abbia il diritto di parlare a nome di una città.",
+      "words": 20,
+      "skeleton": {"mainVerb": "evita", "subject": "Nessuna soluzione", "core_ja": "しかしどの解決も根本の問いを避けられない。"},
+      "clauses": [
+        {"span": [2, 2], "type": "ins", "note_ja": "però は主語と動詞の間の挿入語。"},
+        {"span": [9, 19], "type": "sub", "note_ja": "chi が導く間接疑問文。接続法 abbia は間接疑問における不確かさを示す。"}
+      ],
+      "model_ja": "しかしどの解決策も、根本にある問い、すなわち誰が街を代表して語る権利を持つのか、という問いを避けることはできない。",
+      "traps": ["MOOD", "SYN"]
+    }
+  ],
+  "model_ja_full": "ヨーロッパの広場には、ほとんど誰も名を言えないような人物の像が立っている。しかもそれらは、金が乏しかった時代に、公金で作られたものである。各世代は、誰が像に値するかを決めるとき、単に過去を描いているのではなく、自分たちが何でありたいかを宣言している。まさにそのために、多くの人には時間の無駄に見える記念像をめぐる議論は、外から眺める者を驚かせるほどの激しさで燃え上がるのである。\n\nある者は最も目障りな像の撤去を求め、別の者は、それを消し去ることはあの過去が存在しなかったふりをすることになる、と反論する。声高でない第三の立場は、像はそのままにして、その傍らに説明を添えることを提案する。利点は明らかである。通りかかる者は、像と、今日われわれがそれに下している評価とを同時に目にし、そのどちらもが誰かによって選ばれたものだと理解する。もっとも、説明板を添えようと提案する者は、皆が納得する数行を書くほうが、新しい記念像を建てるよりも難しいことにすぐ気づく。しかしどの解決策も、根本にある問い、すなわち誰が街を代表して語る権利を持つのか、という問いを避けることはできない。",
+  "vocab": [
+    {"it": "scarso", "ja": "乏しい", "hint": "推測可"},
+    {"it": "accendersi", "ja": "燃え上がる・白熱する", "hint": "辞書を引くべき"},
+    {"it": "ingombrante", "ja": "場所ふさぎな・目障りな", "hint": "辞書を引くべき"},
+    {"it": "rimuovere", "ja": "取り除く", "hint": "推測可"},
+    {"it": "fingere", "ja": "ふりをする", "hint": "辞書を引くべき"},
+    {"it": "targa esplicativa", "ja": "説明板", "hint": "推測可"},
+    {"it": "erigere", "ja": "建立する", "hint": "辞書を引くべき"},
+    {"it": "a nome di", "ja": "〜の名において", "hint": "辞書を引くべき"}
+  ]
+}

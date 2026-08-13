@@ -1,0 +1,81 @@
+{
+  "id": "p0016",
+  "phase": "P1",
+  "genre": "essay",
+  "wordCount": 107,
+  "title_ja": "貸し出される図書館",
+  "text": "Una biblioteca pubblica si giudica meno dal numero dei volumi che possiede che dal numero di quelli che escono ogni giorno dalla porta. Per molto tempo si è pensato il contrario, e i libri più preziosi venivano tenuti in armadi chiusi, dove nessuno poteva rovinarli.\n\nPoi ci si è resi conto che un libro che nessuno apre si conserva perfettamente ma non serve a nessuno. Oggi molte biblioteche prestano anche strumenti da lavoro, semi da orto e attrezzi da cucina, convinte che il prestito, e non il possesso, sia ciò che le definisce. Il libro che torna consumato, dicono i bibliotecari, ha fatto semplicemente il proprio mestiere.",
+  "sentences": [
+    {
+      "idx": 0,
+      "text": "Una biblioteca pubblica si giudica meno dal numero dei volumi che possiede che dal numero di quelli che escono ogni giorno dalla porta.",
+      "words": 23,
+      "skeleton": {"mainVerb": "si giudica", "subject": "Una biblioteca pubblica(非人称siの受動的用法)", "core_ja": "公共図書館は所蔵数よりも貸出数で判断される。"},
+      "clauses": [
+        {"span": [10, 11], "type": "rel", "note_ja": "i volumi を先行詞とする関係節。直後の che(12番)は関係詞ではなく meno … che の比較の第二項を導く。二つの che の役割の違いが最大の関門。"},
+        {"span": [17, 22], "type": "rel", "note_ja": "quelli(= i volumi)を先行詞とする関係節。"}
+      ],
+      "model_ja": "公共図書館の価値は、所蔵している本の数よりも、毎日その扉から出ていく本の数によって計られる。",
+      "traps": ["SYN", "LEX"]
+    },
+    {
+      "idx": 1,
+      "text": "Per molto tempo si è pensato il contrario, e i libri più preziosi venivano tenuti in armadi chiusi, dove nessuno poteva rovinarli.",
+      "words": 22,
+      "skeleton": {"mainVerb": "si è pensato / venivano tenuti", "subject": "非人称 / i libri più preziosi", "core_ja": "長いあいだ逆に考えられ、貴重な本は閉じた棚に保管されていた。"},
+      "clauses": [
+        {"span": [18, 21], "type": "rel", "note_ja": "dove は場所の関係副詞で、先行詞は armadi chiusi。rovinarli の li は i libri。"}
+      ],
+      "model_ja": "長いあいだ、人々は逆のことを考えていた。最も貴重な本は閉ざされた戸棚に納められ、そこでは誰もそれを傷めることができなかった。",
+      "traps": ["REF", "MOD"]
+    },
+    {
+      "idx": 2,
+      "text": "Poi ci si è resi conto che un libro che nessuno apre si conserva perfettamente ma non serve a nessuno.",
+      "words": 20,
+      "skeleton": {"mainVerb": "ci si è resi conto", "subject": "非人称のsi(「人々は」)", "core_ja": "やがて〜ということに気づいた。"},
+      "clauses": [
+        {"span": [6, 19], "type": "sub", "note_ja": "rendersi conto che の目的節。主語 un libro と動詞 si conserva の間に関係節が挟まる。"},
+        {"span": [9, 11], "type": "rel", "note_ja": "un libro を先行詞とする関係節。nessuno が主語、che が目的語なので「誰も開かない本」。主客を逆にしないこと。"}
+      ],
+      "model_ja": "やがて人々は、誰も開かない本は完璧に保存されはするが、誰の役にも立たないということに気づいた。",
+      "traps": ["SYN", "REF"]
+    },
+    {
+      "idx": 3,
+      "text": "Oggi molte biblioteche prestano anche strumenti da lavoro, semi da orto e attrezzi da cucina, convinte che il prestito, e non il possesso, sia ciò che le definisce.",
+      "words": 28,
+      "skeleton": {"mainVerb": "prestano", "subject": "molte biblioteche", "core_ja": "今日多くの図書館は道具や種も貸し出している。"},
+      "clauses": [
+        {"span": [15, 27], "type": "ins", "note_ja": "convinte は主語 molte biblioteche に一致する叙述的付加(女性複数)。"},
+        {"span": [16, 27], "type": "sub", "note_ja": "convinte に従属するche節。接続法 sia。主語は il prestito。"},
+        {"span": [19, 22], "type": "ins", "note_ja": "e non il possesso は主語と動詞 sia の間に割り込む対比の挿入句。"},
+        {"span": [24, 27], "type": "rel", "note_ja": "ciò che は「〜するもの」。le は le biblioteche を受ける目的語。"}
+      ],
+      "model_ja": "今日では多くの図書館が、仕事道具や菜園の種、台所用品まで貸し出している。自分たちを定義するのは所有ではなく貸し出しである、と確信しているからである。",
+      "traps": ["MOOD", "REF", "SYN"]
+    },
+    {
+      "idx": 4,
+      "text": "Il libro che torna consumato, dicono i bibliotecari, ha fatto semplicemente il proprio mestiere.",
+      "words": 14,
+      "skeleton": {"mainVerb": "ha fatto", "subject": "Il libro", "core_ja": "傷んで戻る本は自分の務めを果たしたのである。"},
+      "clauses": [
+        {"span": [2, 4], "type": "rel", "note_ja": "Il libro を先行詞とする関係節。consumato は主語の状態を表す補語(「すり切れた状態で戻る」)。"},
+        {"span": [5, 7], "type": "ins", "note_ja": "dicono i bibliotecari は伝達を示す挿入節。主語が動詞のあとに置かれている。"}
+      ],
+      "model_ja": "すり切れて返ってくる本は、ただ自分の務めを果たしたにすぎない、と司書たちは言う。",
+      "traps": ["SYN", "MOD"]
+    }
+  ],
+  "model_ja_full": "公共図書館の価値は、所蔵している本の数よりも、毎日その扉から出ていく本の数によって計られる。長いあいだ、人々は逆のことを考えていた。最も貴重な本は閉ざされた戸棚に納められ、そこでは誰もそれを傷めることができなかった。\n\nやがて人々は、誰も開かない本は完璧に保存されはするが、誰の役にも立たないということに気づいた。今日では多くの図書館が、仕事道具や菜園の種、台所用品まで貸し出している。自分たちを定義するのは所有ではなく貸し出しである、と確信しているからである。すり切れて返ってくる本は、ただ自分の務めを果たしたにすぎない、と司書たちは言う。",
+  "vocab": [
+    {"it": "volume", "ja": "(書物の)一冊", "hint": "辞書を引くべき"},
+    {"it": "armadio", "ja": "戸棚", "hint": "推測可"},
+    {"it": "rovinare", "ja": "傷める", "hint": "推測可"},
+    {"it": "rendersi conto di", "ja": "〜に気づく", "hint": "辞書を引くべき"},
+    {"it": "prestito", "ja": "貸し出し", "hint": "辞書を引くべき"},
+    {"it": "attrezzo", "ja": "道具", "hint": "辞書を引くべき"},
+    {"it": "consumato", "ja": "使い古された", "hint": "推測可"}
+  ]
+}

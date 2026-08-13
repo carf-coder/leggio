@@ -1,0 +1,78 @@
+{
+  "id": "p0017",
+  "phase": "P1",
+  "genre": "narrative",
+  "wordCount": 102,
+  "title_ja": "調律師",
+  "text": "L'accordatore arrivò alle otto, con una borsa di tela che sembrava troppo piccola per contenere qualcosa di utile. Non salutò quasi, alzò il coperchio del pianoforte e restò immobile per un minuto, come se ascoltasse una stanza vuota.\n\nPoi cominciò a battere lo stesso tasto decine di volte, e a Giulia, che lo osservava dalla porta, quel suono parve insopportabile. Quando ebbe finito, disse soltanto che lo strumento era stato tenuto vicino alla finestra troppo a lungo. Giulia non chiese altro; suonò invece la prima cosa che le venne in mente, e capì subito che il pianoforte non era più lo stesso.",
+  "sentences": [
+    {
+      "idx": 0,
+      "text": "L'accordatore arrivò alle otto, con una borsa di tela che sembrava troppo piccola per contenere qualcosa di utile.",
+      "words": 18,
+      "skeleton": {"mainVerb": "arrivò", "subject": "L'accordatore", "core_ja": "調律師は八時に到着した。"},
+      "clauses": [
+        {"span": [9, 17], "type": "rel", "note_ja": "una borsa を先行詞とする関係節。piccola が女性単数なのは borsa に一致するため。"},
+        {"span": [13, 17], "type": "sub", "note_ja": "troppo … per + 不定詞で「〜するには〜すぎる」。この per を目的(「〜するために」)と取ると意味が反転する。"}
+      ],
+      "model_ja": "調律師は八時に、役に立つものが入っているとは思えないほど小さな布の鞄を提げてやって来た。",
+      "traps": ["MOOD", "MOD", "LEX"]
+    },
+    {
+      "idx": 1,
+      "text": "Non salutò quasi, alzò il coperchio del pianoforte e restò immobile per un minuto, come se ascoltasse una stanza vuota.",
+      "words": 20,
+      "skeleton": {"mainVerb": "salutò / alzò / restò(三つの等位の遠過去)", "subject": "(L'accordatore) 省略", "core_ja": "彼はろくに挨拶もせず、蓋を上げ、一分ほど動かずにいた。"},
+      "clauses": [
+        {"span": [14, 19], "type": "sub", "note_ja": "come se は必ず接続法をとる(ここでは半過去 ascoltasse)。"}
+      ],
+      "model_ja": "彼はろくに挨拶もせず、ピアノの蓋を上げ、まるで空の部屋に耳を澄ますかのように、一分ほど動かずにいた。",
+      "traps": ["MOOD", "OMIT"]
+    },
+    {
+      "idx": 2,
+      "text": "Poi cominciò a battere lo stesso tasto decine di volte, e a Giulia, che lo osservava dalla porta, quel suono parve insopportabile.",
+      "words": 22,
+      "skeleton": {"mainVerb": "cominciò / parve", "subject": "(調律師)省略 / quel suono", "core_ja": "彼は同じ鍵を叩き始め、その音はジュリアには耐えがたく思われた。"},
+      "clauses": [
+        {"span": [13, 17], "type": "rel", "note_ja": "Giulia を先行詞とする非制限的関係節。lo は調律師を受ける。"},
+        {"span": [2, 9], "type": "sub", "note_ja": "cominciare a + 不定詞の不定詞句。"}
+      ],
+      "model_ja": "それから彼は同じ鍵盤を何十回も叩き始めた。戸口からそれを見ていたジュリアには、その音は耐えがたく感じられた。",
+      "traps": ["SYN", "REF"]
+    },
+    {
+      "idx": 3,
+      "text": "Quando ebbe finito, disse soltanto che lo strumento era stato tenuto vicino alla finestra troppo a lungo.",
+      "words": 17,
+      "skeleton": {"mainVerb": "disse", "subject": "(調律師) 省略", "core_ja": "終えると、彼は〜とだけ言った。"},
+      "clauses": [
+        {"span": [0, 2], "type": "sub", "note_ja": "quando の時の副詞節。ebbe finito は先立過去(trapassato remoto)で、遠過去の主節より前に完了したことを示す。"},
+        {"span": [5, 16], "type": "sub", "note_ja": "disse の目的節。era stato tenuto は大過去の受動態。"}
+      ],
+      "model_ja": "作業を終えると、彼はただ、この楽器は窓のそばに長く置かれすぎていた、とだけ言った。",
+      "traps": ["MOOD", "SYN"]
+    },
+    {
+      "idx": 4,
+      "text": "Giulia non chiese altro; suonò invece la prima cosa che le venne in mente, e capì subito che il pianoforte non era più lo stesso.",
+      "words": 25,
+      "skeleton": {"mainVerb": "chiese / suonò / capì", "subject": "Giulia", "core_ja": "ジュリアはそれ以上尋ねず、思いついた曲を弾き、すぐに理解した。"},
+      "clauses": [
+        {"span": [9, 13], "type": "rel", "note_ja": "la prima cosa を先行詞とする関係節。venire in mente a qcn で「〜の頭に浮かぶ」。le は Giulia を受ける間接目的語。"},
+        {"span": [17, 24], "type": "sub", "note_ja": "capì の目的節。non era più lo stesso は「もはや同じではなかった」。"}
+      ],
+      "model_ja": "ジュリアはそれ以上何も尋ねなかった。代わりに、真っ先に頭に浮かんだ曲を弾き、そのピアノがもはや以前のものではないことをすぐに悟った。",
+      "traps": ["REF", "LEX", "SYN"]
+    }
+  ],
+  "model_ja_full": "調律師は八時に、役に立つものが入っているとは思えないほど小さな布の鞄を提げてやって来た。彼はろくに挨拶もせず、ピアノの蓋を上げ、まるで空の部屋に耳を澄ますかのように、一分ほど動かずにいた。\n\nそれから彼は同じ鍵盤を何十回も叩き始めた。戸口からそれを見ていたジュリアには、その音は耐えがたく感じられた。作業を終えると、彼はただ、この楽器は窓のそばに長く置かれすぎていた、とだけ言った。ジュリアはそれ以上何も尋ねなかった。代わりに、真っ先に頭に浮かんだ曲を弾き、そのピアノがもはや以前のものではないことをすぐに悟った。",
+  "vocab": [
+    {"it": "accordatore", "ja": "調律師", "hint": "辞書を引くべき"},
+    {"it": "tela", "ja": "布・帆布", "hint": "辞書を引くべき"},
+    {"it": "coperchio", "ja": "蓋", "hint": "辞書を引くべき"},
+    {"it": "tasto", "ja": "鍵盤の鍵", "hint": "辞書を引くべき"},
+    {"it": "insopportabile", "ja": "耐えがたい", "hint": "推測可"},
+    {"it": "venire in mente", "ja": "頭に浮かぶ", "hint": "辞書を引くべき"}
+  ]
+}

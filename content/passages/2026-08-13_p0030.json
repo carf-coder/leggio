@@ -1,0 +1,119 @@
+{
+  "id": "p0030",
+  "phase": "P2",
+  "genre": "practical",
+  "wordCount": 187,
+  "title_ja": "診察を受ける前に",
+  "text": "Chi entra dal medico con la sensazione di aver dimenticato qualcosa quasi sempre ha ragione, perché la memoria funziona male quando siamo preoccupati. Conviene perciò scrivere prima, su un foglio, da quanto tempo dura il disturbo, che cosa lo peggiora e che cosa lo attenua, e portare l'elenco dei farmaci che si prendono, compresi quelli che nessuno considera farmaci, come gli integratori e le tisane.\n\nSe qualcosa non è chiaro, va chiesto subito: nessun medico si offende se gli si domanda di ripetere, mentre molti si irritano quando il paziente annuisce e poi non segue la terapia. Vale la pena, prima di uscire, ripetere ad alta voce quello che si è capito, così che l'eventuale malinteso emerga finché c'è ancora qualcuno che può correggerlo. Chi accompagna una persona anziana faccia attenzione a non rispondere al posto suo, per quanto sia più rapido. Portare con sé, se si è già stati visitati altrove, anche gli esami più vecchi evita di ripetere accertamenti inutili. Le domande scritte, infine, servono anche a chi ascolta: un medico che vede un foglio capisce subito di avere davanti una persona che vuole capire.",
+  "sentences": [
+    {
+      "idx": 0,
+      "text": "Chi entra dal medico con la sensazione di aver dimenticato qualcosa quasi sempre ha ragione, perché la memoria funziona male quando siamo preoccupati.",
+      "words": 23,
+      "skeleton": {"mainVerb": "ha ragione", "subject": "Chi (= colui che)", "core_ja": "何か忘れた気がして診察室に入る人は、たいてい正しい。"},
+      "clauses": [
+        {"span": [0, 10], "type": "rel", "note_ja": "Chi で始まる融合関係詞句が主節の主語。dal medico は「医者のところへ」。"},
+        {"span": [7, 10], "type": "sub", "note_ja": "la sensazione に従属する完了不定詞句。"},
+        {"span": [15, 22], "type": "sub", "note_ja": "perché の理由節。"},
+        {"span": [20, 22], "type": "sub", "note_ja": "quando の時の副詞節が理由節の内部に入れ子になっている。"}
+      ],
+      "model_ja": "何か忘れているような気がしながら医者のもとへ入る人は、たいていの場合その勘が当たっている。心配なとき、記憶はうまく働かないからである。",
+      "traps": ["SYN", "LEX"]
+    },
+    {
+      "idx": 1,
+      "text": "Conviene perciò scrivere prima, su un foglio, da quanto tempo dura il disturbo, che cosa lo peggiora e che cosa lo attenua, e portare l'elenco dei farmaci che si prendono, compresi quelli che nessuno considera farmaci, come gli integratori e le tisane.",
+      "words": 42,
+      "skeleton": {"mainVerb": "Conviene", "subject": "scrivere / portare(二つの不定詞)", "core_ja": "あらかじめ紙に書き、薬の一覧を持参するのがよい。"},
+      "clauses": [
+        {"span": [7, 12], "type": "sub", "note_ja": "da quanto tempo が導く第一の間接疑問文(「いつから続いているか」)。"},
+        {"span": [13, 16], "type": "sub", "note_ja": "che cosa が導く第二の間接疑問文。lo は il disturbo を受ける。"},
+        {"span": [18, 21], "type": "sub", "note_ja": "che cosa が導く第三の間接疑問文。三つが並列している点を見落とすと訳し漏れる。"},
+        {"span": [27, 29], "type": "rel", "note_ja": "i farmaci を先行詞とする関係節。si prendono は非人称のsi。"},
+        {"span": [30, 41], "type": "ins", "note_ja": "compresi quelli … は「〜を含めて」の挿入句。compresi は quelli に一致する過去分詞。"},
+        {"span": [32, 35], "type": "rel", "note_ja": "quelli を先行詞とする関係節。considerare A B(「AをBとみなす」)の語順に注意。"}
+      ],
+      "model_ja": "そこで、症状がいつから続いているか、何によって悪化し何によって和らぐかを、あらかじめ紙に書いておき、服用している薬の一覧を持参するとよい。サプリメントやハーブティーのように、誰も薬とは考えていないものも含めてである。",
+      "traps": ["SYN", "OMIT", "REF"]
+    },
+    {
+      "idx": 2,
+      "text": "Se qualcosa non è chiaro, va chiesto subito: nessun medico si offende se gli si domanda di ripetere, mentre molti si irritano quando il paziente annuisce e poi non segue la terapia.",
+      "words": 32,
+      "skeleton": {"mainVerb": "va chiesto / si offende / si irritano", "subject": "(qualcosa) / nessun medico / molti", "core_ja": "分からないことはすぐ尋ねるべきである。"},
+      "clauses": [
+        {"span": [0, 4], "type": "sub", "note_ja": "se の条件節。"},
+        {"span": [12, 17], "type": "sub", "note_ja": "se の条件節。gli si domanda は間接目的語 gli + 非人称の si(「彼に尋ねられる」)。"},
+        {"span": [18, 31], "type": "sub", "note_ja": "この mentre は時ではなく対比(「それに対して」)。"},
+        {"span": [22, 31], "type": "sub", "note_ja": "quando の時の副詞節。annuisce と non segue の二つの動詞が主語 il paziente を共有する。"}
+      ],
+      "model_ja": "分からないことがあれば、その場ですぐ尋ねるべきである。もう一度説明してほしいと言われて気を悪くする医者はいない。それに対して、患者がうなずいておきながら治療に従わないときには、多くの医者が苛立つ。",
+      "traps": ["LEX", "REF", "SYN"]
+    },
+    {
+      "idx": 3,
+      "text": "Vale la pena, prima di uscire, ripetere ad alta voce quello che si è capito, così che l'eventuale malinteso emerga finché c'è ancora qualcuno che può correggerlo.",
+      "words": 27,
+      "skeleton": {"mainVerb": "Vale la pena", "subject": "ripetere(不定詞)", "core_ja": "出る前に、理解した内容を声に出して繰り返す価値がある。"},
+      "clauses": [
+        {"span": [3, 5], "type": "ins", "note_ja": "prima di uscire は挿入的な不定詞句。"},
+        {"span": [10, 14], "type": "rel", "note_ja": "quello che は「〜したこと」。ripetere の目的語。"},
+        {"span": [15, 26], "type": "sub", "note_ja": "così che + 接続法 emerga(「〜するように」)。"},
+        {"span": [20, 26], "type": "sub", "note_ja": "finché の時の副詞節(「〜がいるあいだに」)。虚辞の non が付いていない点に注意。"},
+        {"span": [24, 26], "type": "rel", "note_ja": "qualcuno を先行詞とする関係節。correggerlo の lo は il malinteso。"}
+      ],
+      "model_ja": "部屋を出る前に、理解した内容を声に出して繰り返しておく価値がある。そうすれば、訂正できる相手がまだそこにいるうちに、誤解があれば表に出るからである。",
+      "traps": ["MOOD", "REF", "SYN"]
+    },
+    {
+      "idx": 4,
+      "text": "Chi accompagna una persona anziana faccia attenzione a non rispondere al posto suo, per quanto sia più rapido.",
+      "words": 18,
+      "skeleton": {"mainVerb": "faccia attenzione(勧告の接続法)", "subject": "Chi (= colui che)", "core_ja": "高齢者に付き添う人は、〜しないよう気をつけるべきだ。"},
+      "clauses": [
+        {"span": [0, 4], "type": "rel", "note_ja": "Chi で始まる融合関係詞句が主語。"},
+        {"span": [7, 12], "type": "sub", "note_ja": "fare attenzione a + 不定詞。al posto suo は「その人の代わりに」。"},
+        {"span": [13, 17], "type": "sub", "note_ja": "per quanto は譲歩を表し接続法をとる(「たとえ〜であっても」)。"}
+      ],
+      "model_ja": "高齢者に付き添う人は、そのほうが早いとしても、本人に代わって答えてしまわないよう気をつけるべきである。",
+      "traps": ["MOOD", "REF"]
+    },
+    {
+      "idx": 5,
+      "text": "Portare con sé, se si è già stati visitati altrove, anche gli esami più vecchi evita di ripetere accertamenti inutili.",
+      "words": 20,
+      "skeleton": {"mainVerb": "evita", "subject": "Portare(不定詞句)", "core_ja": "古い検査結果を持参することが、無駄な検査の繰り返しを避ける。"},
+      "clauses": [
+        {"span": [3, 9], "type": "ins", "note_ja": "se の条件節が、不定詞 Portare とその目的語 gli esami の間に割り込んでいる。si è stati visitati は非人称のsi による受動で、過去分詞が複数形になる。"},
+        {"span": [16, 19], "type": "sub", "note_ja": "evitare di + 不定詞。"}
+      ],
+      "model_ja": "よそで診察を受けたことがあるなら、古い検査結果も持参しておくと、無駄な検査を繰り返さずに済む。",
+      "traps": ["SYN", "MOD"]
+    },
+    {
+      "idx": 6,
+      "text": "Le domande scritte, infine, servono anche a chi ascolta: un medico che vede un foglio capisce subito di avere davanti una persona che vuole capire.",
+      "words": 25,
+      "skeleton": {"mainVerb": "servono / capisce", "subject": "Le domande scritte / un medico", "core_ja": "書かれた質問は聞く側にも役立つ。"},
+      "clauses": [
+        {"span": [7, 8], "type": "rel", "note_ja": "chi は前置詞 a のあとの融合関係詞。"},
+        {"span": [11, 14], "type": "rel", "note_ja": "un medico を先行詞とする関係節。主語と動詞 capisce を隔てている。"},
+        {"span": [17, 24], "type": "sub", "note_ja": "capire di + 不定詞。avere davanti qcn で「目の前に〜がいる」。"},
+        {"span": [22, 24], "type": "rel", "note_ja": "una persona を先行詞とする関係節。"}
+      ],
+      "model_ja": "最後に、書き出した質問は聞く側にも役立つ。紙を目にした医者は、自分の前にいるのが理解しようとしている人間だと即座に分かるからである。",
+      "traps": ["SYN", "MOD"]
+    }
+  ],
+  "model_ja_full": "何か忘れているような気がしながら医者のもとへ入る人は、たいていの場合その勘が当たっている。心配なとき、記憶はうまく働かないからである。そこで、症状がいつから続いているか、何によって悪化し何によって和らぐかを、あらかじめ紙に書いておき、服用している薬の一覧を持参するとよい。サプリメントやハーブティーのように、誰も薬とは考えていないものも含めてである。\n\n分からないことがあれば、その場ですぐ尋ねるべきである。もう一度説明してほしいと言われて気を悪くする医者はいない。それに対して、患者がうなずいておきながら治療に従わないときには、多くの医者が苛立つ。部屋を出る前に、理解した内容を声に出して繰り返しておく価値がある。そうすれば、訂正できる相手がまだそこにいるうちに、誤解があれば表に出るからである。高齢者に付き添う人は、そのほうが早いとしても、本人に代わって答えてしまわないよう気をつけるべきである。よそで診察を受けたことがあるなら、古い検査結果も持参しておくと、無駄な検査を繰り返さずに済む。最後に、書き出した質問は聞く側にも役立つ。紙を目にした医者は、自分の前にいるのが理解しようとしている人間だと即座に分かるからである。",
+  "vocab": [
+    {"it": "disturbo", "ja": "症状・不調", "hint": "辞書を引くべき"},
+    {"it": "attenuare", "ja": "和らげる", "hint": "辞書を引くべき"},
+    {"it": "compreso", "ja": "〜を含めて", "hint": "辞書を引くべき"},
+    {"it": "integratore", "ja": "サプリメント", "hint": "推測可"},
+    {"it": "annuire", "ja": "うなずく", "hint": "辞書を引くべき"},
+    {"it": "malinteso", "ja": "誤解", "hint": "推測可"},
+    {"it": "per quanto", "ja": "たとえ〜でも", "hint": "辞書を引くべき"},
+    {"it": "accertamento", "ja": "(医学的)検査", "hint": "辞書を引くべき"}
+  ]
+}

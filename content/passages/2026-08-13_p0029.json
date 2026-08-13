@@ -1,0 +1,111 @@
+{
+  "id": "p0029",
+  "phase": "P2",
+  "genre": "narrative",
+  "wordCount": 183,
+  "title_ja": "山小屋の一夜",
+  "text": "Arrivarono al rifugio poco prima che il temporale scoppiasse, con le scarpe piene d'acqua e la certezza di essere stati imprudenti. Il custode, un uomo che non doveva avere più di cinquant'anni ma che parlava come se ne avesse ottanta, li fece entrare senza commentare, indicò loro la stufa e disse soltanto che la corrente sarebbe saltata verso le nove, come accadeva ogni volta che il vento veniva da nord.\n\nCenarono in silenzio, ascoltando la pioggia che cambiava suono a seconda che colpisse il tetto o i vetri. Verso mezzanotte, quando ormai dormivano tutti, Chiara si svegliò e vide che il custode era ancora seduto vicino alla finestra, con una lampada accesa. Al mattino il cielo era pulito, e la valle, che la sera prima non si vedeva affatto, apparve così vicina che sembrava di poterla toccare. Sul quaderno del rifugio, accanto alla data del giorno prima, qualcuno aveva scritto una sola parola che nessuno di loro riuscì a decifrare. Il custode li salutò dalla porta e non chiese nulla; solo mentre scendevano Chiara si accorse di non avergli domandato come si chiamasse.",
+  "sentences": [
+    {
+      "idx": 0,
+      "text": "Arrivarono al rifugio poco prima che il temporale scoppiasse, con le scarpe piene d'acqua e la certezza di essere stati imprudenti.",
+      "words": 21,
+      "skeleton": {"mainVerb": "Arrivarono", "subject": "(彼ら) 省略", "core_ja": "彼らは山小屋に着いた。"},
+      "clauses": [
+        {"span": [3, 8], "type": "sub", "note_ja": "prima che は必ず接続法をとる(半過去 scoppiasse)。"},
+        {"span": [17, 20], "type": "sub", "note_ja": "la certezza に従属する完了不定詞句(「軽率だったという確信」)。"}
+      ],
+      "model_ja": "嵐が始まる少し前に、彼らは靴を水浸しにし、自分たちは軽率だったという確信を抱いて山小屋に着いた。",
+      "traps": ["MOOD", "SYN"]
+    },
+    {
+      "idx": 1,
+      "text": "Il custode, un uomo che non doveva avere più di cinquant'anni ma che parlava come se ne avesse ottanta, li fece entrare senza commentare, indicò loro la stufa e disse soltanto che la corrente sarebbe saltata verso le nove, come accadeva ogni volta che il vento veniva da nord.",
+      "words": 49,
+      "skeleton": {"mainVerb": "fece / indicò / disse(三つの等位の遠過去)", "subject": "Il custode", "core_ja": "小屋番は彼らを入れ、ストーブを示し、〜とだけ言った。"},
+      "clauses": [
+        {"span": [2, 18], "type": "ins", "note_ja": "un uomo 以下は Il custode の同格。主語と動詞 fece を長く隔てている。"},
+        {"span": [4, 10], "type": "rel", "note_ja": "un uomo を先行詞とする第一の関係節。doveva avere は推量(「〜歳のはずだった」)で義務ではない。"},
+        {"span": [12, 18], "type": "rel", "note_ja": "同じ先行詞にかかる第二の関係節。"},
+        {"span": [14, 18], "type": "sub", "note_ja": "come se + 接続法半過去 avesse。ne は「歳のうち」を受ける。"},
+        {"span": [22, 23], "type": "sub", "note_ja": "senza + 不定詞。"},
+        {"span": [31, 48], "type": "sub", "note_ja": "disse の目的節。sarebbe saltata は過去から見た未来。saltare は「(電気が)落ちる」。"},
+        {"span": [39, 48], "type": "sub", "note_ja": "come の様態節。その内部に ogni volta che の時の副詞節が入れ子になっている。"}
+      ],
+      "model_ja": "小屋番は、五十を超えているはずもないのに八十であるかのような口をきく男だったが、何も言わずに彼らを中へ入れ、ストーブを指し示し、北風のときはいつもそうなるように九時ごろ停電するだろう、とだけ言った。",
+      "traps": ["MOOD", "SYN", "LEX"]
+    },
+    {
+      "idx": 2,
+      "text": "Cenarono in silenzio, ascoltando la pioggia che cambiava suono a seconda che colpisse il tetto o i vetri.",
+      "words": 18,
+      "skeleton": {"mainVerb": "Cenarono", "subject": "(彼ら) 省略", "core_ja": "彼らは黙って夕食をとった。"},
+      "clauses": [
+        {"span": [3, 17], "type": "ger", "note_ja": "ascoltando のジェルンディオ句。"},
+        {"span": [6, 17], "type": "rel", "note_ja": "la pioggia を先行詞とする関係節。"},
+        {"span": [11, 17], "type": "sub", "note_ja": "a seconda che は接続法をとる(「〜かによって」)。colpisse の主語は la pioggia。"}
+      ],
+      "model_ja": "彼らは黙って夕食をとり、屋根に当たるか窓ガラスに当たるかで音を変える雨に耳を澄ませていた。",
+      "traps": ["MOOD", "MOD"]
+    },
+    {
+      "idx": 3,
+      "text": "Verso mezzanotte, quando ormai dormivano tutti, Chiara si svegliò e vide che il custode era ancora seduto vicino alla finestra, con una lampada accesa.",
+      "words": 24,
+      "skeleton": {"mainVerb": "si svegliò / vide", "subject": "Chiara", "core_ja": "真夜中ごろ、キアーラは目を覚まし、〜を見た。"},
+      "clauses": [
+        {"span": [2, 5], "type": "sub", "note_ja": "quando の時の副詞節。主語 tutti が動詞のあとに置かれている。"},
+        {"span": [11, 23], "type": "sub", "note_ja": "vide の目的節。seduto は状態を表す過去分詞。"}
+      ],
+      "model_ja": "真夜中ごろ、皆がもう眠っていた時分に、キアーラは目を覚まし、小屋番がランプを灯したまま窓辺に座り続けているのを見た。",
+      "traps": ["SYN", "MOD"]
+    },
+    {
+      "idx": 4,
+      "text": "Al mattino il cielo era pulito, e la valle, che la sera prima non si vedeva affatto, apparve così vicina che sembrava di poterla toccare.",
+      "words": 25,
+      "skeleton": {"mainVerb": "era / apparve", "subject": "il cielo / la valle", "core_ja": "朝、空は晴れ、谷はすぐ近くに見えた。"},
+      "clauses": [
+        {"span": [9, 16], "type": "rel", "note_ja": "la valle を先行詞とする非制限的関係節。主語と動詞 apparve を隔てている。"},
+        {"span": [20, 24], "type": "sub", "note_ja": "così … che の結果構文。poterla toccare の la は la valle。"}
+      ],
+      "model_ja": "朝には空が澄み渡り、前の晩にはまるで見えなかった谷が、手を伸ばせば触れられそうなほど近くに現れた。",
+      "traps": ["SYN", "REF"]
+    },
+    {
+      "idx": 5,
+      "text": "Sul quaderno del rifugio, accanto alla data del giorno prima, qualcuno aveva scritto una sola parola che nessuno di loro riuscì a decifrare.",
+      "words": 23,
+      "skeleton": {"mainVerb": "aveva scritto", "subject": "qualcuno", "core_ja": "小屋の帳面に、誰かが一語だけ書いていた。"},
+      "clauses": [
+        {"span": [4, 9], "type": "ins", "note_ja": "accanto alla data … は場所を補足する挿入句。主語 qualcuno の登場を遅らせている。"},
+        {"span": [16, 22], "type": "rel", "note_ja": "una sola parola を先行詞とする関係節。riuscì a + 不定詞。"}
+      ],
+      "model_ja": "小屋の帳面には、前日の日付の横に、誰かが一語だけ書き残していた。その一語を、彼らのうち誰も読み解くことができなかった。",
+      "traps": ["SYN", "MOD"]
+    },
+    {
+      "idx": 6,
+      "text": "Il custode li salutò dalla porta e non chiese nulla; solo mentre scendevano Chiara si accorse di non avergli domandato come si chiamasse.",
+      "words": 23,
+      "skeleton": {"mainVerb": "salutò / si accorse", "subject": "Il custode / Chiara", "core_ja": "小屋番は戸口から挨拶し、何も尋ねなかった。下山中にキアーラは気づいた。"},
+      "clauses": [
+        {"span": [11, 12], "type": "sub", "note_ja": "mentre の時の副詞節。"},
+        {"span": [16, 22], "type": "sub", "note_ja": "accorgersi di + 完了不定詞(「〜しなかったことに気づく」)。gli は小屋番。"},
+        {"span": [20, 22], "type": "sub", "note_ja": "come が導く間接疑問文。接続法半過去 chiamasse。"}
+      ],
+      "model_ja": "小屋番は戸口から彼らに挨拶し、何も尋ねなかった。下りながら、キアーラはようやく、彼に名前を尋ねていなかったことに気づいた。",
+      "traps": ["MOOD", "REF", "SYN"]
+    }
+  ],
+  "model_ja_full": "嵐が始まる少し前に、彼らは靴を水浸しにし、自分たちは軽率だったという確信を抱いて山小屋に着いた。小屋番は、五十を超えているはずもないのに八十であるかのような口をきく男だったが、何も言わずに彼らを中へ入れ、ストーブを指し示し、北風のときはいつもそうなるように九時ごろ停電するだろう、とだけ言った。\n\n彼らは黙って夕食をとり、屋根に当たるか窓ガラスに当たるかで音を変える雨に耳を澄ませていた。真夜中ごろ、皆がもう眠っていた時分に、キアーラは目を覚まし、小屋番がランプを灯したまま窓辺に座り続けているのを見た。朝には空が澄み渡り、前の晩にはまるで見えなかった谷が、手を伸ばせば触れられそうなほど近くに現れた。小屋の帳面には、前日の日付の横に、誰かが一語だけ書き残していた。その一語を、彼らのうち誰も読み解くことができなかった。小屋番は戸口から彼らに挨拶し、何も尋ねなかった。下りながら、キアーラはようやく、彼に名前を尋ねていなかったことに気づいた。",
+  "vocab": [
+    {"it": "rifugio", "ja": "山小屋", "hint": "辞書を引くべき"},
+    {"it": "temporale", "ja": "雷雨", "hint": "辞書を引くべき"},
+    {"it": "custode", "ja": "管理人", "hint": "辞書を引くべき"},
+    {"it": "stufa", "ja": "ストーブ", "hint": "推測可"},
+    {"it": "saltare (la corrente)", "ja": "停電する", "hint": "辞書を引くべき"},
+    {"it": "a seconda che", "ja": "〜かどうかに応じて", "hint": "辞書を引くべき"},
+    {"it": "decifrare", "ja": "判読する", "hint": "推測可"}
+  ]
+}
